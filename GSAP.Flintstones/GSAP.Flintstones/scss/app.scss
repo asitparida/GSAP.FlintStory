@@ -1,0 +1,803 @@
+﻿@import '_vars';
+@import '_utils';
+
+/* Include this file in your html if you are using the CSP mode. */
+
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@function star-speckles ($n, $speckle) {
+    $value: '#{random(3000)}px #{random(3000)}px #{$speckle}';
+
+    @for $i from 2 through $n {
+        $value: '#{$value} , #{random(3000)}px #{random(3000)}px #{$speckle}'
+    }
+
+    @return unquote($value);
+}
+
+@mixin color-defines-css($defcolor) {
+    .header {
+        transition: background-color 0.3s linear 0s;
+
+        &-colorslab {
+
+            &--top {
+                background-color: lighten($defcolor, 20);
+                transition: background-color 0.3s linear 0s;
+            }
+
+            &--middle {
+                background-color: lighten($defcolor, 10);
+                transition: background-color 0.3s linear 0s;
+            }
+
+            &--bottom {
+                background-color: darken($defcolor, 0);
+                transition: background-color 0.3s linear 0s;
+            }
+        }
+
+        &-xs-profile-links-pages-list-toggle,
+        &-profile-links-pages-list-toggle {
+            background: linear-gradient(to right, darken($defcolor, 10) 0%, $defcolor 100%);
+            border: 3px solid lighten($defcolor, 33%);
+            transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s;
+        }
+
+        &-xs-profile-links-pages-list li a svg g g,
+        &-profile-links-pages-list li a svg g g {
+            fill: lighten($defcolor, 33%);
+        }
+    }
+
+    .content {
+        background-color: darken($defcolor, 25);
+        transition: background-color 0.3s linear 0s;
+
+        .layer-grass {
+            .grass {
+                fill: lighten(saturate($defcolor, 40), 25);
+            }
+        }
+
+        .layer-mountains {
+
+            .mountain-peak {
+                fill: lighten(saturate($defcolor, 40), 25);
+            }
+
+            .mountain-left {
+                fill: darken($defcolor, 10);
+            }
+
+            .mountain-right {
+                fill: darken($defcolor, 30);
+            }
+        }
+
+        .layer-moon {
+            .moon-allure-ring,
+            .moon-main-ring {
+                fill: lighten(saturate($defcolor, 40), 35);
+            }
+        }
+
+        .layer-wilma-house {
+
+            .house-wall {
+                fill: lighten(saturate($defcolor, 20), 33);
+            }
+
+            .house-beam {
+                fill: darken($defcolor, 30);
+            }
+        }
+
+        .layer-fred {
+            .leg-left,
+            .hand-left {
+                fill: lighten(saturate($defcolor, 20), 35);
+                opacity: 0.80;
+            }
+
+            .face-back,
+            .face-mid,
+            .leg-right,
+            .hand-right {
+                fill: lighten(saturate($defcolor, 20), 35);
+            }
+
+            .face-front {
+                fill: lighten(saturate($defcolor, 30), 25);
+            }
+
+            .hair {
+                fill: darken($defcolor, 35);
+            }
+
+            .mouth,
+            .eye,
+            .ear {
+                fill: desaturate(darken($defcolor, 10), 20);
+            }
+
+            .dress-spots {
+                fill: darken($defcolor, 35);
+            }
+
+            .dress-wear {
+                fill: $defcolor;
+            }
+
+            .collar {
+                fill: darken($defcolor, 15);
+            }
+        }
+
+        .layer-wilma {
+
+            .hair {
+                fill: darken($defcolor, 35);
+            }
+
+            .face,
+            .hand-left,
+            .leg-left,
+            .nose {
+                fill: lighten(saturate($defcolor, 20), 35);
+            }
+
+            .hand-right,
+            .leg-right {
+                fill: lighten(saturate($defcolor, 20), 35);
+                opacity: 0.80;
+            }
+
+            .beads {
+                fill: darken($defcolor, 30);
+            }
+
+            .eye,
+            .mouth {
+                fill: desaturate(darken($defcolor, 10), 20);
+            }
+
+            .dress-wear {
+                fill: #f0f9fc;
+            }
+        }
+
+        .layer-car {
+
+            .wheel {
+                fill: lighten($defcolor, 40);
+                stroke: lighten(saturate($defcolor, 30), 25);
+            }
+
+            .wheel-spot {
+                fill: lighten(saturate($defcolor, 30), 25);
+                stroke: lighten($defcolor, 40);
+            }
+
+            .rollbar-piston {
+                fill: darken($defcolor, 35);
+            }
+
+            .rollbar-shade {
+                fill: $defcolor;
+                opacity: 0.50;
+            }
+
+            .rollbar-support {
+                fill: darken($defcolor, 35);
+            }
+
+            .rollbar-joint {
+                fill: darken($defcolor, 20);
+            }
+
+            .rollbar-joint-shade {
+                fill: $defcolor;
+                opacity: 0.50;
+            }
+        }
+
+        .layer-rose {
+            .stem {
+                fill: lighten(saturate($defcolor, 30), 15);
+            }
+
+            .petal-outer {
+                fill: lighten(saturate($defcolor, 30), 50);
+            }
+
+            .petal-inner-1 {
+                fill: lighten(saturate($defcolor, 30), 35);
+            }
+
+            .petal-inner-2 {
+                fill: lighten(saturate($defcolor, 30), 15);
+            }
+
+            .petal-inner-3 {
+                fill: lighten(saturate($defcolor, 30), 5);
+            }
+        }
+
+        .layer-plane {
+
+            .plane-body {
+                fill: lighten(saturate($defcolor, 40), 35);
+            }
+
+            .plane-toggle {
+                fill: darken($defcolor, 30);
+            }
+        }
+
+        .planeKiPoonch {
+            background: lighten(saturate($defcolor, 30), 15);
+        }
+    }
+}
+
+body {
+
+    @each $key, $value in $defaultPalettes {
+        &.#{$key} {
+            @include color-defines-css( $value );
+        }
+    }
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f0f0f0;
+    transition: all 0.3s linear 0s;
+    top: 0px;
+
+    &.colorPickerActive {
+        position: relative;
+        top: 275px;
+    }
+
+    .color-switcher {
+        position: absolute;
+        height: 275px;
+        width: 100%;
+        top: -275px;
+        left: 0;
+
+        .accent-picker {
+            height: 275px;
+            margin: 0;
+            overflow: hidden;
+            padding: 30px;
+
+            &-close {
+                width: 24px;
+                height: 24px;
+                background-image: url(../../assets/app-close.png);
+                background-size: contain;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                cursor: pointer;
+
+                &:active {
+                    transform: scale(0.95,0.95);
+                }
+            }
+
+            label {
+                font-size: large;
+                margin: 0;
+                font-weight: 500;
+            }
+
+            .settings-color-picker {
+                margin: 0 auto;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                -moz-transform: rotate(-20deg);
+                -ms-transform: rotate(-20deg);
+                -o-transform: rotate(-20deg);
+                -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+                left: -30px;
+
+                .color-plate {
+                    width: 120px;
+                    height: 48px;
+                    position: absolute;
+                    left: 127px;
+                    -moz-transform-origin: 0 24px;
+                    -ms-transform-origin: 0 24px;
+                    -o-transform-origin: 0 24px;
+                    -webkit-transform-origin: 0 24px;
+                    transform-origin: 0 24px;
+                    top: 140px;
+                    border-radius: 7%;
+                    border: 2px solid #e0e0e0;
+                    -moz-transform: rotate(-150deg) scale(1,1);
+                    -ms-transform: rotate(-150deg) scale(1,1);
+                    -o-transform: rotate(-150deg) scale(1,1);
+                    -webkit-transform: rotate(-150deg) scale(1,1);
+                    transform: rotate(-150deg) scale(1,1);
+                    outline: none;
+                    cursor: pointer;
+
+                    &:active {
+                        -moz-transform: scale(0.90, 0.90);
+                        -ms-transform: scale(0.90, 0.90);
+                        -o-transform: scale(0.90, 0.90);
+                        -webkit-transform: scale(0.90, 0.90);
+                        transform: scale(0.90, 0.90);
+                    }
+
+                    &.ng-enter {
+                        -moz-animation: color_track_pl_enter 0.3s linear;
+                        -o-animation: color_track_pl_enter 0.3s linear;
+                        -webkit-animation: color_track_pl_enter 0.3s linear;
+                        animation: color_track_pl_enter 0.3s linear;
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+
+        &-xs {
+            width: 100%;
+            height: 60px;
+            display: none;
+            padding: 15px 15px 0 15px;
+
+            @include respond-to-mobile {
+                display: block;
+            }
+
+            &-profile-links {
+
+                &-pages-list {
+                    margin: 0;
+                    list-style: none;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+
+                    li {
+                        margin: 0;
+                        display: inline-block;
+                        font-size: 1.25em;
+                        color: #fff;
+                        border-bottom: 2px solid transparent;
+
+                        &.header-profile-links-pages-list--active {
+                            border-bottom: 2px solid #fff;
+                        }
+
+                        a {
+                            padding: 10px 15px;
+                            font-size: medium;
+                            line-height: 48px;
+                            height: 48px;
+                            color: #fff;
+                            text-decoration: none;
+
+                            img {
+                                width: 30px;
+                            }
+
+                            svg {
+                                height: 30px;
+                                position: relative;
+                                top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-profile-links-pages-list-toggle {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #ff0000;
+                border: 3px solid #fff;
+                position: relative;
+                top: 12px;
+                margin-left: 15px;
+            }
+        }
+
+        &-colorslab {
+            width: 100%;
+
+            &--bottom {
+                height: 50vh;
+            }
+        }
+
+        &-profile-data {
+            height: 60px;
+            width: 100%;
+            position: relative;
+            padding: 10px;
+
+            @include respond-to-mobile {
+                z-index: 9;
+            }
+        }
+
+        &-profile-links {
+            position: relative;
+            top: 6px;
+
+            @include respond-to-mobile {
+                display: none;
+            }
+
+            &-pages-list {
+                margin: 0;
+                list-style: none;
+                width: 100%;
+                text-align: center;
+                padding: 0;
+
+                li {
+                    margin: 0;
+                    display: inline-block;
+                    font-size: 1.25em;
+                    color: #fff;
+                    border-bottom: 2px solid transparent;
+
+                    &.header-profile-links-pages-list--active {
+                        border-bottom: 2px solid #fff;
+                    }
+
+                    a {
+                        padding: 10px 15px;
+                        font-size: medium;
+                        line-height: 48px;
+                        height: 48px;
+                        color: #fff;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        img {
+                            width: 30px;
+                        }
+
+                        svg {
+                            height: 30px;
+                            position: relative;
+                            top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-profile-links-pages-list-toggle {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #ff0000;
+            border: 3px solid #fff;
+            position: relative;
+            top: 0;
+            opacity: 0.33;
+
+
+            @include respond-to-mobile {
+                display: none;
+            }
+        }
+    }
+
+    .content {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .stars-bg {
+            position: absolute;
+
+
+            &-md {
+                width: 2px;
+                height: 2px;
+                opacity: 0.75;
+                border-radius: 50%;
+                background: transparent;
+                box-shadow: star-speckles(150, #fff);
+                -moz-animation: animStar 300s linear infinite;
+                -o-animation: animStar 300s linear infinite;
+                -webkit-animation: animStar 300s linear infinite;
+                animation: animStar 300s linear infinite;
+            }
+
+            &-lg {
+                width: 5px;
+                height: 5px;
+                opacity: 0.85;
+                border-radius: 50%;
+                background: transparent;
+                box-shadow: star-speckles(80, #fff);
+                -moz-animation: animStar 400s linear infinite;
+                -o-animation: animStar 400s linear infinite;
+                -webkit-animation: animStar 400s linear infinite;
+                animation: animStar 400s linear infinite;
+            }
+        }
+
+        .layer-grass {
+            position: absolute;
+            bottom: -5px;
+            z-index: 999;
+
+            .grass {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-mountains {
+            position: absolute;
+            bottom: -30px;
+            z-index: 998;
+            height: 20vh;
+
+            .mountain-peak {
+                transition: fill 0.3s linear 0s;
+            }
+
+            .mountain-left {
+                transition: fill 0.3s linear 0s;
+            }
+
+            .mountain-right {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-moon {
+            height: 200vh;
+            width: 100%;
+            position: absolute;
+            top: -90vh;
+            z-index: 100;
+
+            &:not(.active) {
+                right: -20vw;
+            }
+
+            &.active {
+                left: -20vw;
+            }
+
+            .moon-allure-ring {
+                opacity: 0.03;
+            }
+
+            .moon-allure-ring,
+            .moon-main-ring {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-wilma-house {
+            position: absolute;
+            right: -30vh;
+            bottom: 0;
+            height: 70vh;
+            z-index: 300;
+
+            .house-wall {
+                transition: fill 0.3s linear 0s;
+            }
+
+            .house-beam {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-fred {
+            position: absolute;
+            height: 30vh;
+            bottom: 15px;
+            left: 50%;
+            z-index: 200;
+
+            .leg-left,
+            .hand-left,
+            .face-back,
+            .face-mid,
+            .leg-right,
+            .hand-right,
+            .face-front,
+            .hair,
+            .mouth,
+            .eye,
+            .ear,
+            .dress-spots,
+            .collar {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-wilma {
+            position: absolute;
+            height: 30vh;
+            bottom: 15px;
+            left: 70%;
+            z-index: 200;
+
+            .hair,
+            .face,
+            .hand-right,
+            .leg-right,
+            .hand-left,
+            .leg-left,
+            .nose,
+            .beads,
+            .eye,
+            .dress-wear {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-car {
+            position: absolute;
+            height: 33vh;
+            bottom: 15px;
+            left: 20%;
+            z-index: 400;
+
+            &.running {
+                animation: cart-diving 3s ease-in-out infinite, cart-diving-rotate 3s ease-in-out infinite;
+            }
+
+            .wheel {
+                stroke-width: 20px;
+                stroke-miterlimit: 10;
+            }
+
+            .wheel-spot {
+                stroke-width: 5px;
+                stroke-miterlimit: 10;
+            }
+
+            .wheel,
+            .wheel-spot,
+            .rollbar-piston,
+            .wheel-spot,
+            .rollbar-shade,
+            .rollbar-support,
+            .rollbar-joint,
+            .rollbar-joint-shade {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-rose {
+            position: absolute;
+            height: 8vh;
+            bottom: 20vh;
+            left: 60%;
+            z-index: 200;
+            z-index: 400;
+
+            .stem,
+            .petal-outer,
+            .petal-inner-1,
+            .petal-inner-2,
+            .petal-inner-3 {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-plane {
+            position: absolute;
+            height: 30px;
+            left: 20%;
+            top: 20%;
+            z-index: 600;
+            opacity: 0.50;
+            cursor: pointer;
+
+            .plane-body {
+                fill: #c3eafc;
+            }
+
+            .plane-toggle {
+                fill: #245566;
+            }
+
+            .plane-body,
+            .plane-toggle {
+                transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .planeKiPoonch {
+            height: 3px;
+            position: absolute;
+            width: 1px;
+            z-index: 599;
+            opacity: 0.15;
+            transition: background 0.3s linear 0s;
+        }
+    }
+}
+
+@keyframes animStar {
+    from {
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    to {
+        -moz-transform: translateY(-3000px);
+        -ms-transform: translateY(-3000px);
+        -o-transform: translateY(-3000px);
+        -webkit-transform: translateY(-3000px);
+        transform: translateY(-3000px);
+    }
+}
+
+
+@keyframes cart-diving {
+    0% {
+        margin-top: 5px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    100% {
+        margin-top: 5px;
+    }
+}
+
+@keyframes cart-diving-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

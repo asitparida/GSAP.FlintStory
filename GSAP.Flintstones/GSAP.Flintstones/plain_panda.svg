@@ -1,0 +1,21 @@
+<svg id="panda" data-name="??" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647.97 917.95">
+  <title>plain_panda</title>
+  <rect id="panda-bgrect" class="cls-1" width="647.97" height="917.95"/>
+  <circle id="panda-pictrect" class="cls-2" cx="331.48" cy="316.86" r="220.65"/>
+  <path d="M444.4,531.64a220.65,220.65,0,0,1-312,.82l.67.66c19.69-93.29,81.61-161.4,154.94-161.4s135.26,68.11,154.94,161.4Z" transform="translate(39 19.39)"/>
+  <circle class="cls-3" cx="212.73" cy="231.16" r="30"/>
+  <circle class="cls-3" cx="446.13" cy="231.16" r="30"/>
+  <circle class="cls-4" cx="218.07" cy="237.32" r="17.26"/>
+  <circle class="cls-4" cx="442.43" cy="235.68" r="17.26"/>
+  <circle class="cls-5" cx="336.41" cy="331.83" r="139.71"/>
+  <path d="M281.51,270.65c7.1,8.77-12,13.46-27.46,26s-33.83,15.62-40.93,6.84-.3-26.06,15.2-38.61S274.41,261.87,281.51,270.65Z" transform="translate(39 19.39)"/>
+  <circle class="cls-6" cx="282.78" cy="298.14" r="11.71"/>
+  <circle cx="282.37" cy="298.14" r="3.9"/>
+  <path d="M302,270.65c-7.1,8.77,12,13.46,27.46,26s33.83,15.62,40.93,6.84.3-26.06-15.2-38.61S309.14,261.87,302,270.65Z" transform="translate(39 19.39)"/>
+  <circle class="cls-6" cx="378.77" cy="298.14" r="11.71"/>
+  <circle cx="379.18" cy="298.14" r="3.9"/>
+  <path d="M296.5,381.38c17.63-1.93,31.56-18,32.64-38v-.27l-72.08-.45" transform="translate(39 19.39)"/>
+  <polyline class="cls-7" points="356.8 422.28 330.15 422.05 343.21 422.16"/>
+  <path class="cls-7" d="M268.9,402.71l24.33,0Z" transform="translate(39 19.39)"/>
+  <path d="M296.89,381.4v18.12h-7.25V381.64l-.42-.27c-18.29-2.08-32.57-19.41-32.57-40.48,0-5.33,15.64-9.64,35-9.64,20.74,0,37.52,5.31,37.52,11.87" transform="translate(39 19.39)"/>
+</svg>

@@ -82,7 +82,7 @@ function MainController($timeout, $window) {
     TweenMax.set([self.fredHandLeft, self.fredHandRight], { rotation: 90, transformOrigin: self.fredHandsTransformOrigin });
     TweenMax.set([self.wilmaHandLeft, self.wilmaHandRight], { rotation: -90, transformOrigin: "right", x: ' -30px' });
     TweenMax.set(self.fredDress, { scaleY: 1.1, transformOrigin: "top" });
-    TweenMax.to(self.fred, 0.5, { x: (self.window.innerWidth / 2 - 100) });
+
 
     // document.getElementById('cart').getBoundingClientRect()
 

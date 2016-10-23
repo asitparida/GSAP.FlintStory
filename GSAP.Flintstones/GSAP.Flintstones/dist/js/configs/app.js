@@ -1,8 +1,30 @@
-﻿angular.module('Flintstones.UI', ['ngAnimate'])
-.controller('MainController', ['$timeout', '$window', MainController]);
-
-function MainController($timeout, $window) {
+﻿angular.module('Flintstones.UI', [])
+.controller('MainController', ['$timeout', '$window', '$browserService', MainController])
+.service('$browserService', BrowserService);
+function BrowserService() {
     var self = this;
+    self.browserSupported = true;
+    self.isIESupported = false;
+}
+BrowserService.prototype.isBrowserSupported = function () {
+    var self = this;
+    if (typeof detect !== 'undefined' && detect != null && detect != {}) {
+        if (typeof navigator !== 'undefined' && navigator != null && navigator != {}) {
+            if (typeof navigator.userAgent !== 'undefined' && navigator.userAgent != null && navigator.userAgent != {}) {
+                var _parsed = detect.parse(navigator.userAgent);
+                if (typeof _parsed !== 'undefined' && _parsed != null && _parsed != {} && typeof _parsed.browser !== 'undefined' && _parsed.browser != null && _parsed.browser != {}) {
+                    if (_parsed.browser.family == 'IE')
+                        self.browserSupported = self.isIESupported;
+                }
+            }
+        }
+    }
+    return self.browserSupported;
+}
+function MainController($timeout, $window, $browserService) {
+    var self = this;
+    self.browserService = $browserService;
+    self.browserSupported = self.browserService.isBrowserSupported();
     self.timeout = $timeout;
     self.window = $window;
     self.showColorPicker = false;
@@ -81,6 +103,10 @@ function MainController($timeout, $window) {
     self.setCartOutOfView();
     self.setMountainOutOfView();
 
+    if (self.browserSupported == false) {
+        self.startBtn.textContent = 'oopsie !   browser not supprted :(';
+    }
+
     //INIT TWEENS
     TweenMax.set([self.fredHandLeft, self.fredHandRight], { rotation: 90, transformOrigin: self.fredHandsTransformOrigin });
     TweenMax.set([self.wilmaHandLeft, self.wilmaHandRight], { rotation: -90, transformOrigin: "right", x: ' -30px' });
@@ -90,6 +116,9 @@ function MainController($timeout, $window) {
 
 MainController.prototype.startMotion = function () {
     var self = this;
+    if (self.browserSupported == false) {
+        return;
+    }
     if (self.animationComplete) {
         location.reload();
         return;
@@ -298,7 +327,7 @@ MainController.prototype.reset = function () {
             }, "-=0.50")
             .to(self.mountains, 1, {
                 x: self.window.innerWidth
-            }, "-=1.25");       
+            }, "-=1.25");
     }
 }
 

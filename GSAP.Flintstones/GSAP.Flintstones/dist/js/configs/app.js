@@ -26,6 +26,7 @@ function MainController($timeout, $window) {
     self.moonRings = document.getElementById('moon-rings');
     self.starsBg = document.getElementById('stars-bg');
 
+    self.fred = document.getElementById('fred');
     self.fredLegLeft = document.getElementById('fred-leg-left');
     self.fredLegRight = document.getElementById('fred-leg-right');
     self.fredHandLeft = document.getElementById('fred-hand-left');
@@ -33,16 +34,23 @@ function MainController($timeout, $window) {
     self.fredHandsTransformOrigin = "30px 10px";
     self.fredDress = document.getElementById('fred-dress');
 
+    self.wilma = document.getElementById('wilma');
     self.wilmaLegLeft = document.getElementById('wilma-leg-left');
     self.wilmaLegRight = document.getElementById('wilma-leg-right');
     self.wilmaHandLeft = document.getElementById('wilma-hand-left');
     self.wilmaHandRight = document.getElementById('wilma-hand-right');
 
+    self.cart = document.getElementById('cart');
     self.cartWheelFront = document.getElementById('cart-wheel-front');
     self.cartWheelRear = document.getElementById('cart-wheel-rear');
     self.moon = document.getElementById('moon');
     self.plane = document.getElementById('plane');
     self.tail = document.getElementById('planeTail');
+
+    self.house = document.getElementById('wilma-house');
+    self.moonToggle = document.getElementById('layer-toggle');
+    self.rose = document.getElementById('rose');
+    self.mountains = document.getElementById('mountains');
 
     self.moonActive = false;
 
@@ -52,6 +60,12 @@ function MainController($timeout, $window) {
 
     self.animateMoonRings();
     self.initPlane();
+    self.setHouseOutOfView();
+    self.setMoonToRight();
+    self.setWilmaOutOfView();
+    self.setRoseToHide();
+    self.setCartOutOfView();
+    self.setMountainOutOfView();
 
     //INIT TWEENS
     TweenMax.set([self.fredHandLeft, self.fredHandRight], { rotation: 90, transformOrigin: self.fredHandsTransformOrigin });
@@ -62,29 +76,98 @@ function MainController($timeout, $window) {
     //TweenMax.to([self.fredHandRight], 2, { rotation: 0, transformOrigin: self.fredHandsTransformOrigin });
 
     //FRED RUNNING LEGS
-    $timeout(function () {
-        self.fredRunningLegs();
-    }, 1000);
+    //$timeout(function () {
+    //    self.fredRunningLegs();
+    //}, 1000);
     //$timeout(function () {
     //    self.stopFredRunningLegs();
     //}, 5000);
 
     //WILMA WALKING LEGS
-    $timeout(function () {
-        self.wilmaWalkingTowardsFred();
-    }, 1000);
+    //$timeout(function () {
+    //    self.wilmaWalkingTowardsFred();
+    //}, 1000);
     //$timeout(function () {
     //    self.stopFredRunningLegs();
     //}, 5000);
 
     //CART RUNNING LEGS
-    $timeout(function () {
-        self.cartRunning();
-    }, 1000);
+    //$timeout(function () {
+    //    self.cartRunning();
+    //}, 1000);
     //$timeout(function () {
     //    self.stopRunningCart();
     //}, 10000);
 
+    //$timeout(function () {
+    //    self.moveCartOutOfView();
+    //}, 1000);
+
+    //$timeout(function () {
+    //    self.moveMoonToCorrectPosition();
+    //}, 5000);
+
+}
+
+MainController.prototype.setMountainOutOfView = function () {
+    var self = this;
+    var _translateX = self.window.innerWidth;
+    TweenMax.set(self.mountains, { x: _translateX });
+}
+
+MainController.prototype.moveCartOutOfView = function () {
+    var self = this;
+    var _cartPosition = self.cart.getBoundingClientRect();
+    var _translateX = self.window.innerWidth;
+    TweenMax.to(self.cart, 2, { x: _translateX });
+}
+
+MainController.prototype.setCartOutOfView = function () {
+    var self = this;
+    var _cartPosition = self.cart.getBoundingClientRect();
+    var _translateX = self.window.innerWidth;
+    TweenMax.set(self.cart, { x: _translateX });
+}
+
+MainController.prototype.setRoseToHide = function () {
+    var self = this;
+    TweenMax.set(self.rose, { opacity: 0, rotation: 90, transformOrigin: "center center" });
+}
+
+MainController.prototype.setMoonToRight = function () {
+    var self = this;
+    var _moonPosition = self.moon.getBoundingClientRect();
+    var _translateX = (self.window.innerWidth - _moonPosition.right) / 2;
+    if (self.window.innerWidth > _moonPosition.right)
+        _translateX = (self.window.innerWidth - (_moonPosition.width / 2) - 60) - _moonPosition.right;
+    TweenMax.set(self.moonToggle, { x: _translateX });
+}
+
+MainController.prototype.moveMoonToRight = function () {
+    var self = this;
+    var _moonPosition = self.moon.getBoundingClientRect();
+    var _translateX = (self.window.innerWidth - _moonPosition.right) / 2;
+    TweenMax.to(self.moonToggle, 0.5, { x: _translateX });
+}
+
+MainController.prototype.moveMoonToCorrectPosition = function () {
+    var self = this;
+    TweenMax.to(self.moonToggle, 0.5, { x: 0 });
+}
+
+MainController.prototype.setHouseOutOfView = function () {
+    var self = this;
+    TweenMax.set(self.house, { x: '2000px' });
+}
+
+MainController.prototype.moveHouseOutOfView = function () {
+    var self = this;
+    TweenMax.to(self.house, 2, { x: '2000px' });
+}
+
+MainController.prototype.moveHouseIntoOfView = function () {
+    var self = this;
+    TweenMax.to(self.house, 2, { x: 0 });
 }
 
 MainController.prototype.toggleMoon = function () {
@@ -98,9 +181,9 @@ MainController.prototype.initPlane = function () {
     var _planePosition = self.plane.getBoundingClientRect();
 
     self.plane.style.left = (_moonPosition.left - _planePosition.width) + 'px';
-    self.plane.style.top = (_moonPosition.top - 5) + 'px';
+    self.plane.style.top = (_moonPosition.top - 3) + 'px';
     self.tail.style.left = _moonPosition.left + 'px';
-    self.tail.style.top = (_moonPosition.top + _planePosition.height / 2 + 3) + 'px';
+    self.tail.style.top = (_moonPosition.top + _planePosition.height / 2 + 5) + 'px';
     var _maxTranslateX = (-(_moonPosition.left - _planePosition.width)) + 'px';
     self.planeTimeline = new TimelineMax({ repeat: -1 });
     self.planeTimeline
@@ -108,6 +191,16 @@ MainController.prototype.initPlane = function () {
         .to(self.tail, 100, { scaleX: _maxTranslateX, transformOrigin: "left", ease: Linear.easeNone }, "-=100")
         .to(self.plane, 5, { x: 0 + 'px', ease: Linear.easeNone })
         .to(self.tail, 5, { scaleX: 0, transformOrigin: "left", ease: Linear.easeNone }, "-=5");
+}
+
+MainController.prototype.setWilmaOutOfView = function () {
+    var self = this;
+    var _wilmaPosition = self.wilma.getBoundingClientRect();
+    var _translateX = 0;
+    if (self.window.innerWidth > _wilmaPosition.right) {
+        _translateX = self.window.innerWidth - _wilmaPosition.right + 100;
+        TweenMax.set(self.wilma, { x: _translateX });
+    }
 }
 
 MainController.prototype.wilmaWalkingTowardsFred = function () {
@@ -122,8 +215,6 @@ MainController.prototype.wilmaWalkingTowardsFred = function () {
         .to(self.wilmaLegLeft, 0.5, { rotation: 0, ease: Linear.easeNone }, "-=1.5")
         .to(self.wilmaLegLeft, 0.5, { rotation: -15, ease: Linear.easeNone }, "-=1")
         .to(self.wilmaLegLeft, 0.5, { rotation: 0, ease: Linear.easeNone }, "-=0.50");
-
-    //self.fredLegsRunningTimeline.timeScale(8);
 }
 
 MainController.prototype.cartRunning = function () {

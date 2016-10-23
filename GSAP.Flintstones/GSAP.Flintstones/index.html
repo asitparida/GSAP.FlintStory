@@ -34,26 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="header" ng-mouseleave="main.bannerleave($event)">
-        <div class="header-xs">
-            <div class="header-xs-profile-links">
-                <ul class="header-xs-profile-links-pages-list">
-                    <li class="pull-left">
-                        <a target="_blank" href="http://github.com/asitparida">
-                            <svg width="30px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <title>Github</title>
-                                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Black" transform="translate(-700.000000, -560.000000)" fill="#000000">
-                                        <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="pull-right" style="margin-right:15px;"><div class="header-xs-profile-links-pages-list-toggle" ng-click="main.openColorPicker()"></div></li>
-                </ul>
-            </div>
-        </div>
+    <div class="header" ng-mouseleave="main.bannerleave($event)">        
         <div class="header-profile-data">
             <div class="header-profile-links-pages-list-toggle pull-left" ng-click="main.openColorPicker()"></div>
         </div>
@@ -118,7 +99,7 @@
                 <polygon class="rollbar-joint-shade" points="186.94 68.09 206.19 48.84 208.65 48.43 208.24 50.48 188.58 67.89 186.94 68.09" />
             </g>
         </svg>
-        <svg class="layer-rose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.68 63.48">
+        <svg class="layer-rose" id="rose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.68 63.48">
             <g id="Layer_1-2" data-name="Layer 1">
                 <path class="petal-inner-1" d="M18.27,16.12c-1.08-.48-2.14-1-3.25-1.43a29,29,0,0,1-7.65-4.5A46.35,46.35,0,0,1,12,7.75c2.66-1.48,5.19-3.07,6.26-6.16l.29.08c.21,4.46.13,8.93,0,13.39A1.42,1.42,0,0,1,18.27,16.12Z" />
                 <path class="petal-inner-2" d="M18.25,1.58c0,2-1.21,3.28-2.72,4.36A26.89,26.89,0,0,1,7.36,10.2L4.74,7.88c1.4-2.39,2.94-4.65,5.66-5.73C12.31,1.57,14.09.49,16.19.58,17,.62,17.83.71,18.25,1.58Z" />
@@ -157,7 +138,7 @@
                 </g>
             </g>
         </svg>
-        <svg class="layer-mountains" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 698.14 408.01">
+        <svg class="layer-mountains" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 698.14 408.01" id="mountains">
             <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_5" data-name="Layer 5">
                     <path class="mountain-right" d="M270.81,406.73l1.38-11.94-3.81-8.74c1.53-1.23,1.15-3.37,1.11-5.16-.13-6.87,2.1-12.52,7.74-16.69,1.39-1,3.1-2,2.76-4.25-1.12-1.9-2.18-3.83-3.36-5.69q-15.36-24.08-30.77-48.12a33.77,33.77,0,0,1-2.26-2.8q-33.53-51.51-67-103.05c-7-10.83-13.82-21.81-20.72-32.72-4.43-2.72-7.27-.61-9.25,3.28-1.74,3.42-2.61,7.18-3.87,10.8-1.88,5.44-1.88,5.43-6.87,2.16-2.7-1.77-5.26-3.72-7.91-5.55-3.63-2.5-6.64-2.1-9.36,1.51-4.72,6.28-9.36,12.62-13.84,19.08-1.23,1.77-2.72,3.64-1.42,6.07q.09,23.32.18,46.65l-17.62,1.1,6.2,143.58c1.13.07,2.25.14,3.38.2C154.39,398.33,212.5,404.13,270.81,406.73Z" />
@@ -169,28 +150,33 @@
                 </g>
             </g>
         </svg>
-        <svg class="layer-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6000.09 4839.09" ng-class="{'active': main.moonActive}">
-            <g id="moon-rings" style="transform:translateX(500px)">
-                <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="2419.54" />
-                <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="1797.18" />
-                <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="1252.27" />
-                <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="766.56" />
-                <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="349.62" />
-            </g>
-            <circle id="moon" class="moon-main-ring" cx="2419.54" cy="2419.54" r="54.79" style="transform:translateX(500px)" />
-        </svg>
-        <svg id="plane" class="layer-plane" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.5 39.84" ng-click="main.toggleMoon()">
-            <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_8" data-name="Layer 8">
-                    <path class="plane-body" d="M65,20.51H9.67a9.67,9.67,0,1,0,0,19.33H65a9.67,9.67,0,1,0,0-19.33Z" />
-                    <rect class="plane-body" x="8.71" y="10.32" width="43" height="13.79" rx="6.9" ry="6.9" transform="translate(-3.32 26.4) rotate(-45)" />
-                    <rect class="plane-toggle" x="5.34" y="25.08" width="17.33" height="11" rx="4" ry="4" />
-                    <rect class="plane-body" x="79.5" y="26.17" width="24" height="3" rx="1.5" ry="1.5" />
-                    <rect class="plane-body" x="79" y="33.67" width="24" height="3" rx="1.5" ry="1.5" />
+        <div id="layer-toggle" class="moon-toggle" ng-class="{'active': main.moonActive}">
+            <svg class="layer-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6000.09 4839.09">
+                <g id="moon-rings" style="transform:translateX(500px)">
+                    <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="2419.54" />
+                    <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="1797.18" />
+                    <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="1252.27" />
+                    <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="766.56" />
+                    <circle class="moon-allure-ring" cx="2419.54" cy="2419.54" r="349.62" />
                 </g>
-            </g>
-        </svg>
-        <div class="planeKiPoonch" id="planeTail"></div>
+                <circle id="moon" class="moon-main-ring" cx="2419.54" cy="2419.54" r="54.79" style="transform:translateX(500px)" />
+            </svg>
+            <svg id="plane" class="layer-plane" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.5 39.84" ng-click="main.toggleMoon()">
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_8" data-name="Layer 8">
+                        <path class="plane-body" d="M65,20.51H9.67a9.67,9.67,0,1,0,0,19.33H65a9.67,9.67,0,1,0,0-19.33Z" />
+                        <rect class="plane-body" x="8.71" y="10.32" width="43" height="13.79" rx="6.9" ry="6.9" transform="translate(-3.32 26.4) rotate(-45)" />
+                        <rect class="plane-toggle" x="5.34" y="25.08" width="17.33" height="11" rx="4" ry="4" />
+                        <rect class="plane-body" x="79.5" y="26.17" width="24" height="3" rx="1.5" ry="1.5" />
+                        <rect class="plane-body" x="79" y="33.67" width="24" height="3" rx="1.5" ry="1.5" />
+                    </g>
+                </g>
+            </svg>
+            <div class="planeKiPoonch" id="planeTail"></div>
+        </div>
+        <div class="start-btn-holder">
+            <button class="start-btn">Move Flint !</button>
+        </div>        
     </div>
 </body>
 </html>

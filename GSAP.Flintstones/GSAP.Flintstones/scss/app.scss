@@ -248,6 +248,14 @@ html {
         .planeKiPoonch {
             background: lighten(saturate($defcolor, 30), 15);
         }
+
+        .start-btn-holder {
+
+            .start-btn {
+                background-color: darken($defcolor, 10);
+                border-color: darken($defcolor, 30);
+            }
+        }
     }
 }
 
@@ -452,10 +460,6 @@ body {
             position: relative;
             top: 6px;
 
-            @include respond-to-mobile {
-                display: none;
-            }
-
             &-pages-list {
                 margin: 0;
                 list-style: none;
@@ -560,6 +564,10 @@ body {
             .grass {
                 transition: fill 0.3s linear 0s;
             }
+
+            @include respond-to-mobile {
+                height: 10vh !important;
+            }
         }
 
         .layer-mountains {
@@ -581,30 +589,65 @@ body {
             }
         }
 
-        .layer-moon {
-            height: 200vh;
-            width: 100%;
-            position: absolute;
-            top: -90vh;
-            z-index: 100;
-
-            &:not(.active) {
+        .moon-toggle {
+            .layer-moon {
+                height: 200vh;
+                width: 100%;
+                position: absolute;
+                top: -90vh;
+                z-index: 100;
+                transform: scale(1.25,1.25);
                 right: -20vw;
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+
+                .moon-allure-ring {
+                    opacity: 0.03;
+                }
+
+                .moon-allure-ring,
+                .moon-main-ring {
+                    transition: fill 0.3s linear 0s;
+                }
             }
 
             &.active {
-                left: -20vw;
+                transform: rotateY(180deg);
             }
 
-            .moon-allure-ring {
-                opacity: 0.03;
+            .layer-plane {
+                position: absolute;
+                height: 30px;
+                left: 20%;
+                top: 20%;
+                z-index: 600;
+                opacity: 0.50;
+                cursor: pointer;
+
+                .plane-body {
+                    fill: #c3eafc;
+                }
+
+                .plane-toggle {
+                    fill: #245566;
+                }
+
+                .plane-body,
+                .plane-toggle {
+                    transition: fill 0.3s linear 0s;
+                }
             }
 
-            .moon-allure-ring,
-            .moon-main-ring {
-                transition: fill 0.3s linear 0s;
+            .planeKiPoonch {
+                height: 3px;
+                position: absolute;
+                width: 1px;
+                z-index: 599;
+                opacity: 0.15;
+                transition: background 0.3s linear 0s;
             }
         }
+
 
         .layer-wilma-house {
             position: absolute;
@@ -626,7 +669,7 @@ body {
             position: absolute;
             height: 30vh;
             bottom: 15px;
-            left: 50%;
+            left: 45%;
             z-index: 200;
 
             .leg-left,
@@ -643,6 +686,11 @@ body {
             .dress-spots,
             .collar {
                 transition: fill 0.3s linear 0s;
+            }
+
+            @include respond-to-mobile {
+                height: 60vh !important;
+                left: 30%;
             }
         }
 
@@ -705,8 +753,7 @@ body {
             height: 8vh;
             bottom: 20vh;
             left: 60%;
-            z-index: 200;
-            z-index: 400;
+            z-index: 150;
 
             .stem,
             .petal-outer,
@@ -716,37 +763,36 @@ body {
                 transition: fill 0.3s linear 0s;
             }
         }
+    }
 
-        .layer-plane {
-            position: absolute;
-            height: 30px;
-            left: 20%;
-            top: 20%;
-            z-index: 600;
-            opacity: 0.50;
-            cursor: pointer;
+    .start-btn-holder {
+        height: 72px;
+        width: 100%;
+        position: absolute;
+        top: calc(50vh - 36px);
+        outline: none;
 
-            .plane-body {
-                fill: #c3eafc;
+        .start-btn {
+            line-height: 72px;
+            font-family: 'Open Sans';
+            font-size: large;
+            padding: 0 30px;
+            color: #fff;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            box-shadow: none;
+            box-sizing: border-box;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-width: 4px;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+
+            @include respond-to-mobile {
+                display: none;
             }
-
-            .plane-toggle {
-                fill: #245566;
-            }
-
-            .plane-body,
-            .plane-toggle {
-                transition: fill 0.3s linear 0s;
-            }
-        }
-
-        .planeKiPoonch {
-            height: 3px;
-            position: absolute;
-            width: 1px;
-            z-index: 599;
-            opacity: 0.15;
-            transition: background 0.3s linear 0s;
         }
     }
 }

@@ -329,7 +329,7 @@ body {
             .leg-left,
             .hand-left {
                 fill: #e5c9a8;
-                opacity: 0.80;
+                opacity: 0.95;
             }
 
             .face-back,
@@ -376,13 +376,13 @@ body {
             .hand-left,
             .leg-left,
             .nose {
-                fill: #fce0b9;
+                fill: darken(#fce0b9, 5);
             }
 
             .hand-right,
             .leg-right {
                 fill: #e5c9a8;
-                opacity: 0.80;
+                opacity: 0.95;
             }
 
             .beads {
@@ -395,7 +395,7 @@ body {
             }
 
             .dress-wear {
-                fill: #d9b1fc;
+                fill: #fff;
             }
         }
 
@@ -866,7 +866,7 @@ body {
 
         .layer-fred {
             position: absolute;
-            height: 30vh;
+            height: 40vh;
             bottom: 15px;
             left: 0%;
             z-index: 200;
@@ -895,7 +895,7 @@ body {
 
         .layer-wilma {
             position: absolute;
-            height: 30vh;
+            height: 40vh;
             bottom: 15px;
             left: 100%;
             z-index: 200;
@@ -916,7 +916,7 @@ body {
 
         .layer-car {
             position: absolute;
-            height: 33vh;
+            height: 45vh;
             bottom: 0;
             left: 0%;
             z-index: 400;
@@ -950,7 +950,7 @@ body {
         .layer-rose {
             position: absolute;
             height: 8vh;
-            bottom: 20vh;
+            bottom: 0;
             left: 0%;
             z-index: 150;
 

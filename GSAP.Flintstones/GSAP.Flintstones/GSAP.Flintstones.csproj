@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fred.jpg" />
+    <Content Include="lib\detect.min.js" />
     <Content Include="lib\jquery-2.2.4.min.js" />
     <Content Include="dist\css\bootstrap-theme.min.css" />
     <Content Include="dist\css\bootstrap.min.css" />

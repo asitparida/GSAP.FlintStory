@@ -53,10 +53,15 @@ function MainController($timeout, $window) {
     self.mountains = document.getElementById('mountains');
 
     self.moonActive = false;
+    self.inMotion = false;
 
     angular.element(self.window).bind('resize', function (e) {
         self.adjsutGrassWidth();
-    })
+    });
+
+    self.initialFredPosition = self.fred.getBoundingClientRect();
+    self.initialCartPosition = self.cart.getBoundingClientRect();
+    self.widthCartFredDiff = (self.initialCartPosition.width - self.initialFredPosition.width) / 2;
 
     self.animateMoonRings();
     self.initPlane();
@@ -71,6 +76,9 @@ function MainController($timeout, $window) {
     TweenMax.set([self.fredHandLeft, self.fredHandRight], { rotation: 90, transformOrigin: self.fredHandsTransformOrigin });
     TweenMax.set([self.wilmaHandLeft, self.wilmaHandRight], { rotation: -90, transformOrigin: "right", x: ' -30px' });
     TweenMax.set(self.fredDress, { scaleY: 1.1, transformOrigin: "top" });
+    TweenMax.to(self.fred, 0.5, { x: (self.window.innerWidth / 2 - 100) });
+
+    // document.getElementById('cart').getBoundingClientRect()
 
     //FRED MOVE HAND
     //TweenMax.to([self.fredHandRight], 2, { rotation: 0, transformOrigin: self.fredHandsTransformOrigin });
@@ -107,6 +115,106 @@ function MainController($timeout, $window) {
     //    self.moveMoonToCorrectPosition();
     //}, 5000);
 
+}
+
+MainController.prototype.startMotion = function () {
+    var self = this;
+    self.inMotion = true;
+    self.fredRunningLegs();
+    self.moveFredOutOfViewToCart();
+    var _translateX = self.window.innerWidth + 'px';
+    var _fredPosition = self.fred.getBoundingClientRect();
+    var _cartPosition = self.cart.getBoundingClientRect();
+    var _cartToFredTranslate = _cartPosition.left - (self.window.innerWidth / 2) - (_cartPosition.width / 2);
+    var _fredToCartTranslate = (self.window.innerWidth / 2) - (_fredPosition.width / 2);
+    var _fredTimeline = new TimelineMax();
+    _fredTimeline
+        .to(self.fred, 0.3, { x: (_fredPosition.left - 100) })
+        .to(self.fred, 2, { x: _translateX, ease: Power1.easeIn })
+        .to(self.fred, 0.05, {
+            opacity: 0, onComplete: function () {
+                TweenMax.set(self.fred, { x: -(0.50 * self.window.innerWidth) });
+            }
+        })
+        .to(self.fred, 0.1, { opacity: 1 })
+        .to(self.fred, 2, {
+            x: _fredToCartTranslate, ease: Power3.easeOut, onComplete: function () {
+                self.stopFredRunningLegs();
+            }
+        })
+        .to(self.cart, 0.5, { x: _cartToFredTranslate, ease: Power3.easeOut }, "-=1")
+        .to(self.cart, 0.75, {
+            y: -30, ease: Power3.easeInOut, onComplete: function () {
+                self.getCartRunningWithFred();
+            }
+        });
+}
+
+MainController.prototype.getCartRunningWithFred = function () {
+    var self = this;
+    var _fredPosition = self.fred.getBoundingClientRect();
+    var _cartPosition = self.cart.getBoundingClientRect();
+    self.cartRunning();
+    self.fredRunningLegs();
+    var _fredInitialTranslate = _fredPosition.left - 200;
+    var _cartInitialTranslate = _cartPosition.left - 200;
+    var _finalMountainPosition = 0.05 * self.window.innerWidth;
+    var _cartRunningWithFred = new TimelineMax();
+    var _midFredTranslateX = (1.5 * self.window.innerWidth) + 'px';
+    var _midCardTranslateX = (1.5 * self.window.innerWidth) - (_fredPosition.left - _cartPosition.left) + 'px';
+
+    _cartRunningWithFred
+        .to(self.fred, 0.3, { x: _fredInitialTranslate })
+        .to(self.cart, 0.3, { x: _cartInitialTranslate }, "-=0.3")
+        .to(self.fred, 2, {
+            x: _midFredTranslateX, ease: Power1.easeIn, onComplete: function () {
+                TweenMax.set(self.fred, { opacity: 0 });
+                TweenMax.set(self.fred, { x: -(self.window.innerWidth) });
+            }
+        })
+        .to(self.cart, 2, {
+            x: _midCardTranslateX, ease: Power1.easeIn, onComplete: function () {
+                TweenMax.set(self.cart, { opacity: 0 });
+                TweenMax.set(self.cart, { x: -(self.window.innerWidth) });
+            }
+        }, "-=2")
+        .to(self.mountains, 2, { x: 0 })
+        .to([self.fred, self.cart], 0.1, { opacity: 1 }, "-=2")
+        .to(self.fred, 2, { x: self.widthCartFredDiff + _finalMountainPosition }, "-=1")
+        .to(self.cart, 2, { x: _finalMountainPosition }, "-=2")
+        .to(self.house, 1, { x: 0 }, "-=2")
+        .to(self.cart, 0.75, {
+            y: 0, ease: Power3.easeInOut, onComplete: function () {
+                self.stopFredRunningLegs();
+                self.stopRunningCart();
+            }
+        })
+        .to(self.wilma, 1, {
+            x: -(self.wilma.getBoundingClientRect().width), onComplete: function () {
+                self.fredRunningLegs(4);
+            }
+        })
+        .to(self.fred, 2, {
+            x: (self.window.innerWidth / 2 - (self.fred.getBoundingClientRect().width)), onComplete: function () {
+                self.stopFredRunningLegs();
+                var _fredPosition = self.fred.getBoundingClientRect();
+                var _rosePosition = self.rose.getBoundingClientRect();
+                var _fredleftHandPosition = self.fredHandLeft.getBoundingClientRect();
+                var _rosePointX = _fredPosition.right - _rosePosition.width;
+                var _rosePointY = _fredleftHandPosition.bottom - _fredleftHandPosition.top + 15;
+                TweenMax.set(self.rose, { opacity: 1, x: _rosePointX, y: _rosePointY });
+                self.wilmaWalking(4);
+            }
+        })
+        .to(self.wilma, 2, {
+            x: -(self.window.innerWidth / 2 - 60), onComplete: function () {
+                self.stopWilmaRunningLegs();
+            }
+        });
+}
+
+MainController.prototype.moveFredOutOfViewToCart = function () {
+    var self = this;
 }
 
 MainController.prototype.setMountainOutOfView = function () {
@@ -167,12 +275,21 @@ MainController.prototype.moveHouseOutOfView = function () {
 
 MainController.prototype.moveHouseIntoOfView = function () {
     var self = this;
-    TweenMax.to(self.house, 2, { x: 0 });
+    TweenMax.to(self.house, 0.3, { x: 0 }, "-=1");
 }
 
 MainController.prototype.toggleMoon = function () {
     var self = this;
     self.moonActive = !self.moonActive;
+    var _moonPosition = self.moon.getBoundingClientRect();
+    if (self.moonActive) {
+        self.moveMoonToCorrectPosition();
+        TweenMax.set(self.moonToggle, { scaleX: -1 });
+    }
+    else {
+        TweenMax.set(self.moonToggle, { scaleX: 1 });
+        self.moveMoonToRight();
+    }
 }
 
 MainController.prototype.initPlane = function () {
@@ -197,16 +314,15 @@ MainController.prototype.setWilmaOutOfView = function () {
     var self = this;
     var _wilmaPosition = self.wilma.getBoundingClientRect();
     var _translateX = 0;
-    if (self.window.innerWidth > _wilmaPosition.right) {
-        _translateX = self.window.innerWidth - _wilmaPosition.right + 100;
-        TweenMax.set(self.wilma, { x: _translateX });
-    }
+    TweenMax.set(self.wilma, { x: 200 });
+
 }
 
-MainController.prototype.wilmaWalkingTowardsFred = function () {
+MainController.prototype.wilmaWalking = function (_scale) {
     var self = this;
-    self.fredLegsRunningTimeline = new TimelineMax({ repeat: -1 });
-    self.fredLegsRunningTimeline
+    _scale = _scale || 8;
+    self.wilmaLegsRunningTimeline = new TimelineMax({ repeat: -1 });
+    self.wilmaLegsRunningTimeline
         .to(self.wilmaLegRight, 0.5, { rotation: -15, transformOrigin: "0 15px", ease: Linear.easeNone })
         .to(self.wilmaLegRight, 0.5, { rotation: 0, ease: Linear.easeNone })
         .to(self.wilmaLegRight, 0.5, { rotation: 15, ease: Linear.easeNone })
@@ -215,6 +331,14 @@ MainController.prototype.wilmaWalkingTowardsFred = function () {
         .to(self.wilmaLegLeft, 0.5, { rotation: 0, ease: Linear.easeNone }, "-=1.5")
         .to(self.wilmaLegLeft, 0.5, { rotation: -15, ease: Linear.easeNone }, "-=1")
         .to(self.wilmaLegLeft, 0.5, { rotation: 0, ease: Linear.easeNone }, "-=0.50");
+
+    self.wilmaLegsRunningTimeline.timeScale(_scale);
+}
+
+MainController.prototype.stopWilmaRunningLegs = function () {
+    var self = this;
+    if (self.wilmaLegsRunningTimeline)
+        self.wilmaLegsRunningTimeline.repeat(0);
 }
 
 MainController.prototype.cartRunning = function () {
@@ -239,8 +363,9 @@ MainController.prototype.stopRunningCart = function () {
         self.cartRunningTimeline.repeat(0);
 }
 
-MainController.prototype.fredRunningLegs = function () {
+MainController.prototype.fredRunningLegs = function (_scale) {
     var self = this;
+    _scale = _scale || 8;
     self.fredLegsRunningTimeline = new TimelineMax({ repeat: -1 });
     self.fredLegsRunningTimeline
         .to(self.fredLegRight, 0.5, { rotation: 30, transformOrigin: "0 30px", ease: Linear.easeNone })
@@ -252,7 +377,7 @@ MainController.prototype.fredRunningLegs = function () {
         .to(self.fredLegLeft, 0.5, { rotation: 30, ease: Linear.easeNone }, "-=1")
         .to(self.fredLegLeft, 0.5, { rotation: 0, ease: Linear.easeNone }, "-=0.50");
 
-    self.fredLegsRunningTimeline.timeScale(8);
+    self.fredLegsRunningTimeline.timeScale(_scale);
 }
 
 MainController.prototype.stopFredRunningLegs = function () {

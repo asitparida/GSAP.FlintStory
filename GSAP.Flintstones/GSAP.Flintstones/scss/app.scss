@@ -261,9 +261,211 @@ html {
 
 body {
 
-    @each $key, $value in $defaultPalettes {
-        &.#{$key} {
-            @include color-defines-css( $value );
+
+    &:not(.dark) {
+        @each $key, $value in $defaultPalettes {
+            &.#{$key} {
+                @include color-defines-css( $value );
+            }
+        }
+    }
+
+    #color_multicolored {
+        background: url(../../fred.jpg) no-repeat !important;
+        background-size: contain;
+    }
+
+    &.multicolored {
+
+        .content {
+            background-color: lighten(#3498db, 15);
+        }
+
+        .layer-grass {
+            .grass {
+                fill: #16a085;
+            }
+        }
+
+        .layer-mountains {
+
+            .mountain-peak {
+                fill: #fefefe;
+            }
+
+            .mountain-left {
+                fill: #91b4c7;
+            }
+
+            .mountain-right {
+                fill: #87a6bb;
+            }
+        }
+
+        .layer-moon {
+            .moon-allure-ring {
+                fill: #000;
+                opacity: 0.02;
+            }
+
+            .moon-main-ring {
+                fill: #fff;
+            }
+        }
+
+        .layer-fred {
+            .leg-left,
+            .hand-left {
+                fill: #e5c9a8;
+                opacity: 0.80;
+            }
+
+            .face-back,
+            .face-mid,
+            .leg-right,
+            .hand-right {
+                fill: #fce0b9;
+            }
+
+            .face-front {
+                fill: #fcc995;
+            }
+
+            .hair {
+                fill: #000000;
+            }
+
+            .mouth,
+            .eye,
+            .ear {
+                fill: #4f463e;
+            }
+
+            .dress-spots {
+                fill: #6d3d18;
+            }
+
+            .dress-wear {
+                fill: #f98c32;
+            }
+
+            .collar {
+                fill: #606ce2;
+            }
+        }
+
+        .layer-wilma {
+
+            .hair {
+                fill: #f15a24;
+            }
+
+            .face,
+            .hand-left,
+            .leg-left,
+            .nose {
+                fill: #fce0b9;
+            }
+
+            .hand-right,
+            .leg-right {
+                fill: #e5c9a8;
+                opacity: 0.80;
+            }
+
+            .beads {
+                fill: #9451bf;
+            }
+
+            .eye,
+            .mouth {
+                fill: #4f463e;
+            }
+
+            .dress-wear {
+                fill: #d9b1fc;
+            }
+        }
+
+        .layer-car {
+
+            .wheel {
+                fill: #fff1cc;
+                stroke: #f9d895;
+            }
+
+            .wheel-spot {
+                fill: #f9d895;
+                stroke: #fff1cc;
+            }
+
+            .rollbar-piston {
+                fill: #b75555;
+            }
+
+            .rollbar-shade {
+                fill: #753838;
+                opacity: 0.50;
+            }
+
+            .rollbar-support {
+                fill: #b75555;
+            }
+
+            .rollbar-joint {
+                fill: #542929;
+            }
+
+            .rollbar-joint-shade {
+                fill: #844040;
+                opacity: 0.50;
+            }
+        }
+
+        .layer-rose {
+            .stem {
+                fill: #28b463;
+            }
+
+            .petal-outer {
+                fill: #e74c3c;
+            }
+
+            .petal-inner-1 {
+                fill: lighten(saturate(#e74c3c, 30), 35);
+            }
+
+            .petal-inner-2 {
+                fill: lighten(saturate(#e74c3c, 30), 15);
+            }
+
+            .petal-inner-3 {
+                fill: lighten(saturate(#e74c3c, 30), 5);
+            }
+        }
+
+        .layer-plane {
+
+            .plane-body {
+                fill: lighten(saturate(#2980b9, 40), 35);
+            }
+
+            .plane-toggle {
+                fill: darken(#2980b9, 30);
+            }
+        }
+
+        .planeKiPoonch {
+            background: lighten(saturate(#2980b9, 30), 15);
+        }
+
+        .start-btn-holder {
+
+            .start-btn {
+                background-color: #f1c40f;
+                border-color: darken(#f39c12, 10);
+                color: #000;
+            }
         }
     }
 
@@ -429,7 +631,7 @@ body {
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
-                background: #ff0000;
+                background: #e67e22;
                 border: 3px solid #fff;
                 position: relative;
                 top: 12px;
@@ -506,7 +708,7 @@ body {
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background: #ff0000;
+            background: #e67e22;
             border: 3px solid #fff;
             position: relative;
             top: 0;
@@ -568,7 +770,7 @@ body {
 
         .layer-mountains {
             position: absolute;
-            bottom: -30px;
+            bottom: -60px;
             z-index: 100;
             height: 20vh;
 
@@ -616,14 +818,6 @@ body {
                 opacity: 0.50;
                 cursor: pointer;
 
-                .plane-body {
-                    fill: #c3eafc;
-                }
-
-                .plane-toggle {
-                    fill: #245566;
-                }
-
                 .plane-body,
                 .plane-toggle {
                     transition: fill 0.3s linear 0s;
@@ -636,6 +830,7 @@ body {
                 width: 1px;
                 z-index: 599;
                 opacity: 0.15;
+                background-color: #909090;
                 transition: background 0.3s linear 0s;
             }
         }
@@ -783,6 +978,8 @@ body {
             letter-spacing: 1px;
             outline: none;
             transition: all 0.3s linear 0s;
+            background-color: #000;
+            border-color: #A0A0A0;
 
             @include respond-to-mobile {
                 display: none;

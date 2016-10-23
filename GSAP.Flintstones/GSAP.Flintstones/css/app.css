@@ -381,1944 +381,2041 @@ body {
   background: #f0f0f0;
   transition: all 0.3s linear 0s;
   top: 0px; }
-  body.turquoise .header {
+  body:not(.dark).turquoise .header {
     transition: background-color 0.3s linear 0s; }
-    body.turquoise .header-colorslab--top {
+    body:not(.dark).turquoise .header-colorslab--top {
       background-color: #55e7ca;
       transition: background-color 0.3s linear 0s; }
-    body.turquoise .header-colorslab--middle {
+    body:not(.dark).turquoise .header-colorslab--middle {
       background-color: #28e1bd;
       transition: background-color 0.3s linear 0s; }
-    body.turquoise .header-colorslab--bottom {
+    body:not(.dark).turquoise .header-colorslab--bottom {
       background-color: #1abc9c;
       transition: background-color 0.3s linear 0s; }
-    body.turquoise .header-xs-profile-links-pages-list-toggle, body.turquoise .header-profile-links-pages-list-toggle {
+    body:not(.dark).turquoise .header-xs-profile-links-pages-list-toggle, body:not(.dark).turquoise .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #148f77 0%, #1abc9c 100%);
       border: 3px solid #8fefdc;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.turquoise .header-xs-profile-links-pages-list li a svg g g,
-    body.turquoise .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).turquoise .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).turquoise .header-profile-links-pages-list li a svg g g {
       fill: #8fefdc; }
-  body.turquoise .content {
+  body:not(.dark).turquoise .content {
     background-color: #0b4c3f;
     transition: background-color 0.3s linear 0s; }
-    body.turquoise .content .layer-grass .grass {
+    body:not(.dark).turquoise .content .layer-grass .grass {
       fill: #57ffde; }
-    body.turquoise .content .layer-mountains .mountain-peak {
+    body:not(.dark).turquoise .content .layer-mountains .mountain-peak {
       fill: #57ffde; }
-    body.turquoise .content .layer-mountains .mountain-left {
+    body:not(.dark).turquoise .content .layer-mountains .mountain-left {
       fill: #148f77; }
-    body.turquoise .content .layer-mountains .mountain-right {
+    body:not(.dark).turquoise .content .layer-mountains .mountain-right {
       fill: #07362c; }
-    body.turquoise .content .layer-moon .moon-allure-ring,
-    body.turquoise .content .layer-moon .moon-main-ring {
+    body:not(.dark).turquoise .content .layer-moon .moon-allure-ring,
+    body:not(.dark).turquoise .content .layer-moon .moon-main-ring {
       fill: #8affe8; }
-    body.turquoise .content .layer-wilma-house .house-wall {
+    body:not(.dark).turquoise .content .layer-wilma-house .house-wall {
       fill: #82fce4; }
-    body.turquoise .content .layer-wilma-house .house-beam {
+    body:not(.dark).turquoise .content .layer-wilma-house .house-beam {
       fill: #07362c; }
-    body.turquoise .content .layer-fred .leg-left,
-    body.turquoise .content .layer-fred .hand-left {
+    body:not(.dark).turquoise .content .layer-fred .leg-left,
+    body:not(.dark).turquoise .content .layer-fred .hand-left {
       fill: #8cfce6;
       opacity: 0.80; }
-    body.turquoise .content .layer-fred .face-back,
-    body.turquoise .content .layer-fred .face-mid,
-    body.turquoise .content .layer-fred .leg-right,
-    body.turquoise .content .layer-fred .hand-right {
+    body:not(.dark).turquoise .content .layer-fred .face-back,
+    body:not(.dark).turquoise .content .layer-fred .face-mid,
+    body:not(.dark).turquoise .content .layer-fred .leg-right,
+    body:not(.dark).turquoise .content .layer-fred .hand-right {
       fill: #8cfce6; }
-    body.turquoise .content .layer-fred .face-front {
+    body:not(.dark).turquoise .content .layer-fred .face-front {
       fill: #57ffde; }
-    body.turquoise .content .layer-fred .hair {
+    body:not(.dark).turquoise .content .layer-fred .hair {
       fill: #041f1a; }
-    body.turquoise .content .layer-fred .mouth,
-    body.turquoise .content .layer-fred .eye,
-    body.turquoise .content .layer-fred .ear {
+    body:not(.dark).turquoise .content .layer-fred .mouth,
+    body:not(.dark).turquoise .content .layer-fred .eye,
+    body:not(.dark).turquoise .content .layer-fred .ear {
       fill: #247f6d; }
-    body.turquoise .content .layer-fred .dress-spots {
+    body:not(.dark).turquoise .content .layer-fred .dress-spots {
       fill: #041f1a; }
-    body.turquoise .content .layer-fred .dress-wear {
+    body:not(.dark).turquoise .content .layer-fred .dress-wear {
       fill: #1abc9c; }
-    body.turquoise .content .layer-fred .collar {
+    body:not(.dark).turquoise .content .layer-fred .collar {
       fill: #117964; }
-    body.turquoise .content .layer-wilma .hair {
+    body:not(.dark).turquoise .content .layer-wilma .hair {
       fill: #041f1a; }
-    body.turquoise .content .layer-wilma .face,
-    body.turquoise .content .layer-wilma .hand-left,
-    body.turquoise .content .layer-wilma .leg-left,
-    body.turquoise .content .layer-wilma .nose {
+    body:not(.dark).turquoise .content .layer-wilma .face,
+    body:not(.dark).turquoise .content .layer-wilma .hand-left,
+    body:not(.dark).turquoise .content .layer-wilma .leg-left,
+    body:not(.dark).turquoise .content .layer-wilma .nose {
       fill: #8cfce6; }
-    body.turquoise .content .layer-wilma .hand-right,
-    body.turquoise .content .layer-wilma .leg-right {
+    body:not(.dark).turquoise .content .layer-wilma .hand-right,
+    body:not(.dark).turquoise .content .layer-wilma .leg-right {
       fill: #8cfce6;
       opacity: 0.80; }
-    body.turquoise .content .layer-wilma .beads {
+    body:not(.dark).turquoise .content .layer-wilma .beads {
       fill: #07362c; }
-    body.turquoise .content .layer-wilma .eye,
-    body.turquoise .content .layer-wilma .mouth {
+    body:not(.dark).turquoise .content .layer-wilma .eye,
+    body:not(.dark).turquoise .content .layer-wilma .mouth {
       fill: #247f6d; }
-    body.turquoise .content .layer-wilma .dress-wear {
+    body:not(.dark).turquoise .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.turquoise .content .layer-car .wheel {
+    body:not(.dark).turquoise .content .layer-car .wheel {
       fill: #aef4e6;
       stroke: #57ffde; }
-    body.turquoise .content .layer-car .wheel-spot {
+    body:not(.dark).turquoise .content .layer-car .wheel-spot {
       fill: #57ffde;
       stroke: #aef4e6; }
-    body.turquoise .content .layer-car .rollbar-piston {
+    body:not(.dark).turquoise .content .layer-car .rollbar-piston {
       fill: #041f1a; }
-    body.turquoise .content .layer-car .rollbar-shade {
+    body:not(.dark).turquoise .content .layer-car .rollbar-shade {
       fill: #1abc9c;
       opacity: 0.50; }
-    body.turquoise .content .layer-car .rollbar-support {
+    body:not(.dark).turquoise .content .layer-car .rollbar-support {
       fill: #041f1a; }
-    body.turquoise .content .layer-car .rollbar-joint {
+    body:not(.dark).turquoise .content .layer-car .rollbar-joint {
       fill: #0e6252; }
-    body.turquoise .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).turquoise .content .layer-car .rollbar-joint-shade {
       fill: #1abc9c;
       opacity: 0.50; }
-    body.turquoise .content .layer-rose .stem {
+    body:not(.dark).turquoise .content .layer-rose .stem {
       fill: #24ffd4; }
-    body.turquoise .content .layer-rose .petal-outer {
+    body:not(.dark).turquoise .content .layer-rose .petal-outer {
       fill: #d6fff7; }
-    body.turquoise .content .layer-rose .petal-inner-1 {
+    body:not(.dark).turquoise .content .layer-rose .petal-inner-1 {
       fill: #8affe8; }
-    body.turquoise .content .layer-rose .petal-inner-2 {
+    body:not(.dark).turquoise .content .layer-rose .petal-inner-2 {
       fill: #24ffd4; }
-    body.turquoise .content .layer-rose .petal-inner-3 {
+    body:not(.dark).turquoise .content .layer-rose .petal-inner-3 {
       fill: #00f0c0; }
-    body.turquoise .content .layer-plane .plane-body {
+    body:not(.dark).turquoise .content .layer-plane .plane-body {
       fill: #8affe8; }
-    body.turquoise .content .layer-plane .plane-toggle {
+    body:not(.dark).turquoise .content .layer-plane .plane-toggle {
       fill: #07362c; }
-    body.turquoise .content .planeKiPoonch {
+    body:not(.dark).turquoise .content .planeKiPoonch {
       background: #24ffd4; }
-    body.turquoise .content .start-btn-holder .start-btn {
+    body:not(.dark).turquoise .content .start-btn-holder .start-btn {
       background-color: #148f77;
       border-color: #148f77; }
-  body.emerland .header {
+  body:not(.dark).emerland .header {
     transition: background-color 0.3s linear 0s; }
-    body.emerland .header-colorslab--top {
+    body:not(.dark).emerland .header-colorslab--top {
       background-color: #7ee2a8;
       transition: background-color 0.3s linear 0s; }
-    body.emerland .header-colorslab--middle {
+    body:not(.dark).emerland .header-colorslab--middle {
       background-color: #54d98c;
       transition: background-color 0.3s linear 0s; }
-    body.emerland .header-colorslab--bottom {
+    body:not(.dark).emerland .header-colorslab--bottom {
       background-color: #2ecc71;
       transition: background-color 0.3s linear 0s; }
-    body.emerland .header-xs-profile-links-pages-list-toggle, body.emerland .header-profile-links-pages-list-toggle {
+    body:not(.dark).emerland .header-xs-profile-links-pages-list-toggle, body:not(.dark).emerland .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #25a25a 0%, #2ecc71 100%);
       border: 3px solid #b4eecd;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.emerland .header-xs-profile-links-pages-list li a svg g g,
-    body.emerland .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).emerland .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).emerland .header-profile-links-pages-list li a svg g g {
       fill: #b4eecd; }
-  body.emerland .content {
+  body:not(.dark).emerland .content {
     background-color: #176437;
     transition: background-color 0.3s linear 0s; }
-    body.emerland .content .layer-grass .grass {
+    body:not(.dark).emerland .content .layer-grass .grass {
       fill: #7bffb3; }
-    body.emerland .content .layer-mountains .mountain-peak {
+    body:not(.dark).emerland .content .layer-mountains .mountain-peak {
       fill: #7bffb3; }
-    body.emerland .content .layer-mountains .mountain-left {
+    body:not(.dark).emerland .content .layer-mountains .mountain-left {
       fill: #25a25a; }
-    body.emerland .content .layer-mountains .mountain-right {
+    body:not(.dark).emerland .content .layer-mountains .mountain-right {
       fill: #124f2c; }
-    body.emerland .content .layer-moon .moon-allure-ring,
-    body.emerland .content .layer-moon .moon-main-ring {
+    body:not(.dark).emerland .content .layer-moon .moon-allure-ring,
+    body:not(.dark).emerland .content .layer-moon .moon-main-ring {
       fill: #aeffd0; }
-    body.emerland .content .layer-wilma-house .house-wall {
+    body:not(.dark).emerland .content .layer-wilma-house .house-wall {
       fill: #abf7cb; }
-    body.emerland .content .layer-wilma-house .house-beam {
+    body:not(.dark).emerland .content .layer-wilma-house .house-beam {
       fill: #124f2c; }
-    body.emerland .content .layer-fred .leg-left,
-    body.emerland .content .layer-fred .hand-left {
+    body:not(.dark).emerland .content .layer-fred .leg-left,
+    body:not(.dark).emerland .content .layer-fred .hand-left {
       fill: #b4f8d1;
       opacity: 0.80; }
-    body.emerland .content .layer-fred .face-back,
-    body.emerland .content .layer-fred .face-mid,
-    body.emerland .content .layer-fred .leg-right,
-    body.emerland .content .layer-fred .hand-right {
+    body:not(.dark).emerland .content .layer-fred .face-back,
+    body:not(.dark).emerland .content .layer-fred .face-mid,
+    body:not(.dark).emerland .content .layer-fred .leg-right,
+    body:not(.dark).emerland .content .layer-fred .hand-right {
       fill: #b4f8d1; }
-    body.emerland .content .layer-fred .face-front {
+    body:not(.dark).emerland .content .layer-fred .face-front {
       fill: #7ffab3; }
-    body.emerland .content .layer-fred .hair {
+    body:not(.dark).emerland .content .layer-fred .hair {
       fill: #0d3a20; }
-    body.emerland .content .layer-fred .mouth,
-    body.emerland .content .layer-fred .eye,
-    body.emerland .content .layer-fred .ear {
+    body:not(.dark).emerland .content .layer-fred .mouth,
+    body:not(.dark).emerland .content .layer-fred .eye,
+    body:not(.dark).emerland .content .layer-fred .ear {
       fill: #398e5d; }
-    body.emerland .content .layer-fred .dress-spots {
+    body:not(.dark).emerland .content .layer-fred .dress-spots {
       fill: #0d3a20; }
-    body.emerland .content .layer-fred .dress-wear {
+    body:not(.dark).emerland .content .layer-fred .dress-wear {
       fill: #2ecc71; }
-    body.emerland .content .layer-fred .collar {
+    body:not(.dark).emerland .content .layer-fred .collar {
       fill: #208e4e; }
-    body.emerland .content .layer-wilma .hair {
+    body:not(.dark).emerland .content .layer-wilma .hair {
       fill: #0d3a20; }
-    body.emerland .content .layer-wilma .face,
-    body.emerland .content .layer-wilma .hand-left,
-    body.emerland .content .layer-wilma .leg-left,
-    body.emerland .content .layer-wilma .nose {
+    body:not(.dark).emerland .content .layer-wilma .face,
+    body:not(.dark).emerland .content .layer-wilma .hand-left,
+    body:not(.dark).emerland .content .layer-wilma .leg-left,
+    body:not(.dark).emerland .content .layer-wilma .nose {
       fill: #b4f8d1; }
-    body.emerland .content .layer-wilma .hand-right,
-    body.emerland .content .layer-wilma .leg-right {
+    body:not(.dark).emerland .content .layer-wilma .hand-right,
+    body:not(.dark).emerland .content .layer-wilma .leg-right {
       fill: #b4f8d1;
       opacity: 0.80; }
-    body.emerland .content .layer-wilma .beads {
+    body:not(.dark).emerland .content .layer-wilma .beads {
       fill: #124f2c; }
-    body.emerland .content .layer-wilma .eye,
-    body.emerland .content .layer-wilma .mouth {
+    body:not(.dark).emerland .content .layer-wilma .eye,
+    body:not(.dark).emerland .content .layer-wilma .mouth {
       fill: #398e5d; }
-    body.emerland .content .layer-wilma .dress-wear {
+    body:not(.dark).emerland .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.emerland .content .layer-car .wheel {
+    body:not(.dark).emerland .content .layer-car .wheel {
       fill: #d1f5e0;
       stroke: #7ffab3; }
-    body.emerland .content .layer-car .wheel-spot {
+    body:not(.dark).emerland .content .layer-car .wheel-spot {
       fill: #7ffab3;
       stroke: #d1f5e0; }
-    body.emerland .content .layer-car .rollbar-piston {
+    body:not(.dark).emerland .content .layer-car .rollbar-piston {
       fill: #0d3a20; }
-    body.emerland .content .layer-car .rollbar-shade {
+    body:not(.dark).emerland .content .layer-car .rollbar-shade {
       fill: #2ecc71;
       opacity: 0.50; }
-    body.emerland .content .layer-car .rollbar-support {
+    body:not(.dark).emerland .content .layer-car .rollbar-support {
       fill: #0d3a20; }
-    body.emerland .content .layer-car .rollbar-joint {
+    body:not(.dark).emerland .content .layer-car .rollbar-joint {
       fill: #1b7943; }
-    body.emerland .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).emerland .content .layer-car .rollbar-joint-shade {
       fill: #2ecc71;
       opacity: 0.50; }
-    body.emerland .content .layer-rose .stem {
+    body:not(.dark).emerland .content .layer-rose .stem {
       fill: #4ef996; }
-    body.emerland .content .layer-rose .petal-outer {
+    body:not(.dark).emerland .content .layer-rose .petal-outer {
       fill: #fafffc; }
-    body.emerland .content .layer-rose .petal-inner-1 {
+    body:not(.dark).emerland .content .layer-rose .petal-inner-1 {
       fill: #b0fcd0; }
-    body.emerland .content .layer-rose .petal-inner-2 {
+    body:not(.dark).emerland .content .layer-rose .petal-inner-2 {
       fill: #4ef996; }
-    body.emerland .content .layer-rose .petal-inner-3 {
+    body:not(.dark).emerland .content .layer-rose .petal-inner-3 {
       fill: #1cf779; }
-    body.emerland .content .layer-plane .plane-body {
+    body:not(.dark).emerland .content .layer-plane .plane-body {
       fill: #aeffd0; }
-    body.emerland .content .layer-plane .plane-toggle {
+    body:not(.dark).emerland .content .layer-plane .plane-toggle {
       fill: #124f2c; }
-    body.emerland .content .planeKiPoonch {
+    body:not(.dark).emerland .content .planeKiPoonch {
       background: #4ef996; }
-    body.emerland .content .start-btn-holder .start-btn {
+    body:not(.dark).emerland .content .start-btn-holder .start-btn {
       background-color: #25a25a;
       border-color: #25a25a; }
-  body.peterRiver .header {
+  body:not(.dark).peterRiver .header {
     transition: background-color 0.3s linear 0s; }
-    body.peterRiver .header-colorslab--top {
+    body:not(.dark).peterRiver .header-colorslab--top {
       background-color: #8bc4ea;
       transition: background-color 0.3s linear 0s; }
-    body.peterRiver .header-colorslab--middle {
+    body:not(.dark).peterRiver .header-colorslab--middle {
       background-color: #5faee3;
       transition: background-color 0.3s linear 0s; }
-    body.peterRiver .header-colorslab--bottom {
+    body:not(.dark).peterRiver .header-colorslab--bottom {
       background-color: #3498db;
       transition: background-color 0.3s linear 0s; }
-    body.peterRiver .header-xs-profile-links-pages-list-toggle, body.peterRiver .header-profile-links-pages-list-toggle {
+    body:not(.dark).peterRiver .header-xs-profile-links-pages-list-toggle, body:not(.dark).peterRiver .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #217dbb 0%, #3498db 100%);
       border: 3px solid #c3e1f4;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.peterRiver .header-xs-profile-links-pages-list li a svg g g,
-    body.peterRiver .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).peterRiver .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).peterRiver .header-profile-links-pages-list li a svg g g {
       fill: #c3e1f4; }
-  body.peterRiver .content {
+  body:not(.dark).peterRiver .content {
     background-color: #16527a;
     transition: background-color 0.3s linear 0s; }
-    body.peterRiver .content .layer-grass .grass {
+    body:not(.dark).peterRiver .content .layer-grass .grass {
       fill: #90d2ff; }
-    body.peterRiver .content .layer-mountains .mountain-peak {
+    body:not(.dark).peterRiver .content .layer-mountains .mountain-peak {
       fill: #90d2ff; }
-    body.peterRiver .content .layer-mountains .mountain-left {
+    body:not(.dark).peterRiver .content .layer-mountains .mountain-left {
       fill: #217dbb; }
-    body.peterRiver .content .layer-mountains .mountain-right {
+    body:not(.dark).peterRiver .content .layer-mountains .mountain-right {
       fill: #124364; }
-    body.peterRiver .content .layer-moon .moon-allure-ring,
-    body.peterRiver .content .layer-moon .moon-main-ring {
+    body:not(.dark).peterRiver .content .layer-moon .moon-allure-ring,
+    body:not(.dark).peterRiver .content .layer-moon .moon-main-ring {
       fill: #c3e7ff; }
-    body.peterRiver .content .layer-wilma-house .house-wall {
+    body:not(.dark).peterRiver .content .layer-wilma-house .house-wall {
       fill: #bce2fb; }
-    body.peterRiver .content .layer-wilma-house .house-beam {
+    body:not(.dark).peterRiver .content .layer-wilma-house .house-beam {
       fill: #124364; }
-    body.peterRiver .content .layer-fred .leg-left,
-    body.peterRiver .content .layer-fred .hand-left {
+    body:not(.dark).peterRiver .content .layer-fred .leg-left,
+    body:not(.dark).peterRiver .content .layer-fred .hand-left {
       fill: #c6e6fc;
       opacity: 0.80; }
-    body.peterRiver .content .layer-fred .face-back,
-    body.peterRiver .content .layer-fred .face-mid,
-    body.peterRiver .content .layer-fred .leg-right,
-    body.peterRiver .content .layer-fred .hand-right {
+    body:not(.dark).peterRiver .content .layer-fred .face-back,
+    body:not(.dark).peterRiver .content .layer-fred .face-mid,
+    body:not(.dark).peterRiver .content .layer-fred .leg-right,
+    body:not(.dark).peterRiver .content .layer-fred .hand-right {
       fill: #c6e6fc; }
-    body.peterRiver .content .layer-fred .face-front {
+    body:not(.dark).peterRiver .content .layer-fred .face-front {
       fill: #90d2ff; }
-    body.peterRiver .content .layer-fred .hair {
+    body:not(.dark).peterRiver .content .layer-fred .hair {
       fill: #0e354f; }
-    body.peterRiver .content .layer-fred .mouth,
-    body.peterRiver .content .layer-fred .eye,
-    body.peterRiver .content .layer-fred .ear {
+    body:not(.dark).peterRiver .content .layer-fred .mouth,
+    body:not(.dark).peterRiver .content .layer-fred .eye,
+    body:not(.dark).peterRiver .content .layer-fred .ear {
       fill: #3779a5; }
-    body.peterRiver .content .layer-fred .dress-spots {
+    body:not(.dark).peterRiver .content .layer-fred .dress-spots {
       fill: #0e354f; }
-    body.peterRiver .content .layer-fred .dress-wear {
+    body:not(.dark).peterRiver .content .layer-fred .dress-wear {
       fill: #3498db; }
-    body.peterRiver .content .layer-fred .collar {
+    body:not(.dark).peterRiver .content .layer-fred .collar {
       fill: #1d6fa5; }
-    body.peterRiver .content .layer-wilma .hair {
+    body:not(.dark).peterRiver .content .layer-wilma .hair {
       fill: #0e354f; }
-    body.peterRiver .content .layer-wilma .face,
-    body.peterRiver .content .layer-wilma .hand-left,
-    body.peterRiver .content .layer-wilma .leg-left,
-    body.peterRiver .content .layer-wilma .nose {
+    body:not(.dark).peterRiver .content .layer-wilma .face,
+    body:not(.dark).peterRiver .content .layer-wilma .hand-left,
+    body:not(.dark).peterRiver .content .layer-wilma .leg-left,
+    body:not(.dark).peterRiver .content .layer-wilma .nose {
       fill: #c6e6fc; }
-    body.peterRiver .content .layer-wilma .hand-right,
-    body.peterRiver .content .layer-wilma .leg-right {
+    body:not(.dark).peterRiver .content .layer-wilma .hand-right,
+    body:not(.dark).peterRiver .content .layer-wilma .leg-right {
       fill: #c6e6fc;
       opacity: 0.80; }
-    body.peterRiver .content .layer-wilma .beads {
+    body:not(.dark).peterRiver .content .layer-wilma .beads {
       fill: #124364; }
-    body.peterRiver .content .layer-wilma .eye,
-    body.peterRiver .content .layer-wilma .mouth {
+    body:not(.dark).peterRiver .content .layer-wilma .eye,
+    body:not(.dark).peterRiver .content .layer-wilma .mouth {
       fill: #3779a5; }
-    body.peterRiver .content .layer-wilma .dress-wear {
+    body:not(.dark).peterRiver .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.peterRiver .content .layer-car .wheel {
+    body:not(.dark).peterRiver .content .layer-car .wheel {
       fill: #e1f0fa;
       stroke: #90d2ff; }
-    body.peterRiver .content .layer-car .wheel-spot {
+    body:not(.dark).peterRiver .content .layer-car .wheel-spot {
       fill: #90d2ff;
       stroke: #e1f0fa; }
-    body.peterRiver .content .layer-car .rollbar-piston {
+    body:not(.dark).peterRiver .content .layer-car .rollbar-piston {
       fill: #0e354f; }
-    body.peterRiver .content .layer-car .rollbar-shade {
+    body:not(.dark).peterRiver .content .layer-car .rollbar-shade {
       fill: #3498db;
       opacity: 0.50; }
-    body.peterRiver .content .layer-car .rollbar-support {
+    body:not(.dark).peterRiver .content .layer-car .rollbar-support {
       fill: #0e354f; }
-    body.peterRiver .content .layer-car .rollbar-joint {
+    body:not(.dark).peterRiver .content .layer-car .rollbar-joint {
       fill: #196090; }
-    body.peterRiver .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).peterRiver .content .layer-car .rollbar-joint-shade {
       fill: #3498db;
       opacity: 0.50; }
-    body.peterRiver .content .layer-rose .stem {
+    body:not(.dark).peterRiver .content .layer-rose .stem {
       fill: #5dbeff; }
-    body.peterRiver .content .layer-rose .petal-outer {
+    body:not(.dark).peterRiver .content .layer-rose .petal-outer {
       fill: white; }
-    body.peterRiver .content .layer-rose .petal-inner-1 {
+    body:not(.dark).peterRiver .content .layer-rose .petal-inner-1 {
       fill: #c3e7ff; }
-    body.peterRiver .content .layer-rose .petal-inner-2 {
+    body:not(.dark).peterRiver .content .layer-rose .petal-inner-2 {
       fill: #5dbeff; }
-    body.peterRiver .content .layer-rose .petal-inner-3 {
+    body:not(.dark).peterRiver .content .layer-rose .petal-inner-3 {
       fill: #2aa9ff; }
-    body.peterRiver .content .layer-plane .plane-body {
+    body:not(.dark).peterRiver .content .layer-plane .plane-body {
       fill: #c3e7ff; }
-    body.peterRiver .content .layer-plane .plane-toggle {
+    body:not(.dark).peterRiver .content .layer-plane .plane-toggle {
       fill: #124364; }
-    body.peterRiver .content .planeKiPoonch {
+    body:not(.dark).peterRiver .content .planeKiPoonch {
       background: #5dbeff; }
-    body.peterRiver .content .start-btn-holder .start-btn {
+    body:not(.dark).peterRiver .content .start-btn-holder .start-btn {
       background-color: #217dbb;
       border-color: #217dbb; }
-  body.amethyst .header {
+  body:not(.dark).amethyst .header {
     transition: background-color 0.3s linear 0s; }
-    body.amethyst .header-colorslab--top {
+    body:not(.dark).amethyst .header-colorslab--top {
       background-color: #c6a0d5;
       transition: background-color 0.3s linear 0s; }
-    body.amethyst .header-colorslab--middle {
+    body:not(.dark).amethyst .header-colorslab--middle {
       background-color: #b07cc6;
       transition: background-color 0.3s linear 0s; }
-    body.amethyst .header-colorslab--bottom {
+    body:not(.dark).amethyst .header-colorslab--bottom {
       background-color: #9b59b6;
       transition: background-color 0.3s linear 0s; }
-    body.amethyst .header-xs-profile-links-pages-list-toggle, body.amethyst .header-profile-links-pages-list-toggle {
+    body:not(.dark).amethyst .header-xs-profile-links-pages-list-toggle, body:not(.dark).amethyst .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #804399 0%, #9b59b6 100%);
       border: 3px solid #e1cee9;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.amethyst .header-xs-profile-links-pages-list li a svg g g,
-    body.amethyst .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).amethyst .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).amethyst .header-profile-links-pages-list li a svg g g {
       fill: #e1cee9; }
-  body.amethyst .content {
+  body:not(.dark).amethyst .content {
     background-color: #532c64;
     transition: background-color 0.3s linear 0s; }
-    body.amethyst .content .layer-grass .grass {
+    body:not(.dark).amethyst .content .layer-grass .grass {
       fill: #da9bf3; }
-    body.amethyst .content .layer-mountains .mountain-peak {
+    body:not(.dark).amethyst .content .layer-mountains .mountain-peak {
       fill: #da9bf3; }
-    body.amethyst .content .layer-mountains .mountain-left {
+    body:not(.dark).amethyst .content .layer-mountains .mountain-left {
       fill: #804399; }
-    body.amethyst .content .layer-mountains .mountain-right {
+    body:not(.dark).amethyst .content .layer-mountains .mountain-right {
       fill: #452452; }
-    body.amethyst .content .layer-moon .moon-allure-ring,
-    body.amethyst .content .layer-moon .moon-main-ring {
+    body:not(.dark).amethyst .content .layer-moon .moon-allure-ring,
+    body:not(.dark).amethyst .content .layer-moon .moon-main-ring {
       fill: #ebc9f9; }
-    body.amethyst .content .layer-wilma-house .house-wall {
+    body:not(.dark).amethyst .content .layer-wilma-house .house-wall {
       fill: #e4c7f0; }
-    body.amethyst .content .layer-wilma-house .house-beam {
+    body:not(.dark).amethyst .content .layer-wilma-house .house-beam {
       fill: #452452; }
-    body.amethyst .content .layer-fred .leg-left,
-    body.amethyst .content .layer-fred .hand-left {
+    body:not(.dark).amethyst .content .layer-fred .leg-left,
+    body:not(.dark).amethyst .content .layer-fred .hand-left {
       fill: #e8cff3;
       opacity: 0.80; }
-    body.amethyst .content .layer-fred .face-back,
-    body.amethyst .content .layer-fred .face-mid,
-    body.amethyst .content .layer-fred .leg-right,
-    body.amethyst .content .layer-fred .hand-right {
+    body:not(.dark).amethyst .content .layer-fred .face-back,
+    body:not(.dark).amethyst .content .layer-fred .face-mid,
+    body:not(.dark).amethyst .content .layer-fred .leg-right,
+    body:not(.dark).amethyst .content .layer-fred .hand-right {
       fill: #e8cff3; }
-    body.amethyst .content .layer-fred .face-front {
+    body:not(.dark).amethyst .content .layer-fred .face-front {
       fill: #d7a1ee; }
-    body.amethyst .content .layer-fred .hair {
+    body:not(.dark).amethyst .content .layer-fred .hair {
       fill: #361c40; }
-    body.amethyst .content .layer-fred .mouth,
-    body.amethyst .content .layer-fred .eye,
-    body.amethyst .content .layer-fred .ear {
+    body:not(.dark).amethyst .content .layer-fred .mouth,
+    body:not(.dark).amethyst .content .layer-fred .eye,
+    body:not(.dark).amethyst .content .layer-fred .ear {
       fill: #775983; }
-    body.amethyst .content .layer-fred .dress-spots {
+    body:not(.dark).amethyst .content .layer-fred .dress-spots {
       fill: #361c40; }
-    body.amethyst .content .layer-fred .dress-wear {
+    body:not(.dark).amethyst .content .layer-fred .dress-wear {
       fill: #9b59b6; }
-    body.amethyst .content .layer-fred .collar {
+    body:not(.dark).amethyst .content .layer-fred .collar {
       fill: #713b87; }
-    body.amethyst .content .layer-wilma .hair {
+    body:not(.dark).amethyst .content .layer-wilma .hair {
       fill: #361c40; }
-    body.amethyst .content .layer-wilma .face,
-    body.amethyst .content .layer-wilma .hand-left,
-    body.amethyst .content .layer-wilma .leg-left,
-    body.amethyst .content .layer-wilma .nose {
+    body:not(.dark).amethyst .content .layer-wilma .face,
+    body:not(.dark).amethyst .content .layer-wilma .hand-left,
+    body:not(.dark).amethyst .content .layer-wilma .leg-left,
+    body:not(.dark).amethyst .content .layer-wilma .nose {
       fill: #e8cff3; }
-    body.amethyst .content .layer-wilma .hand-right,
-    body.amethyst .content .layer-wilma .leg-right {
+    body:not(.dark).amethyst .content .layer-wilma .hand-right,
+    body:not(.dark).amethyst .content .layer-wilma .leg-right {
       fill: #e8cff3;
       opacity: 0.80; }
-    body.amethyst .content .layer-wilma .beads {
+    body:not(.dark).amethyst .content .layer-wilma .beads {
       fill: #452452; }
-    body.amethyst .content .layer-wilma .eye,
-    body.amethyst .content .layer-wilma .mouth {
+    body:not(.dark).amethyst .content .layer-wilma .eye,
+    body:not(.dark).amethyst .content .layer-wilma .mouth {
       fill: #775983; }
-    body.amethyst .content .layer-wilma .dress-wear {
+    body:not(.dark).amethyst .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.amethyst .content .layer-car .wheel {
+    body:not(.dark).amethyst .content .layer-car .wheel {
       fill: #f0e7f4;
       stroke: #d7a1ee; }
-    body.amethyst .content .layer-car .wheel-spot {
+    body:not(.dark).amethyst .content .layer-car .wheel-spot {
       fill: #d7a1ee;
       stroke: #f0e7f4; }
-    body.amethyst .content .layer-car .rollbar-piston {
+    body:not(.dark).amethyst .content .layer-car .rollbar-piston {
       fill: #361c40; }
-    body.amethyst .content .layer-car .rollbar-shade {
+    body:not(.dark).amethyst .content .layer-car .rollbar-shade {
       fill: #9b59b6;
       opacity: 0.50; }
-    body.amethyst .content .layer-car .rollbar-support {
+    body:not(.dark).amethyst .content .layer-car .rollbar-support {
       fill: #361c40; }
-    body.amethyst .content .layer-car .rollbar-joint {
+    body:not(.dark).amethyst .content .layer-car .rollbar-joint {
       fill: #623475; }
-    body.amethyst .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).amethyst .content .layer-car .rollbar-joint-shade {
       fill: #9b59b6;
       opacity: 0.50; }
-    body.amethyst .content .layer-rose .stem {
+    body:not(.dark).amethyst .content .layer-rose .stem {
       fill: #c576e6; }
-    body.amethyst .content .layer-rose .petal-outer {
+    body:not(.dark).amethyst .content .layer-rose .petal-outer {
       fill: white; }
-    body.amethyst .content .layer-rose .petal-inner-1 {
+    body:not(.dark).amethyst .content .layer-rose .petal-inner-1 {
       fill: #e9ccf6; }
-    body.amethyst .content .layer-rose .petal-inner-2 {
+    body:not(.dark).amethyst .content .layer-rose .petal-inner-2 {
       fill: #c576e6; }
-    body.amethyst .content .layer-rose .petal-inner-3 {
+    body:not(.dark).amethyst .content .layer-rose .petal-inner-3 {
       fill: #b34bde; }
-    body.amethyst .content .layer-plane .plane-body {
+    body:not(.dark).amethyst .content .layer-plane .plane-body {
       fill: #ebc9f9; }
-    body.amethyst .content .layer-plane .plane-toggle {
+    body:not(.dark).amethyst .content .layer-plane .plane-toggle {
       fill: #452452; }
-    body.amethyst .content .planeKiPoonch {
+    body:not(.dark).amethyst .content .planeKiPoonch {
       background: #c576e6; }
-    body.amethyst .content .start-btn-holder .start-btn {
+    body:not(.dark).amethyst .content .start-btn-holder .start-btn {
       background-color: #804399;
       border-color: #804399; }
-  body.moosikPurple .header {
+  body:not(.dark).moosikPurple .header {
     transition: background-color 0.3s linear 0s; }
-    body.moosikPurple .header-colorslab--top {
+    body:not(.dark).moosikPurple .header-colorslab--top {
       background-color: #f15ed8;
       transition: background-color 0.3s linear 0s; }
-    body.moosikPurple .header-colorslab--middle {
+    body:not(.dark).moosikPurple .header-colorslab--middle {
       background-color: #ed2fcd;
       transition: background-color 0.3s linear 0s; }
-    body.moosikPurple .header-colorslab--bottom {
+    body:not(.dark).moosikPurple .header-colorslab--bottom {
       background-color: #d613b5;
       transition: background-color 0.3s linear 0s; }
-    body.moosikPurple .header-xs-profile-links-pages-list-toggle, body.moosikPurple .header-profile-links-pages-list-toggle {
+    body:not(.dark).moosikPurple .header-xs-profile-links-pages-list-toggle, body:not(.dark).moosikPurple .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #a70f8d 0%, #d613b5 100%);
       border: 3px solid #f69be7;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.moosikPurple .header-xs-profile-links-pages-list li a svg g g,
-    body.moosikPurple .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).moosikPurple .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).moosikPurple .header-profile-links-pages-list li a svg g g {
       fill: #f69be7; }
-  body.moosikPurple .content {
+  body:not(.dark).moosikPurple .content {
     background-color: #610952;
     transition: background-color 0.3s linear 0s; }
-    body.moosikPurple .content .layer-grass .grass {
+    body:not(.dark).moosikPurple .content .layer-grass .grass {
       fill: #ff6ae6; }
-    body.moosikPurple .content .layer-mountains .mountain-peak {
+    body:not(.dark).moosikPurple .content .layer-mountains .mountain-peak {
       fill: #ff6ae6; }
-    body.moosikPurple .content .layer-mountains .mountain-left {
+    body:not(.dark).moosikPurple .content .layer-mountains .mountain-left {
       fill: #a70f8d; }
-    body.moosikPurple .content .layer-mountains .mountain-right {
+    body:not(.dark).moosikPurple .content .layer-mountains .mountain-right {
       fill: #49073e; }
-    body.moosikPurple .content .layer-moon .moon-allure-ring,
-    body.moosikPurple .content .layer-moon .moon-main-ring {
+    body:not(.dark).moosikPurple .content .layer-moon .moon-allure-ring,
+    body:not(.dark).moosikPurple .content .layer-moon .moon-main-ring {
       fill: #ff9dee; }
-    body.moosikPurple .content .layer-wilma-house .house-wall {
+    body:not(.dark).moosikPurple .content .layer-wilma-house .house-wall {
       fill: #ff92ed; }
-    body.moosikPurple .content .layer-wilma-house .house-beam {
+    body:not(.dark).moosikPurple .content .layer-wilma-house .house-beam {
       fill: #49073e; }
-    body.moosikPurple .content .layer-fred .leg-left,
-    body.moosikPurple .content .layer-fred .hand-left {
+    body:not(.dark).moosikPurple .content .layer-fred .leg-left,
+    body:not(.dark).moosikPurple .content .layer-fred .hand-left {
       fill: #ff9dee;
       opacity: 0.80; }
-    body.moosikPurple .content .layer-fred .face-back,
-    body.moosikPurple .content .layer-fred .face-mid,
-    body.moosikPurple .content .layer-fred .leg-right,
-    body.moosikPurple .content .layer-fred .hand-right {
+    body:not(.dark).moosikPurple .content .layer-fred .face-back,
+    body:not(.dark).moosikPurple .content .layer-fred .face-mid,
+    body:not(.dark).moosikPurple .content .layer-fred .leg-right,
+    body:not(.dark).moosikPurple .content .layer-fred .hand-right {
       fill: #ff9dee; }
-    body.moosikPurple .content .layer-fred .face-front {
+    body:not(.dark).moosikPurple .content .layer-fred .face-front {
       fill: #ff6ae6; }
-    body.moosikPurple .content .layer-fred .hair {
+    body:not(.dark).moosikPurple .content .layer-fred .hair {
       fill: #32042a; }
-    body.moosikPurple .content .layer-fred .mouth,
-    body.moosikPurple .content .layer-fred .eye,
-    body.moosikPurple .content .layer-fred .ear {
+    body:not(.dark).moosikPurple .content .layer-fred .mouth,
+    body:not(.dark).moosikPurple .content .layer-fred .eye,
+    body:not(.dark).moosikPurple .content .layer-fred .ear {
       fill: #952181; }
-    body.moosikPurple .content .layer-fred .dress-spots {
+    body:not(.dark).moosikPurple .content .layer-fred .dress-spots {
       fill: #32042a; }
-    body.moosikPurple .content .layer-fred .dress-wear {
+    body:not(.dark).moosikPurple .content .layer-fred .dress-wear {
       fill: #d613b5; }
-    body.moosikPurple .content .layer-fred .collar {
+    body:not(.dark).moosikPurple .content .layer-fred .collar {
       fill: #900d7a; }
-    body.moosikPurple .content .layer-wilma .hair {
+    body:not(.dark).moosikPurple .content .layer-wilma .hair {
       fill: #32042a; }
-    body.moosikPurple .content .layer-wilma .face,
-    body.moosikPurple .content .layer-wilma .hand-left,
-    body.moosikPurple .content .layer-wilma .leg-left,
-    body.moosikPurple .content .layer-wilma .nose {
+    body:not(.dark).moosikPurple .content .layer-wilma .face,
+    body:not(.dark).moosikPurple .content .layer-wilma .hand-left,
+    body:not(.dark).moosikPurple .content .layer-wilma .leg-left,
+    body:not(.dark).moosikPurple .content .layer-wilma .nose {
       fill: #ff9dee; }
-    body.moosikPurple .content .layer-wilma .hand-right,
-    body.moosikPurple .content .layer-wilma .leg-right {
+    body:not(.dark).moosikPurple .content .layer-wilma .hand-right,
+    body:not(.dark).moosikPurple .content .layer-wilma .leg-right {
       fill: #ff9dee;
       opacity: 0.80; }
-    body.moosikPurple .content .layer-wilma .beads {
+    body:not(.dark).moosikPurple .content .layer-wilma .beads {
       fill: #49073e; }
-    body.moosikPurple .content .layer-wilma .eye,
-    body.moosikPurple .content .layer-wilma .mouth {
+    body:not(.dark).moosikPurple .content .layer-wilma .eye,
+    body:not(.dark).moosikPurple .content .layer-wilma .mouth {
       fill: #952181; }
-    body.moosikPurple .content .layer-wilma .dress-wear {
+    body:not(.dark).moosikPurple .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.moosikPurple .content .layer-car .wheel {
+    body:not(.dark).moosikPurple .content .layer-car .wheel {
       fill: #f9bcef;
       stroke: #ff6ae6; }
-    body.moosikPurple .content .layer-car .wheel-spot {
+    body:not(.dark).moosikPurple .content .layer-car .wheel-spot {
       fill: #ff6ae6;
       stroke: #f9bcef; }
-    body.moosikPurple .content .layer-car .rollbar-piston {
+    body:not(.dark).moosikPurple .content .layer-car .rollbar-piston {
       fill: #32042a; }
-    body.moosikPurple .content .layer-car .rollbar-shade {
+    body:not(.dark).moosikPurple .content .layer-car .rollbar-shade {
       fill: #d613b5;
       opacity: 0.50; }
-    body.moosikPurple .content .layer-car .rollbar-support {
+    body:not(.dark).moosikPurple .content .layer-car .rollbar-support {
       fill: #32042a; }
-    body.moosikPurple .content .layer-car .rollbar-joint {
+    body:not(.dark).moosikPurple .content .layer-car .rollbar-joint {
       fill: #780b66; }
-    body.moosikPurple .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).moosikPurple .content .layer-car .rollbar-joint-shade {
       fill: #d613b5;
       opacity: 0.50; }
-    body.moosikPurple .content .layer-rose .stem {
+    body:not(.dark).moosikPurple .content .layer-rose .stem {
       fill: #ff37dd; }
-    body.moosikPurple .content .layer-rose .petal-outer {
+    body:not(.dark).moosikPurple .content .layer-rose .petal-outer {
       fill: #ffe9fb; }
-    body.moosikPurple .content .layer-rose .petal-inner-1 {
+    body:not(.dark).moosikPurple .content .layer-rose .petal-inner-1 {
       fill: #ff9dee; }
-    body.moosikPurple .content .layer-rose .petal-inner-2 {
+    body:not(.dark).moosikPurple .content .layer-rose .petal-inner-2 {
       fill: #ff37dd; }
-    body.moosikPurple .content .layer-rose .petal-inner-3 {
+    body:not(.dark).moosikPurple .content .layer-rose .petal-inner-3 {
       fill: #ff04d4; }
-    body.moosikPurple .content .layer-plane .plane-body {
+    body:not(.dark).moosikPurple .content .layer-plane .plane-body {
       fill: #ff9dee; }
-    body.moosikPurple .content .layer-plane .plane-toggle {
+    body:not(.dark).moosikPurple .content .layer-plane .plane-toggle {
       fill: #49073e; }
-    body.moosikPurple .content .planeKiPoonch {
+    body:not(.dark).moosikPurple .content .planeKiPoonch {
       background: #ff37dd; }
-    body.moosikPurple .content .start-btn-holder .start-btn {
+    body:not(.dark).moosikPurple .content .start-btn-holder .start-btn {
       background-color: #a70f8d;
       border-color: #a70f8d; }
-  body.wetAsphalt .header {
+  body:not(.dark).wetAsphalt .header {
     transition: background-color 0.3s linear 0s; }
-    body.wetAsphalt .header-colorslab--top {
+    body:not(.dark).wetAsphalt .header-colorslab--top {
       background-color: #587ca0;
       transition: background-color 0.3s linear 0s; }
-    body.wetAsphalt .header-colorslab--middle {
+    body:not(.dark).wetAsphalt .header-colorslab--middle {
       background-color: #46637f;
       transition: background-color 0.3s linear 0s; }
-    body.wetAsphalt .header-colorslab--bottom {
+    body:not(.dark).wetAsphalt .header-colorslab--bottom {
       background-color: #34495e;
       transition: background-color 0.3s linear 0s; }
-    body.wetAsphalt .header-xs-profile-links-pages-list-toggle, body.wetAsphalt .header-profile-links-pages-list-toggle {
+    body:not(.dark).wetAsphalt .header-xs-profile-links-pages-list-toggle, body:not(.dark).wetAsphalt .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #22303d 0%, #34495e 100%);
       border: 3px solid #819db9;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.wetAsphalt .header-xs-profile-links-pages-list li a svg g g,
-    body.wetAsphalt .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).wetAsphalt .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).wetAsphalt .header-profile-links-pages-list li a svg g g {
       fill: #819db9; }
-  body.wetAsphalt .content {
+  body:not(.dark).wetAsphalt .content {
     background-color: #07090c;
     transition: background-color 0.3s linear 0s; }
-    body.wetAsphalt .content .layer-grass .grass {
+    body:not(.dark).wetAsphalt .content .layer-grass .grass {
       fill: #3789da; }
-    body.wetAsphalt .content .layer-mountains .mountain-peak {
+    body:not(.dark).wetAsphalt .content .layer-mountains .mountain-peak {
       fill: #3789da; }
-    body.wetAsphalt .content .layer-mountains .mountain-left {
+    body:not(.dark).wetAsphalt .content .layer-mountains .mountain-left {
       fill: #22303d; }
-    body.wetAsphalt .content .layer-mountains .mountain-right {
+    body:not(.dark).wetAsphalt .content .layer-mountains .mountain-right {
       fill: black; }
-    body.wetAsphalt .content .layer-moon .moon-allure-ring,
-    body.wetAsphalt .content .layer-moon .moon-main-ring {
+    body:not(.dark).wetAsphalt .content .layer-moon .moon-allure-ring,
+    body:not(.dark).wetAsphalt .content .layer-moon .moon-main-ring {
       fill: #62a2e2; }
-    body.wetAsphalt .content .layer-wilma-house .house-wall {
+    body:not(.dark).wetAsphalt .content .layer-wilma-house .house-wall {
       fill: #6d9dcd; }
-    body.wetAsphalt .content .layer-wilma-house .house-beam {
+    body:not(.dark).wetAsphalt .content .layer-wilma-house .house-beam {
       fill: black; }
-    body.wetAsphalt .content .layer-fred .leg-left,
-    body.wetAsphalt .content .layer-fred .hand-left {
+    body:not(.dark).wetAsphalt .content .layer-fred .leg-left,
+    body:not(.dark).wetAsphalt .content .layer-fred .hand-left {
       fill: #75a2cf;
       opacity: 0.80; }
-    body.wetAsphalt .content .layer-fred .face-back,
-    body.wetAsphalt .content .layer-fred .face-mid,
-    body.wetAsphalt .content .layer-fred .leg-right,
-    body.wetAsphalt .content .layer-fred .hand-right {
+    body:not(.dark).wetAsphalt .content .layer-fred .face-back,
+    body:not(.dark).wetAsphalt .content .layer-fred .face-mid,
+    body:not(.dark).wetAsphalt .content .layer-fred .leg-right,
+    body:not(.dark).wetAsphalt .content .layer-fred .hand-right {
       fill: #75a2cf; }
-    body.wetAsphalt .content .layer-fred .face-front {
+    body:not(.dark).wetAsphalt .content .layer-fred .face-front {
       fill: #4389ce; }
-    body.wetAsphalt .content .layer-fred .hair {
+    body:not(.dark).wetAsphalt .content .layer-fred .hair {
       fill: black; }
-    body.wetAsphalt .content .layer-fred .mouth,
-    body.wetAsphalt .content .layer-fred .eye,
-    body.wetAsphalt .content .layer-fred .ear {
+    body:not(.dark).wetAsphalt .content .layer-fred .mouth,
+    body:not(.dark).wetAsphalt .content .layer-fred .eye,
+    body:not(.dark).wetAsphalt .content .layer-fred .ear {
       fill: #2b3034; }
-    body.wetAsphalt .content .layer-fred .dress-spots {
+    body:not(.dark).wetAsphalt .content .layer-fred .dress-spots {
       fill: black; }
-    body.wetAsphalt .content .layer-fred .dress-wear {
+    body:not(.dark).wetAsphalt .content .layer-fred .dress-wear {
       fill: #34495e; }
-    body.wetAsphalt .content .layer-fred .collar {
+    body:not(.dark).wetAsphalt .content .layer-fred .collar {
       fill: #19232d; }
-    body.wetAsphalt .content .layer-wilma .hair {
+    body:not(.dark).wetAsphalt .content .layer-wilma .hair {
       fill: black; }
-    body.wetAsphalt .content .layer-wilma .face,
-    body.wetAsphalt .content .layer-wilma .hand-left,
-    body.wetAsphalt .content .layer-wilma .leg-left,
-    body.wetAsphalt .content .layer-wilma .nose {
+    body:not(.dark).wetAsphalt .content .layer-wilma .face,
+    body:not(.dark).wetAsphalt .content .layer-wilma .hand-left,
+    body:not(.dark).wetAsphalt .content .layer-wilma .leg-left,
+    body:not(.dark).wetAsphalt .content .layer-wilma .nose {
       fill: #75a2cf; }
-    body.wetAsphalt .content .layer-wilma .hand-right,
-    body.wetAsphalt .content .layer-wilma .leg-right {
+    body:not(.dark).wetAsphalt .content .layer-wilma .hand-right,
+    body:not(.dark).wetAsphalt .content .layer-wilma .leg-right {
       fill: #75a2cf;
       opacity: 0.80; }
-    body.wetAsphalt .content .layer-wilma .beads {
+    body:not(.dark).wetAsphalt .content .layer-wilma .beads {
       fill: black; }
-    body.wetAsphalt .content .layer-wilma .eye,
-    body.wetAsphalt .content .layer-wilma .mouth {
+    body:not(.dark).wetAsphalt .content .layer-wilma .eye,
+    body:not(.dark).wetAsphalt .content .layer-wilma .mouth {
       fill: #2b3034; }
-    body.wetAsphalt .content .layer-wilma .dress-wear {
+    body:not(.dark).wetAsphalt .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.wetAsphalt .content .layer-car .wheel {
+    body:not(.dark).wetAsphalt .content .layer-car .wheel {
       fill: #98afc6;
       stroke: #4389ce; }
-    body.wetAsphalt .content .layer-car .wheel-spot {
+    body:not(.dark).wetAsphalt .content .layer-car .wheel-spot {
       fill: #4389ce;
       stroke: #98afc6; }
-    body.wetAsphalt .content .layer-car .rollbar-piston {
+    body:not(.dark).wetAsphalt .content .layer-car .rollbar-piston {
       fill: black; }
-    body.wetAsphalt .content .layer-car .rollbar-shade {
+    body:not(.dark).wetAsphalt .content .layer-car .rollbar-shade {
       fill: #34495e;
       opacity: 0.50; }
-    body.wetAsphalt .content .layer-car .rollbar-support {
+    body:not(.dark).wetAsphalt .content .layer-car .rollbar-support {
       fill: black; }
-    body.wetAsphalt .content .layer-car .rollbar-joint {
+    body:not(.dark).wetAsphalt .content .layer-car .rollbar-joint {
       fill: #10161c; }
-    body.wetAsphalt .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).wetAsphalt .content .layer-car .rollbar-joint-shade {
       fill: #34495e;
       opacity: 0.50; }
-    body.wetAsphalt .content .layer-rose .stem {
+    body:not(.dark).wetAsphalt .content .layer-rose .stem {
       fill: #2e6fb1; }
-    body.wetAsphalt .content .layer-rose .petal-outer {
+    body:not(.dark).wetAsphalt .content .layer-rose .petal-outer {
       fill: #a8c9e9; }
-    body.wetAsphalt .content .layer-rose .petal-inner-1 {
+    body:not(.dark).wetAsphalt .content .layer-rose .petal-inner-1 {
       fill: #6ca2d9; }
-    body.wetAsphalt .content .layer-rose .petal-inner-2 {
+    body:not(.dark).wetAsphalt .content .layer-rose .petal-inner-2 {
       fill: #2e6fb1; }
-    body.wetAsphalt .content .layer-rose .petal-inner-3 {
+    body:not(.dark).wetAsphalt .content .layer-rose .petal-inner-3 {
       fill: #235688; }
-    body.wetAsphalt .content .layer-plane .plane-body {
+    body:not(.dark).wetAsphalt .content .layer-plane .plane-body {
       fill: #62a2e2; }
-    body.wetAsphalt .content .layer-plane .plane-toggle {
+    body:not(.dark).wetAsphalt .content .layer-plane .plane-toggle {
       fill: black; }
-    body.wetAsphalt .content .planeKiPoonch {
+    body:not(.dark).wetAsphalt .content .planeKiPoonch {
       background: #2e6fb1; }
-    body.wetAsphalt .content .start-btn-holder .start-btn {
+    body:not(.dark).wetAsphalt .content .start-btn-holder .start-btn {
       background-color: #22303d;
       border-color: #22303d; }
-  body.greenSea .header {
+  body:not(.dark).greenSea .header {
     transition: background-color 0.3s linear 0s; }
-    body.greenSea .header-colorslab--top {
+    body:not(.dark).greenSea .header-colorslab--top {
       background-color: #38e4c2;
       transition: background-color 0.3s linear 0s; }
-    body.greenSea .header-colorslab--middle {
+    body:not(.dark).greenSea .header-colorslab--middle {
       background-color: #1ccdaa;
       transition: background-color 0.3s linear 0s; }
-    body.greenSea .header-colorslab--bottom {
+    body:not(.dark).greenSea .header-colorslab--bottom {
       background-color: #16a085;
       transition: background-color 0.3s linear 0s; }
-    body.greenSea .header-xs-profile-links-pages-list-toggle, body.greenSea .header-profile-links-pages-list-toggle {
+    body:not(.dark).greenSea .header-xs-profile-links-pages-list-toggle, body:not(.dark).greenSea .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #107360 0%, #16a085 100%);
       border: 3px solid #73ecd4;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.greenSea .header-xs-profile-links-pages-list li a svg g g,
-    body.greenSea .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).greenSea .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).greenSea .header-profile-links-pages-list li a svg g g {
       fill: #73ecd4; }
-  body.greenSea .content {
+  body:not(.dark).greenSea .content {
     background-color: #073028;
     transition: background-color 0.3s linear 0s; }
-    body.greenSea .content .layer-grass .grass {
+    body:not(.dark).greenSea .content .layer-grass .grass {
       fill: #37ffd8; }
-    body.greenSea .content .layer-mountains .mountain-peak {
+    body:not(.dark).greenSea .content .layer-mountains .mountain-peak {
       fill: #37ffd8; }
-    body.greenSea .content .layer-mountains .mountain-left {
+    body:not(.dark).greenSea .content .layer-mountains .mountain-left {
       fill: #107360; }
-    body.greenSea .content .layer-mountains .mountain-right {
+    body:not(.dark).greenSea .content .layer-mountains .mountain-right {
       fill: #041915; }
-    body.greenSea .content .layer-moon .moon-allure-ring,
-    body.greenSea .content .layer-moon .moon-main-ring {
+    body:not(.dark).greenSea .content .layer-moon .moon-allure-ring,
+    body:not(.dark).greenSea .content .layer-moon .moon-main-ring {
       fill: #6affe2; }
-    body.greenSea .content .layer-wilma-house .house-wall {
+    body:not(.dark).greenSea .content .layer-wilma-house .house-wall {
       fill: #63fcde; }
-    body.greenSea .content .layer-wilma-house .house-beam {
+    body:not(.dark).greenSea .content .layer-wilma-house .house-beam {
       fill: #041915; }
-    body.greenSea .content .layer-fred .leg-left,
-    body.greenSea .content .layer-fred .hand-left {
+    body:not(.dark).greenSea .content .layer-fred .leg-left,
+    body:not(.dark).greenSea .content .layer-fred .hand-left {
       fill: #6dfce0;
       opacity: 0.80; }
-    body.greenSea .content .layer-fred .face-back,
-    body.greenSea .content .layer-fred .face-mid,
-    body.greenSea .content .layer-fred .leg-right,
-    body.greenSea .content .layer-fred .hand-right {
+    body:not(.dark).greenSea .content .layer-fred .face-back,
+    body:not(.dark).greenSea .content .layer-fred .face-mid,
+    body:not(.dark).greenSea .content .layer-fred .leg-right,
+    body:not(.dark).greenSea .content .layer-fred .hand-right {
       fill: #6dfce0; }
-    body.greenSea .content .layer-fred .face-front {
+    body:not(.dark).greenSea .content .layer-fred .face-front {
       fill: #37ffd8; }
-    body.greenSea .content .layer-fred .hair {
+    body:not(.dark).greenSea .content .layer-fred .hair {
       fill: #000303; }
-    body.greenSea .content .layer-fred .mouth,
-    body.greenSea .content .layer-fred .eye,
-    body.greenSea .content .layer-fred .ear {
+    body:not(.dark).greenSea .content .layer-fred .mouth,
+    body:not(.dark).greenSea .content .layer-fred .eye,
+    body:not(.dark).greenSea .content .layer-fred .ear {
       fill: #1d6658; }
-    body.greenSea .content .layer-fred .dress-spots {
+    body:not(.dark).greenSea .content .layer-fred .dress-spots {
       fill: #000303; }
-    body.greenSea .content .layer-fred .dress-wear {
+    body:not(.dark).greenSea .content .layer-fred .dress-wear {
       fill: #16a085; }
-    body.greenSea .content .layer-fred .collar {
+    body:not(.dark).greenSea .content .layer-fred .collar {
       fill: #0d5d4d; }
-    body.greenSea .content .layer-wilma .hair {
+    body:not(.dark).greenSea .content .layer-wilma .hair {
       fill: #000303; }
-    body.greenSea .content .layer-wilma .face,
-    body.greenSea .content .layer-wilma .hand-left,
-    body.greenSea .content .layer-wilma .leg-left,
-    body.greenSea .content .layer-wilma .nose {
+    body:not(.dark).greenSea .content .layer-wilma .face,
+    body:not(.dark).greenSea .content .layer-wilma .hand-left,
+    body:not(.dark).greenSea .content .layer-wilma .leg-left,
+    body:not(.dark).greenSea .content .layer-wilma .nose {
       fill: #6dfce0; }
-    body.greenSea .content .layer-wilma .hand-right,
-    body.greenSea .content .layer-wilma .leg-right {
+    body:not(.dark).greenSea .content .layer-wilma .hand-right,
+    body:not(.dark).greenSea .content .layer-wilma .leg-right {
       fill: #6dfce0;
       opacity: 0.80; }
-    body.greenSea .content .layer-wilma .beads {
+    body:not(.dark).greenSea .content .layer-wilma .beads {
       fill: #041915; }
-    body.greenSea .content .layer-wilma .eye,
-    body.greenSea .content .layer-wilma .mouth {
+    body:not(.dark).greenSea .content .layer-wilma .eye,
+    body:not(.dark).greenSea .content .layer-wilma .mouth {
       fill: #1d6658; }
-    body.greenSea .content .layer-wilma .dress-wear {
+    body:not(.dark).greenSea .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.greenSea .content .layer-car .wheel {
+    body:not(.dark).greenSea .content .layer-car .wheel {
       fill: #92f0de;
       stroke: #37ffd8; }
-    body.greenSea .content .layer-car .wheel-spot {
+    body:not(.dark).greenSea .content .layer-car .wheel-spot {
       fill: #37ffd8;
       stroke: #92f0de; }
-    body.greenSea .content .layer-car .rollbar-piston {
+    body:not(.dark).greenSea .content .layer-car .rollbar-piston {
       fill: #000303; }
-    body.greenSea .content .layer-car .rollbar-shade {
+    body:not(.dark).greenSea .content .layer-car .rollbar-shade {
       fill: #16a085;
       opacity: 0.50; }
-    body.greenSea .content .layer-car .rollbar-support {
+    body:not(.dark).greenSea .content .layer-car .rollbar-support {
       fill: #000303; }
-    body.greenSea .content .layer-car .rollbar-joint {
+    body:not(.dark).greenSea .content .layer-car .rollbar-joint {
       fill: #0a463a; }
-    body.greenSea .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).greenSea .content .layer-car .rollbar-joint-shade {
       fill: #16a085;
       opacity: 0.50; }
-    body.greenSea .content .layer-rose .stem {
+    body:not(.dark).greenSea .content .layer-rose .stem {
       fill: #04ffce; }
-    body.greenSea .content .layer-rose .petal-outer {
+    body:not(.dark).greenSea .content .layer-rose .petal-outer {
       fill: #b6fff1; }
-    body.greenSea .content .layer-rose .petal-inner-1 {
+    body:not(.dark).greenSea .content .layer-rose .petal-inner-1 {
       fill: #6affe2; }
-    body.greenSea .content .layer-rose .petal-inner-2 {
+    body:not(.dark).greenSea .content .layer-rose .petal-inner-2 {
       fill: #04ffce; }
-    body.greenSea .content .layer-rose .petal-inner-3 {
+    body:not(.dark).greenSea .content .layer-rose .petal-inner-3 {
       fill: #00d0a7; }
-    body.greenSea .content .layer-plane .plane-body {
+    body:not(.dark).greenSea .content .layer-plane .plane-body {
       fill: #6affe2; }
-    body.greenSea .content .layer-plane .plane-toggle {
+    body:not(.dark).greenSea .content .layer-plane .plane-toggle {
       fill: #041915; }
-    body.greenSea .content .planeKiPoonch {
+    body:not(.dark).greenSea .content .planeKiPoonch {
       background: #04ffce; }
-    body.greenSea .content .start-btn-holder .start-btn {
+    body:not(.dark).greenSea .content .start-btn-holder .start-btn {
       background-color: #107360;
       border-color: #107360; }
-  body.nephritis .header {
+  body:not(.dark).nephritis .header {
     transition: background-color 0.3s linear 0s; }
-    body.nephritis .header-colorslab--top {
+    body:not(.dark).nephritis .header-colorslab--top {
       background-color: #60db94;
       transition: background-color 0.3s linear 0s; }
-    body.nephritis .header-colorslab--middle {
+    body:not(.dark).nephritis .header-colorslab--middle {
       background-color: #36d278;
       transition: background-color 0.3s linear 0s; }
-    body.nephritis .header-colorslab--bottom {
+    body:not(.dark).nephritis .header-colorslab--bottom {
       background-color: #27ae60;
       transition: background-color 0.3s linear 0s; }
-    body.nephritis .header-xs-profile-links-pages-list-toggle, body.nephritis .header-profile-links-pages-list-toggle {
+    body:not(.dark).nephritis .header-xs-profile-links-pages-list-toggle, body:not(.dark).nephritis .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #1e8449 0%, #27ae60 100%);
       border: 3px solid #96e7b8;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.nephritis .header-xs-profile-links-pages-list li a svg g g,
-    body.nephritis .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).nephritis .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).nephritis .header-profile-links-pages-list li a svg g g {
       fill: #96e7b8; }
-  body.nephritis .content {
+  body:not(.dark).nephritis .content {
     background-color: #104627;
     transition: background-color 0.3s linear 0s; }
-    body.nephritis .content .layer-grass .grass {
+    body:not(.dark).nephritis .content .layer-grass .grass {
       fill: #56ff9d; }
-    body.nephritis .content .layer-mountains .mountain-peak {
+    body:not(.dark).nephritis .content .layer-mountains .mountain-peak {
       fill: #56ff9d; }
-    body.nephritis .content .layer-mountains .mountain-left {
+    body:not(.dark).nephritis .content .layer-mountains .mountain-left {
       fill: #1e8449; }
-    body.nephritis .content .layer-mountains .mountain-right {
+    body:not(.dark).nephritis .content .layer-mountains .mountain-right {
       fill: #0b311b; }
-    body.nephritis .content .layer-moon .moon-allure-ring,
-    body.nephritis .content .layer-moon .moon-main-ring {
+    body:not(.dark).nephritis .content .layer-moon .moon-allure-ring,
+    body:not(.dark).nephritis .content .layer-moon .moon-main-ring {
       fill: #89ffbb; }
-    body.nephritis .content .layer-wilma-house .house-wall {
+    body:not(.dark).nephritis .content .layer-wilma-house .house-wall {
       fill: #89f4b6; }
-    body.nephritis .content .layer-wilma-house .house-beam {
+    body:not(.dark).nephritis .content .layer-wilma-house .house-beam {
       fill: #0b311b; }
-    body.nephritis .content .layer-fred .leg-left,
-    body.nephritis .content .layer-fred .hand-left {
+    body:not(.dark).nephritis .content .layer-fred .leg-left,
+    body:not(.dark).nephritis .content .layer-fred .hand-left {
       fill: #92f5bc;
       opacity: 0.80; }
-    body.nephritis .content .layer-fred .face-back,
-    body.nephritis .content .layer-fred .face-mid,
-    body.nephritis .content .layer-fred .leg-right,
-    body.nephritis .content .layer-fred .hand-right {
+    body:not(.dark).nephritis .content .layer-fred .face-back,
+    body:not(.dark).nephritis .content .layer-fred .face-mid,
+    body:not(.dark).nephritis .content .layer-fred .leg-right,
+    body:not(.dark).nephritis .content .layer-fred .hand-right {
       fill: #92f5bc; }
-    body.nephritis .content .layer-fred .face-front {
+    body:not(.dark).nephritis .content .layer-fred .face-front {
       fill: #5bf99e; }
-    body.nephritis .content .layer-fred .hair {
+    body:not(.dark).nephritis .content .layer-fred .hair {
       fill: #061c10; }
-    body.nephritis .content .layer-fred .mouth,
-    body.nephritis .content .layer-fred .eye,
-    body.nephritis .content .layer-fred .ear {
+    body:not(.dark).nephritis .content .layer-fred .mouth,
+    body:not(.dark).nephritis .content .layer-fred .eye,
+    body:not(.dark).nephritis .content .layer-fred .ear {
       fill: #2e744c; }
-    body.nephritis .content .layer-fred .dress-spots {
+    body:not(.dark).nephritis .content .layer-fred .dress-spots {
       fill: #061c10; }
-    body.nephritis .content .layer-fred .dress-wear {
+    body:not(.dark).nephritis .content .layer-fred .dress-wear {
       fill: #27ae60; }
-    body.nephritis .content .layer-fred .collar {
+    body:not(.dark).nephritis .content .layer-fred .collar {
       fill: #19703e; }
-    body.nephritis .content .layer-wilma .hair {
+    body:not(.dark).nephritis .content .layer-wilma .hair {
       fill: #061c10; }
-    body.nephritis .content .layer-wilma .face,
-    body.nephritis .content .layer-wilma .hand-left,
-    body.nephritis .content .layer-wilma .leg-left,
-    body.nephritis .content .layer-wilma .nose {
+    body:not(.dark).nephritis .content .layer-wilma .face,
+    body:not(.dark).nephritis .content .layer-wilma .hand-left,
+    body:not(.dark).nephritis .content .layer-wilma .leg-left,
+    body:not(.dark).nephritis .content .layer-wilma .nose {
       fill: #92f5bc; }
-    body.nephritis .content .layer-wilma .hand-right,
-    body.nephritis .content .layer-wilma .leg-right {
+    body:not(.dark).nephritis .content .layer-wilma .hand-right,
+    body:not(.dark).nephritis .content .layer-wilma .leg-right {
       fill: #92f5bc;
       opacity: 0.80; }
-    body.nephritis .content .layer-wilma .beads {
+    body:not(.dark).nephritis .content .layer-wilma .beads {
       fill: #0b311b; }
-    body.nephritis .content .layer-wilma .eye,
-    body.nephritis .content .layer-wilma .mouth {
+    body:not(.dark).nephritis .content .layer-wilma .eye,
+    body:not(.dark).nephritis .content .layer-wilma .mouth {
       fill: #2e744c; }
-    body.nephritis .content .layer-wilma .dress-wear {
+    body:not(.dark).nephritis .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.nephritis .content .layer-car .wheel {
+    body:not(.dark).nephritis .content .layer-car .wheel {
       fill: #b3eecc;
       stroke: #5bf99e; }
-    body.nephritis .content .layer-car .wheel-spot {
+    body:not(.dark).nephritis .content .layer-car .wheel-spot {
       fill: #5bf99e;
       stroke: #b3eecc; }
-    body.nephritis .content .layer-car .rollbar-piston {
+    body:not(.dark).nephritis .content .layer-car .rollbar-piston {
       fill: #061c10; }
-    body.nephritis .content .layer-car .rollbar-shade {
+    body:not(.dark).nephritis .content .layer-car .rollbar-shade {
       fill: #27ae60;
       opacity: 0.50; }
-    body.nephritis .content .layer-car .rollbar-support {
+    body:not(.dark).nephritis .content .layer-car .rollbar-support {
       fill: #061c10; }
-    body.nephritis .content .layer-car .rollbar-joint {
+    body:not(.dark).nephritis .content .layer-car .rollbar-joint {
       fill: #145b32; }
-    body.nephritis .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).nephritis .content .layer-car .rollbar-joint-shade {
       fill: #27ae60;
       opacity: 0.50; }
-    body.nephritis .content .layer-rose .stem {
+    body:not(.dark).nephritis .content .layer-rose .stem {
       fill: #2af881; }
-    body.nephritis .content .layer-rose .petal-outer {
+    body:not(.dark).nephritis .content .layer-rose .petal-outer {
       fill: #d6fee7; }
-    body.nephritis .content .layer-rose .petal-inner-1 {
+    body:not(.dark).nephritis .content .layer-rose .petal-inner-1 {
       fill: #8cfbbb; }
-    body.nephritis .content .layer-rose .petal-inner-2 {
+    body:not(.dark).nephritis .content .layer-rose .petal-inner-2 {
       fill: #2af881; }
-    body.nephritis .content .layer-rose .petal-inner-3 {
+    body:not(.dark).nephritis .content .layer-rose .petal-inner-3 {
       fill: #08e766; }
-    body.nephritis .content .layer-plane .plane-body {
+    body:not(.dark).nephritis .content .layer-plane .plane-body {
       fill: #89ffbb; }
-    body.nephritis .content .layer-plane .plane-toggle {
+    body:not(.dark).nephritis .content .layer-plane .plane-toggle {
       fill: #0b311b; }
-    body.nephritis .content .planeKiPoonch {
+    body:not(.dark).nephritis .content .planeKiPoonch {
       background: #2af881; }
-    body.nephritis .content .start-btn-holder .start-btn {
+    body:not(.dark).nephritis .content .start-btn-holder .start-btn {
       background-color: #1e8449;
       border-color: #1e8449; }
-  body.belizeHole .header {
+  body:not(.dark).belizeHole .header {
     transition: background-color 0.3s linear 0s; }
-    body.belizeHole .header-colorslab--top {
+    body:not(.dark).belizeHole .header-colorslab--top {
       background-color: #6ab0de;
       transition: background-color 0.3s linear 0s; }
-    body.belizeHole .header-colorslab--middle {
+    body:not(.dark).belizeHole .header-colorslab--middle {
       background-color: #409ad5;
       transition: background-color 0.3s linear 0s; }
-    body.belizeHole .header-colorslab--bottom {
+    body:not(.dark).belizeHole .header-colorslab--bottom {
       background-color: #2980b9;
       transition: background-color 0.3s linear 0s; }
-    body.belizeHole .header-xs-profile-links-pages-list-toggle, body.belizeHole .header-profile-links-pages-list-toggle {
+    body:not(.dark).belizeHole .header-xs-profile-links-pages-list-toggle, body:not(.dark).belizeHole .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #20638f 0%, #2980b9 100%);
       border: 3px solid #a0cdea;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.belizeHole .header-xs-profile-links-pages-list li a svg g g,
-    body.belizeHole .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).belizeHole .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).belizeHole .header-profile-links-pages-list li a svg g g {
       fill: #a0cdea; }
-  body.belizeHole .content {
+  body:not(.dark).belizeHole .content {
     background-color: #123851;
     transition: background-color 0.3s linear 0s; }
-    body.belizeHole .content .layer-grass .grass {
+    body:not(.dark).belizeHole .content .layer-grass .grass {
       fill: #63c1ff; }
-    body.belizeHole .content .layer-mountains .mountain-peak {
+    body:not(.dark).belizeHole .content .layer-mountains .mountain-peak {
       fill: #63c1ff; }
-    body.belizeHole .content .layer-mountains .mountain-left {
+    body:not(.dark).belizeHole .content .layer-mountains .mountain-left {
       fill: #20638f; }
-    body.belizeHole .content .layer-mountains .mountain-right {
+    body:not(.dark).belizeHole .content .layer-mountains .mountain-right {
       fill: #0d293c; }
-    body.belizeHole .content .layer-moon .moon-allure-ring,
-    body.belizeHole .content .layer-moon .moon-main-ring {
+    body:not(.dark).belizeHole .content .layer-moon .moon-allure-ring,
+    body:not(.dark).belizeHole .content .layer-moon .moon-main-ring {
       fill: #96d5ff; }
-    body.belizeHole .content .layer-wilma-house .house-wall {
+    body:not(.dark).belizeHole .content .layer-wilma-house .house-wall {
       fill: #95cff6; }
-    body.belizeHole .content .layer-wilma-house .house-beam {
+    body:not(.dark).belizeHole .content .layer-wilma-house .house-beam {
       fill: #0d293c; }
-    body.belizeHole .content .layer-fred .leg-left,
-    body.belizeHole .content .layer-fred .hand-left {
+    body:not(.dark).belizeHole .content .layer-fred .leg-left,
+    body:not(.dark).belizeHole .content .layer-fred .hand-left {
       fill: #9ed3f6;
       opacity: 0.80; }
-    body.belizeHole .content .layer-fred .face-back,
-    body.belizeHole .content .layer-fred .face-mid,
-    body.belizeHole .content .layer-fred .leg-right,
-    body.belizeHole .content .layer-fred .hand-right {
+    body:not(.dark).belizeHole .content .layer-fred .face-back,
+    body:not(.dark).belizeHole .content .layer-fred .face-mid,
+    body:not(.dark).belizeHole .content .layer-fred .leg-right,
+    body:not(.dark).belizeHole .content .layer-fred .hand-right {
       fill: #9ed3f6; }
-    body.belizeHole .content .layer-fred .face-front {
+    body:not(.dark).belizeHole .content .layer-fred .face-front {
       fill: #67c0fa; }
-    body.belizeHole .content .layer-fred .hair {
+    body:not(.dark).belizeHole .content .layer-fred .hair {
       fill: #091b27; }
-    body.belizeHole .content .layer-fred .mouth,
-    body.belizeHole .content .layer-fred .eye,
-    body.belizeHole .content .layer-fred .ear {
+    body:not(.dark).belizeHole .content .layer-fred .mouth,
+    body:not(.dark).belizeHole .content .layer-fred .eye,
+    body:not(.dark).belizeHole .content .layer-fred .ear {
       fill: #315f7e; }
-    body.belizeHole .content .layer-fred .dress-spots {
+    body:not(.dark).belizeHole .content .layer-fred .dress-spots {
       fill: #091b27; }
-    body.belizeHole .content .layer-fred .dress-wear {
+    body:not(.dark).belizeHole .content .layer-fred .dress-wear {
       fill: #2980b9; }
-    body.belizeHole .content .layer-fred .collar {
+    body:not(.dark).belizeHole .content .layer-fred .collar {
       fill: #1b557a; }
-    body.belizeHole .content .layer-wilma .hair {
+    body:not(.dark).belizeHole .content .layer-wilma .hair {
       fill: #091b27; }
-    body.belizeHole .content .layer-wilma .face,
-    body.belizeHole .content .layer-wilma .hand-left,
-    body.belizeHole .content .layer-wilma .leg-left,
-    body.belizeHole .content .layer-wilma .nose {
+    body:not(.dark).belizeHole .content .layer-wilma .face,
+    body:not(.dark).belizeHole .content .layer-wilma .hand-left,
+    body:not(.dark).belizeHole .content .layer-wilma .leg-left,
+    body:not(.dark).belizeHole .content .layer-wilma .nose {
       fill: #9ed3f6; }
-    body.belizeHole .content .layer-wilma .hand-right,
-    body.belizeHole .content .layer-wilma .leg-right {
+    body:not(.dark).belizeHole .content .layer-wilma .hand-right,
+    body:not(.dark).belizeHole .content .layer-wilma .leg-right {
       fill: #9ed3f6;
       opacity: 0.80; }
-    body.belizeHole .content .layer-wilma .beads {
+    body:not(.dark).belizeHole .content .layer-wilma .beads {
       fill: #0d293c; }
-    body.belizeHole .content .layer-wilma .eye,
-    body.belizeHole .content .layer-wilma .mouth {
+    body:not(.dark).belizeHole .content .layer-wilma .eye,
+    body:not(.dark).belizeHole .content .layer-wilma .mouth {
       fill: #315f7e; }
-    body.belizeHole .content .layer-wilma .dress-wear {
+    body:not(.dark).belizeHole .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.belizeHole .content .layer-car .wheel {
+    body:not(.dark).belizeHole .content .layer-car .wheel {
       fill: #bedcf0;
       stroke: #67c0fa; }
-    body.belizeHole .content .layer-car .wheel-spot {
+    body:not(.dark).belizeHole .content .layer-car .wheel-spot {
       fill: #67c0fa;
       stroke: #bedcf0; }
-    body.belizeHole .content .layer-car .rollbar-piston {
+    body:not(.dark).belizeHole .content .layer-car .rollbar-piston {
       fill: #091b27; }
-    body.belizeHole .content .layer-car .rollbar-shade {
+    body:not(.dark).belizeHole .content .layer-car .rollbar-shade {
       fill: #2980b9;
       opacity: 0.50; }
-    body.belizeHole .content .layer-car .rollbar-support {
+    body:not(.dark).belizeHole .content .layer-car .rollbar-support {
       fill: #091b27; }
-    body.belizeHole .content .layer-car .rollbar-joint {
+    body:not(.dark).belizeHole .content .layer-car .rollbar-joint {
       fill: #164666; }
-    body.belizeHole .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).belizeHole .content .layer-car .rollbar-joint-shade {
       fill: #2980b9;
       opacity: 0.50; }
-    body.belizeHole .content .layer-rose .stem {
+    body:not(.dark).belizeHole .content .layer-rose .stem {
       fill: #36acf8; }
-    body.belizeHole .content .layer-rose .petal-outer {
+    body:not(.dark).belizeHole .content .layer-rose .petal-outer {
       fill: #e3f3fe; }
-    body.belizeHole .content .layer-rose .petal-inner-1 {
+    body:not(.dark).belizeHole .content .layer-rose .petal-inner-1 {
       fill: #99d5fc; }
-    body.belizeHole .content .layer-rose .petal-inner-2 {
+    body:not(.dark).belizeHole .content .layer-rose .petal-inner-2 {
       fill: #36acf8; }
-    body.belizeHole .content .layer-rose .petal-inner-3 {
+    body:not(.dark).belizeHole .content .layer-rose .petal-inner-3 {
       fill: #0896f4; }
-    body.belizeHole .content .layer-plane .plane-body {
+    body:not(.dark).belizeHole .content .layer-plane .plane-body {
       fill: #96d5ff; }
-    body.belizeHole .content .layer-plane .plane-toggle {
+    body:not(.dark).belizeHole .content .layer-plane .plane-toggle {
       fill: #0d293c; }
-    body.belizeHole .content .planeKiPoonch {
+    body:not(.dark).belizeHole .content .planeKiPoonch {
       background: #36acf8; }
-    body.belizeHole .content .start-btn-holder .start-btn {
+    body:not(.dark).belizeHole .content .start-btn-holder .start-btn {
       background-color: #20638f;
       border-color: #20638f; }
-  body.wisteria .header {
+  body:not(.dark).wisteria .header {
     transition: background-color 0.3s linear 0s; }
-    body.wisteria .header-colorslab--top {
+    body:not(.dark).wisteria .header-colorslab--top {
       background-color: #ba87d0;
       transition: background-color 0.3s linear 0s; }
-    body.wisteria .header-colorslab--middle {
+    body:not(.dark).wisteria .header-colorslab--middle {
       background-color: #a563c1;
       transition: background-color 0.3s linear 0s; }
-    body.wisteria .header-colorslab--bottom {
+    body:not(.dark).wisteria .header-colorslab--bottom {
       background-color: #8e44ad;
       transition: background-color 0.3s linear 0s; }
-    body.wisteria .header-xs-profile-links-pages-list-toggle, body.wisteria .header-profile-links-pages-list-toggle {
+    body:not(.dark).wisteria .header-xs-profile-links-pages-list-toggle, body:not(.dark).wisteria .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #703688 0%, #8e44ad 100%);
       border: 3px solid #d6b7e3;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.wisteria .header-xs-profile-links-pages-list li a svg g g,
-    body.wisteria .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).wisteria .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).wisteria .header-profile-links-pages-list li a svg g g {
       fill: #d6b7e3; }
-  body.wisteria .content {
+  body:not(.dark).wisteria .content {
     background-color: #432051;
     transition: background-color 0.3s linear 0s; }
-    body.wisteria .content .layer-grass .grass {
+    body:not(.dark).wisteria .content .layer-grass .grass {
       fill: #d07df3; }
-    body.wisteria .content .layer-mountains .mountain-peak {
+    body:not(.dark).wisteria .content .layer-mountains .mountain-peak {
       fill: #d07df3; }
-    body.wisteria .content .layer-mountains .mountain-left {
+    body:not(.dark).wisteria .content .layer-mountains .mountain-left {
       fill: #703688; }
-    body.wisteria .content .layer-mountains .mountain-right {
+    body:not(.dark).wisteria .content .layer-mountains .mountain-right {
       fill: #34193f; }
-    body.wisteria .content .layer-moon .moon-allure-ring,
-    body.wisteria .content .layer-moon .moon-main-ring {
+    body:not(.dark).wisteria .content .layer-moon .moon-allure-ring,
+    body:not(.dark).wisteria .content .layer-moon .moon-main-ring {
       fill: #e1acf8; }
-    body.wisteria .content .layer-wilma-house .house-wall {
+    body:not(.dark).wisteria .content .layer-wilma-house .house-wall {
       fill: #daaded; }
-    body.wisteria .content .layer-wilma-house .house-beam {
+    body:not(.dark).wisteria .content .layer-wilma-house .house-beam {
       fill: #34193f; }
-    body.wisteria .content .layer-fred .leg-left,
-    body.wisteria .content .layer-fred .hand-left {
+    body:not(.dark).wisteria .content .layer-fred .leg-left,
+    body:not(.dark).wisteria .content .layer-fred .hand-left {
       fill: #deb5ef;
       opacity: 0.80; }
-    body.wisteria .content .layer-fred .face-back,
-    body.wisteria .content .layer-fred .face-mid,
-    body.wisteria .content .layer-fred .leg-right,
-    body.wisteria .content .layer-fred .hand-right {
+    body:not(.dark).wisteria .content .layer-fred .face-back,
+    body:not(.dark).wisteria .content .layer-fred .face-mid,
+    body:not(.dark).wisteria .content .layer-fred .leg-right,
+    body:not(.dark).wisteria .content .layer-fred .hand-right {
       fill: #deb5ef; }
-    body.wisteria .content .layer-fred .face-front {
+    body:not(.dark).wisteria .content .layer-fred .face-front {
       fill: #ce84ec; }
-    body.wisteria .content .layer-fred .hair {
+    body:not(.dark).wisteria .content .layer-fred .hair {
       fill: #25122d; }
-    body.wisteria .content .layer-fred .mouth,
-    body.wisteria .content .layer-fred .eye,
-    body.wisteria .content .layer-fred .ear {
+    body:not(.dark).wisteria .content .layer-fred .mouth,
+    body:not(.dark).wisteria .content .layer-fred .eye,
+    body:not(.dark).wisteria .content .layer-fred .ear {
       fill: #684975; }
-    body.wisteria .content .layer-fred .dress-spots {
+    body:not(.dark).wisteria .content .layer-fred .dress-spots {
       fill: #25122d; }
-    body.wisteria .content .layer-fred .dress-wear {
+    body:not(.dark).wisteria .content .layer-fred .dress-wear {
       fill: #8e44ad; }
-    body.wisteria .content .layer-fred .collar {
+    body:not(.dark).wisteria .content .layer-fred .collar {
       fill: #612e76; }
-    body.wisteria .content .layer-wilma .hair {
+    body:not(.dark).wisteria .content .layer-wilma .hair {
       fill: #25122d; }
-    body.wisteria .content .layer-wilma .face,
-    body.wisteria .content .layer-wilma .hand-left,
-    body.wisteria .content .layer-wilma .leg-left,
-    body.wisteria .content .layer-wilma .nose {
+    body:not(.dark).wisteria .content .layer-wilma .face,
+    body:not(.dark).wisteria .content .layer-wilma .hand-left,
+    body:not(.dark).wisteria .content .layer-wilma .leg-left,
+    body:not(.dark).wisteria .content .layer-wilma .nose {
       fill: #deb5ef; }
-    body.wisteria .content .layer-wilma .hand-right,
-    body.wisteria .content .layer-wilma .leg-right {
+    body:not(.dark).wisteria .content .layer-wilma .hand-right,
+    body:not(.dark).wisteria .content .layer-wilma .leg-right {
       fill: #deb5ef;
       opacity: 0.80; }
-    body.wisteria .content .layer-wilma .beads {
+    body:not(.dark).wisteria .content .layer-wilma .beads {
       fill: #34193f; }
-    body.wisteria .content .layer-wilma .eye,
-    body.wisteria .content .layer-wilma .mouth {
+    body:not(.dark).wisteria .content .layer-wilma .eye,
+    body:not(.dark).wisteria .content .layer-wilma .mouth {
       fill: #684975; }
-    body.wisteria .content .layer-wilma .dress-wear {
+    body:not(.dark).wisteria .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.wisteria .content .layer-car .wheel {
+    body:not(.dark).wisteria .content .layer-car .wheel {
       fill: #e4d0ed;
       stroke: #ce84ec; }
-    body.wisteria .content .layer-car .wheel-spot {
+    body:not(.dark).wisteria .content .layer-car .wheel-spot {
       fill: #ce84ec;
       stroke: #e4d0ed; }
-    body.wisteria .content .layer-car .rollbar-piston {
+    body:not(.dark).wisteria .content .layer-car .rollbar-piston {
       fill: #25122d; }
-    body.wisteria .content .layer-car .rollbar-shade {
+    body:not(.dark).wisteria .content .layer-car .rollbar-shade {
       fill: #8e44ad;
       opacity: 0.50; }
-    body.wisteria .content .layer-car .rollbar-support {
+    body:not(.dark).wisteria .content .layer-car .rollbar-support {
       fill: #25122d; }
-    body.wisteria .content .layer-car .rollbar-joint {
+    body:not(.dark).wisteria .content .layer-car .rollbar-joint {
       fill: #522764; }
-    body.wisteria .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).wisteria .content .layer-car .rollbar-joint-shade {
       fill: #8e44ad;
       opacity: 0.50; }
-    body.wisteria .content .layer-rose .stem {
+    body:not(.dark).wisteria .content .layer-rose .stem {
       fill: #bc58e6; }
-    body.wisteria .content .layer-rose .petal-outer {
+    body:not(.dark).wisteria .content .layer-rose .petal-outer {
       fill: #faf3fd; }
-    body.wisteria .content .layer-rose .petal-inner-1 {
+    body:not(.dark).wisteria .content .layer-rose .petal-inner-1 {
       fill: #dfb0f3; }
-    body.wisteria .content .layer-rose .petal-inner-2 {
+    body:not(.dark).wisteria .content .layer-rose .petal-inner-2 {
       fill: #bc58e6; }
-    body.wisteria .content .layer-rose .petal-inner-3 {
+    body:not(.dark).wisteria .content .layer-rose .petal-inner-3 {
       fill: #aa2cdf; }
-    body.wisteria .content .layer-plane .plane-body {
+    body:not(.dark).wisteria .content .layer-plane .plane-body {
       fill: #e1acf8; }
-    body.wisteria .content .layer-plane .plane-toggle {
+    body:not(.dark).wisteria .content .layer-plane .plane-toggle {
       fill: #34193f; }
-    body.wisteria .content .planeKiPoonch {
+    body:not(.dark).wisteria .content .planeKiPoonch {
       background: #bc58e6; }
-    body.wisteria .content .start-btn-holder .start-btn {
+    body:not(.dark).wisteria .content .start-btn-holder .start-btn {
       background-color: #703688;
       border-color: #703688; }
-  body.midnightBlue .header {
+  body:not(.dark).midnightBlue .header {
     transition: background-color 0.3s linear 0s; }
-    body.midnightBlue .header-colorslab--top {
+    body:not(.dark).midnightBlue .header-colorslab--top {
       background-color: #507192;
       transition: background-color 0.3s linear 0s; }
-    body.midnightBlue .header-colorslab--middle {
+    body:not(.dark).midnightBlue .header-colorslab--middle {
       background-color: #3e5871;
       transition: background-color 0.3s linear 0s; }
-    body.midnightBlue .header-colorslab--bottom {
+    body:not(.dark).midnightBlue .header-colorslab--bottom {
       background-color: #2c3e50;
       transition: background-color 0.3s linear 0s; }
-    body.midnightBlue .header-xs-profile-links-pages-list-toggle, body.midnightBlue .header-profile-links-pages-list-toggle {
+    body:not(.dark).midnightBlue .header-xs-profile-links-pages-list-toggle, body:not(.dark).midnightBlue .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #1a252f 0%, #2c3e50 100%);
       border: 3px solid #7392b2;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.midnightBlue .header-xs-profile-links-pages-list li a svg g g,
-    body.midnightBlue .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).midnightBlue .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).midnightBlue .header-profile-links-pages-list li a svg g g {
       fill: #7392b2; }
-  body.midnightBlue .content {
+  body:not(.dark).midnightBlue .content {
     background-color: black;
     transition: background-color 0.3s linear 0s; }
-    body.midnightBlue .content .layer-grass .grass {
+    body:not(.dark).midnightBlue .content .layer-grass .grass {
       fill: #277ed5; }
-    body.midnightBlue .content .layer-mountains .mountain-peak {
+    body:not(.dark).midnightBlue .content .layer-mountains .mountain-peak {
       fill: #277ed5; }
-    body.midnightBlue .content .layer-mountains .mountain-left {
+    body:not(.dark).midnightBlue .content .layer-mountains .mountain-left {
       fill: #1a252f; }
-    body.midnightBlue .content .layer-mountains .mountain-right {
+    body:not(.dark).midnightBlue .content .layer-mountains .mountain-right {
       fill: black; }
-    body.midnightBlue .content .layer-moon .moon-allure-ring,
-    body.midnightBlue .content .layer-moon .moon-main-ring {
+    body:not(.dark).midnightBlue .content .layer-moon .moon-allure-ring,
+    body:not(.dark).midnightBlue .content .layer-moon .moon-main-ring {
       fill: #5097df; }
-    body.midnightBlue .content .layer-wilma-house .house-wall {
+    body:not(.dark).midnightBlue .content .layer-wilma-house .house-wall {
       fill: #5d92c8; }
-    body.midnightBlue .content .layer-wilma-house .house-beam {
+    body:not(.dark).midnightBlue .content .layer-wilma-house .house-beam {
       fill: black; }
-    body.midnightBlue .content .layer-fred .leg-left,
-    body.midnightBlue .content .layer-fred .hand-left {
+    body:not(.dark).midnightBlue .content .layer-fred .leg-left,
+    body:not(.dark).midnightBlue .content .layer-fred .hand-left {
       fill: #6497ca;
       opacity: 0.80; }
-    body.midnightBlue .content .layer-fred .face-back,
-    body.midnightBlue .content .layer-fred .face-mid,
-    body.midnightBlue .content .layer-fred .leg-right,
-    body.midnightBlue .content .layer-fred .hand-right {
+    body:not(.dark).midnightBlue .content .layer-fred .face-back,
+    body:not(.dark).midnightBlue .content .layer-fred .face-mid,
+    body:not(.dark).midnightBlue .content .layer-fred .leg-right,
+    body:not(.dark).midnightBlue .content .layer-fred .hand-right {
       fill: #6497ca; }
-    body.midnightBlue .content .layer-fred .face-front {
+    body:not(.dark).midnightBlue .content .layer-fred .face-front {
       fill: #347ec8; }
-    body.midnightBlue .content .layer-fred .hair {
+    body:not(.dark).midnightBlue .content .layer-fred .hair {
       fill: black; }
-    body.midnightBlue .content .layer-fred .mouth,
-    body.midnightBlue .content .layer-fred .eye,
-    body.midnightBlue .content .layer-fred .ear {
+    body:not(.dark).midnightBlue .content .layer-fred .mouth,
+    body:not(.dark).midnightBlue .content .layer-fred .eye,
+    body:not(.dark).midnightBlue .content .layer-fred .ear {
       fill: #212528; }
-    body.midnightBlue .content .layer-fred .dress-spots {
+    body:not(.dark).midnightBlue .content .layer-fred .dress-spots {
       fill: black; }
-    body.midnightBlue .content .layer-fred .dress-wear {
+    body:not(.dark).midnightBlue .content .layer-fred .dress-wear {
       fill: #2c3e50; }
-    body.midnightBlue .content .layer-fred .collar {
+    body:not(.dark).midnightBlue .content .layer-fred .collar {
       fill: #11181f; }
-    body.midnightBlue .content .layer-wilma .hair {
+    body:not(.dark).midnightBlue .content .layer-wilma .hair {
       fill: black; }
-    body.midnightBlue .content .layer-wilma .face,
-    body.midnightBlue .content .layer-wilma .hand-left,
-    body.midnightBlue .content .layer-wilma .leg-left,
-    body.midnightBlue .content .layer-wilma .nose {
+    body:not(.dark).midnightBlue .content .layer-wilma .face,
+    body:not(.dark).midnightBlue .content .layer-wilma .hand-left,
+    body:not(.dark).midnightBlue .content .layer-wilma .leg-left,
+    body:not(.dark).midnightBlue .content .layer-wilma .nose {
       fill: #6497ca; }
-    body.midnightBlue .content .layer-wilma .hand-right,
-    body.midnightBlue .content .layer-wilma .leg-right {
+    body:not(.dark).midnightBlue .content .layer-wilma .hand-right,
+    body:not(.dark).midnightBlue .content .layer-wilma .leg-right {
       fill: #6497ca;
       opacity: 0.80; }
-    body.midnightBlue .content .layer-wilma .beads {
+    body:not(.dark).midnightBlue .content .layer-wilma .beads {
       fill: black; }
-    body.midnightBlue .content .layer-wilma .eye,
-    body.midnightBlue .content .layer-wilma .mouth {
+    body:not(.dark).midnightBlue .content .layer-wilma .eye,
+    body:not(.dark).midnightBlue .content .layer-wilma .mouth {
       fill: #212528; }
-    body.midnightBlue .content .layer-wilma .dress-wear {
+    body:not(.dark).midnightBlue .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.midnightBlue .content .layer-car .wheel {
+    body:not(.dark).midnightBlue .content .layer-car .wheel {
       fill: #8aa4be;
       stroke: #347ec8; }
-    body.midnightBlue .content .layer-car .wheel-spot {
+    body:not(.dark).midnightBlue .content .layer-car .wheel-spot {
       fill: #347ec8;
       stroke: #8aa4be; }
-    body.midnightBlue .content .layer-car .rollbar-piston {
+    body:not(.dark).midnightBlue .content .layer-car .rollbar-piston {
       fill: black; }
-    body.midnightBlue .content .layer-car .rollbar-shade {
+    body:not(.dark).midnightBlue .content .layer-car .rollbar-shade {
       fill: #2c3e50;
       opacity: 0.50; }
-    body.midnightBlue .content .layer-car .rollbar-support {
+    body:not(.dark).midnightBlue .content .layer-car .rollbar-support {
       fill: black; }
-    body.midnightBlue .content .layer-car .rollbar-joint {
+    body:not(.dark).midnightBlue .content .layer-car .rollbar-joint {
       fill: #080b0e; }
-    body.midnightBlue .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).midnightBlue .content .layer-car .rollbar-joint-shade {
       fill: #2c3e50;
       opacity: 0.50; }
-    body.midnightBlue .content .layer-rose .stem {
+    body:not(.dark).midnightBlue .content .layer-rose .stem {
       fill: #29649f; }
-    body.midnightBlue .content .layer-rose .petal-outer {
+    body:not(.dark).midnightBlue .content .layer-rose .petal-outer {
       fill: #97bee4; }
-    body.midnightBlue .content .layer-rose .petal-inner-1 {
+    body:not(.dark).midnightBlue .content .layer-rose .petal-inner-1 {
       fill: #5a97d4; }
-    body.midnightBlue .content .layer-rose .petal-inner-2 {
+    body:not(.dark).midnightBlue .content .layer-rose .petal-inner-2 {
       fill: #29649f; }
-    body.midnightBlue .content .layer-rose .petal-inner-3 {
+    body:not(.dark).midnightBlue .content .layer-rose .petal-inner-3 {
       fill: #1f4b77; }
-    body.midnightBlue .content .layer-plane .plane-body {
+    body:not(.dark).midnightBlue .content .layer-plane .plane-body {
       fill: #5097df; }
-    body.midnightBlue .content .layer-plane .plane-toggle {
+    body:not(.dark).midnightBlue .content .layer-plane .plane-toggle {
       fill: black; }
-    body.midnightBlue .content .planeKiPoonch {
+    body:not(.dark).midnightBlue .content .planeKiPoonch {
       background: #29649f; }
-    body.midnightBlue .content .start-btn-holder .start-btn {
+    body:not(.dark).midnightBlue .content .start-btn-holder .start-btn {
       background-color: #1a252f;
       border-color: #1a252f; }
-  body.sunDlower .header {
+  body:not(.dark).sunDlower .header {
     transition: background-color 0.3s linear 0s; }
-    body.sunDlower .header-colorslab--top {
+    body:not(.dark).sunDlower .header-colorslab--top {
       background-color: #f7dc6f;
       transition: background-color 0.3s linear 0s; }
-    body.sunDlower .header-colorslab--middle {
+    body:not(.dark).sunDlower .header-colorslab--middle {
       background-color: #f4d03f;
       transition: background-color 0.3s linear 0s; }
-    body.sunDlower .header-colorslab--bottom {
+    body:not(.dark).sunDlower .header-colorslab--bottom {
       background-color: #f1c40f;
       transition: background-color 0.3s linear 0s; }
-    body.sunDlower .header-xs-profile-links-pages-list-toggle, body.sunDlower .header-profile-links-pages-list-toggle {
+    body:not(.dark).sunDlower .header-xs-profile-links-pages-list-toggle, body:not(.dark).sunDlower .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #c29d0b 0%, #f1c40f 100%);
       border: 3px solid #faebae;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.sunDlower .header-xs-profile-links-pages-list li a svg g g,
-    body.sunDlower .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).sunDlower .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).sunDlower .header-profile-links-pages-list li a svg g g {
       fill: #faebae; }
-  body.sunDlower .content {
+  body:not(.dark).sunDlower .content {
     background-color: #796307;
     transition: background-color 0.3s linear 0s; }
-    body.sunDlower .content .layer-grass .grass {
+    body:not(.dark).sunDlower .content .layer-grass .grass {
       fill: #ffe681; }
-    body.sunDlower .content .layer-mountains .mountain-peak {
+    body:not(.dark).sunDlower .content .layer-mountains .mountain-peak {
       fill: #ffe681; }
-    body.sunDlower .content .layer-mountains .mountain-left {
+    body:not(.dark).sunDlower .content .layer-mountains .mountain-left {
       fill: #c29d0b; }
-    body.sunDlower .content .layer-mountains .mountain-right {
+    body:not(.dark).sunDlower .content .layer-mountains .mountain-right {
       fill: #614f06; }
-    body.sunDlower .content .layer-moon .moon-allure-ring,
-    body.sunDlower .content .layer-moon .moon-main-ring {
+    body:not(.dark).sunDlower .content .layer-moon .moon-allure-ring,
+    body:not(.dark).sunDlower .content .layer-moon .moon-main-ring {
       fill: #fff0b4; }
-    body.sunDlower .content .layer-wilma-house .house-wall {
+    body:not(.dark).sunDlower .content .layer-wilma-house .house-wall {
       fill: #ffeea9; }
-    body.sunDlower .content .layer-wilma-house .house-beam {
+    body:not(.dark).sunDlower .content .layer-wilma-house .house-beam {
       fill: #614f06; }
-    body.sunDlower .content .layer-fred .leg-left,
-    body.sunDlower .content .layer-fred .hand-left {
+    body:not(.dark).sunDlower .content .layer-fred .leg-left,
+    body:not(.dark).sunDlower .content .layer-fred .hand-left {
       fill: #fff0b4;
       opacity: 0.80; }
-    body.sunDlower .content .layer-fred .face-back,
-    body.sunDlower .content .layer-fred .face-mid,
-    body.sunDlower .content .layer-fred .leg-right,
-    body.sunDlower .content .layer-fred .hand-right {
+    body:not(.dark).sunDlower .content .layer-fred .face-back,
+    body:not(.dark).sunDlower .content .layer-fred .face-mid,
+    body:not(.dark).sunDlower .content .layer-fred .leg-right,
+    body:not(.dark).sunDlower .content .layer-fred .hand-right {
       fill: #fff0b4; }
-    body.sunDlower .content .layer-fred .face-front {
+    body:not(.dark).sunDlower .content .layer-fred .face-front {
       fill: #ffe681; }
-    body.sunDlower .content .layer-fred .hair {
+    body:not(.dark).sunDlower .content .layer-fred .hair {
       fill: #493b04; }
-    body.sunDlower .content .layer-fred .mouth,
-    body.sunDlower .content .layer-fred .eye,
-    body.sunDlower .content .layer-fred .ear {
+    body:not(.dark).sunDlower .content .layer-fred .mouth,
+    body:not(.dark).sunDlower .content .layer-fred .eye,
+    body:not(.dark).sunDlower .content .layer-fred .ear {
       fill: #ad9120; }
-    body.sunDlower .content .layer-fred .dress-spots {
+    body:not(.dark).sunDlower .content .layer-fred .dress-spots {
       fill: #493b04; }
-    body.sunDlower .content .layer-fred .dress-wear {
+    body:not(.dark).sunDlower .content .layer-fred .dress-wear {
       fill: #f1c40f; }
-    body.sunDlower .content .layer-fred .collar {
+    body:not(.dark).sunDlower .content .layer-fred .collar {
       fill: #aa8a0a; }
-    body.sunDlower .content .layer-wilma .hair {
+    body:not(.dark).sunDlower .content .layer-wilma .hair {
       fill: #493b04; }
-    body.sunDlower .content .layer-wilma .face,
-    body.sunDlower .content .layer-wilma .hand-left,
-    body.sunDlower .content .layer-wilma .leg-left,
-    body.sunDlower .content .layer-wilma .nose {
+    body:not(.dark).sunDlower .content .layer-wilma .face,
+    body:not(.dark).sunDlower .content .layer-wilma .hand-left,
+    body:not(.dark).sunDlower .content .layer-wilma .leg-left,
+    body:not(.dark).sunDlower .content .layer-wilma .nose {
       fill: #fff0b4; }
-    body.sunDlower .content .layer-wilma .hand-right,
-    body.sunDlower .content .layer-wilma .leg-right {
+    body:not(.dark).sunDlower .content .layer-wilma .hand-right,
+    body:not(.dark).sunDlower .content .layer-wilma .leg-right {
       fill: #fff0b4;
       opacity: 0.80; }
-    body.sunDlower .content .layer-wilma .beads {
+    body:not(.dark).sunDlower .content .layer-wilma .beads {
       fill: #614f06; }
-    body.sunDlower .content .layer-wilma .eye,
-    body.sunDlower .content .layer-wilma .mouth {
+    body:not(.dark).sunDlower .content .layer-wilma .eye,
+    body:not(.dark).sunDlower .content .layer-wilma .mouth {
       fill: #ad9120; }
-    body.sunDlower .content .layer-wilma .dress-wear {
+    body:not(.dark).sunDlower .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.sunDlower .content .layer-car .wheel {
+    body:not(.dark).sunDlower .content .layer-car .wheel {
       fill: #fcf3d0;
       stroke: #ffe681; }
-    body.sunDlower .content .layer-car .wheel-spot {
+    body:not(.dark).sunDlower .content .layer-car .wheel-spot {
       fill: #ffe681;
       stroke: #fcf3d0; }
-    body.sunDlower .content .layer-car .rollbar-piston {
+    body:not(.dark).sunDlower .content .layer-car .rollbar-piston {
       fill: #493b04; }
-    body.sunDlower .content .layer-car .rollbar-shade {
+    body:not(.dark).sunDlower .content .layer-car .rollbar-shade {
       fill: #f1c40f;
       opacity: 0.50; }
-    body.sunDlower .content .layer-car .rollbar-support {
+    body:not(.dark).sunDlower .content .layer-car .rollbar-support {
       fill: #493b04; }
-    body.sunDlower .content .layer-car .rollbar-joint {
+    body:not(.dark).sunDlower .content .layer-car .rollbar-joint {
       fill: #927608; }
-    body.sunDlower .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).sunDlower .content .layer-car .rollbar-joint-shade {
       fill: #f1c40f;
       opacity: 0.50; }
-    body.sunDlower .content .layer-rose .stem {
+    body:not(.dark).sunDlower .content .layer-rose .stem {
       fill: #ffdc4e; }
-    body.sunDlower .content .layer-rose .petal-outer {
+    body:not(.dark).sunDlower .content .layer-rose .petal-outer {
       fill: white; }
-    body.sunDlower .content .layer-rose .petal-inner-1 {
+    body:not(.dark).sunDlower .content .layer-rose .petal-inner-1 {
       fill: #fff0b4; }
-    body.sunDlower .content .layer-rose .petal-inner-2 {
+    body:not(.dark).sunDlower .content .layer-rose .petal-inner-2 {
       fill: #ffdc4e; }
-    body.sunDlower .content .layer-rose .petal-inner-3 {
+    body:not(.dark).sunDlower .content .layer-rose .petal-inner-3 {
       fill: #ffd21b; }
-    body.sunDlower .content .layer-plane .plane-body {
+    body:not(.dark).sunDlower .content .layer-plane .plane-body {
       fill: #fff0b4; }
-    body.sunDlower .content .layer-plane .plane-toggle {
+    body:not(.dark).sunDlower .content .layer-plane .plane-toggle {
       fill: #614f06; }
-    body.sunDlower .content .planeKiPoonch {
+    body:not(.dark).sunDlower .content .planeKiPoonch {
       background: #ffdc4e; }
-    body.sunDlower .content .start-btn-holder .start-btn {
+    body:not(.dark).sunDlower .content .start-btn-holder .start-btn {
       background-color: #c29d0b;
       border-color: #c29d0b; }
-  body.carrot .header {
+  body:not(.dark).carrot .header {
     transition: background-color 0.3s linear 0s; }
-    body.carrot .header-colorslab--top {
+    body:not(.dark).carrot .header-colorslab--top {
       background-color: #f0b37e;
       transition: background-color 0.3s linear 0s; }
-    body.carrot .header-colorslab--middle {
+    body:not(.dark).carrot .header-colorslab--middle {
       background-color: #eb9950;
       transition: background-color 0.3s linear 0s; }
-    body.carrot .header-colorslab--bottom {
+    body:not(.dark).carrot .header-colorslab--bottom {
       background-color: #e67e22;
       transition: background-color 0.3s linear 0s; }
-    body.carrot .header-xs-profile-links-pages-list-toggle, body.carrot .header-profile-links-pages-list-toggle {
+    body:not(.dark).carrot .header-xs-profile-links-pages-list-toggle, body:not(.dark).carrot .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #bf6516 0%, #e67e22 100%);
       border: 3px solid #f7d6b9;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.carrot .header-xs-profile-links-pages-list li a svg g g,
-    body.carrot .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).carrot .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).carrot .header-profile-links-pages-list li a svg g g {
       fill: #f7d6b9; }
-  body.carrot .content {
+  body:not(.dark).carrot .content {
     background-color: #7b410e;
     transition: background-color 0.3s linear 0s; }
-    body.carrot .content .layer-grass .grass {
+    body:not(.dark).carrot .content .layer-grass .grass {
       fill: #ffc089; }
-    body.carrot .content .layer-mountains .mountain-peak {
+    body:not(.dark).carrot .content .layer-mountains .mountain-peak {
       fill: #ffc089; }
-    body.carrot .content .layer-mountains .mountain-left {
+    body:not(.dark).carrot .content .layer-mountains .mountain-left {
       fill: #bf6516; }
-    body.carrot .content .layer-mountains .mountain-right {
+    body:not(.dark).carrot .content .layer-mountains .mountain-right {
       fill: #64350b; }
-    body.carrot .content .layer-moon .moon-allure-ring,
-    body.carrot .content .layer-moon .moon-main-ring {
+    body:not(.dark).carrot .content .layer-moon .moon-allure-ring,
+    body:not(.dark).carrot .content .layer-moon .moon-main-ring {
       fill: #ffdbbc; }
-    body.carrot .content .layer-wilma-house .house-wall {
+    body:not(.dark).carrot .content .layer-wilma-house .house-wall {
       fill: #ffd6b1; }
-    body.carrot .content .layer-wilma-house .house-beam {
+    body:not(.dark).carrot .content .layer-wilma-house .house-beam {
       fill: #64350b; }
-    body.carrot .content .layer-fred .leg-left,
-    body.carrot .content .layer-fred .hand-left {
+    body:not(.dark).carrot .content .layer-fred .leg-left,
+    body:not(.dark).carrot .content .layer-fred .hand-left {
       fill: #ffdbbc;
       opacity: 0.80; }
-    body.carrot .content .layer-fred .face-back,
-    body.carrot .content .layer-fred .face-mid,
-    body.carrot .content .layer-fred .leg-right,
-    body.carrot .content .layer-fred .hand-right {
+    body:not(.dark).carrot .content .layer-fred .face-back,
+    body:not(.dark).carrot .content .layer-fred .face-mid,
+    body:not(.dark).carrot .content .layer-fred .leg-right,
+    body:not(.dark).carrot .content .layer-fred .hand-right {
       fill: #ffdbbc; }
-    body.carrot .content .layer-fred .face-front {
+    body:not(.dark).carrot .content .layer-fred .face-front {
       fill: #ffc089; }
-    body.carrot .content .layer-fred .hair {
+    body:not(.dark).carrot .content .layer-fred .hair {
       fill: #4d2909; }
-    body.carrot .content .layer-fred .mouth,
-    body.carrot .content .layer-fred .eye,
-    body.carrot .content .layer-fred .ear {
+    body:not(.dark).carrot .content .layer-fred .mouth,
+    body:not(.dark).carrot .content .layer-fred .eye,
+    body:not(.dark).carrot .content .layer-fred .ear {
       fill: #aa672b; }
-    body.carrot .content .layer-fred .dress-spots {
+    body:not(.dark).carrot .content .layer-fred .dress-spots {
       fill: #4d2909; }
-    body.carrot .content .layer-fred .dress-wear {
+    body:not(.dark).carrot .content .layer-fred .dress-wear {
       fill: #e67e22; }
-    body.carrot .content .layer-fred .collar {
+    body:not(.dark).carrot .content .layer-fred .collar {
       fill: #a85913; }
-    body.carrot .content .layer-wilma .hair {
+    body:not(.dark).carrot .content .layer-wilma .hair {
       fill: #4d2909; }
-    body.carrot .content .layer-wilma .face,
-    body.carrot .content .layer-wilma .hand-left,
-    body.carrot .content .layer-wilma .leg-left,
-    body.carrot .content .layer-wilma .nose {
+    body:not(.dark).carrot .content .layer-wilma .face,
+    body:not(.dark).carrot .content .layer-wilma .hand-left,
+    body:not(.dark).carrot .content .layer-wilma .leg-left,
+    body:not(.dark).carrot .content .layer-wilma .nose {
       fill: #ffdbbc; }
-    body.carrot .content .layer-wilma .hand-right,
-    body.carrot .content .layer-wilma .leg-right {
+    body:not(.dark).carrot .content .layer-wilma .hand-right,
+    body:not(.dark).carrot .content .layer-wilma .leg-right {
       fill: #ffdbbc;
       opacity: 0.80; }
-    body.carrot .content .layer-wilma .beads {
+    body:not(.dark).carrot .content .layer-wilma .beads {
       fill: #64350b; }
-    body.carrot .content .layer-wilma .eye,
-    body.carrot .content .layer-wilma .mouth {
+    body:not(.dark).carrot .content .layer-wilma .eye,
+    body:not(.dark).carrot .content .layer-wilma .mouth {
       fill: #aa672b; }
-    body.carrot .content .layer-wilma .dress-wear {
+    body:not(.dark).carrot .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.carrot .content .layer-car .wheel {
+    body:not(.dark).carrot .content .layer-car .wheel {
       fill: #fbe9d9;
       stroke: #ffc089; }
-    body.carrot .content .layer-car .wheel-spot {
+    body:not(.dark).carrot .content .layer-car .wheel-spot {
       fill: #ffc089;
       stroke: #fbe9d9; }
-    body.carrot .content .layer-car .rollbar-piston {
+    body:not(.dark).carrot .content .layer-car .rollbar-piston {
       fill: #4d2909; }
-    body.carrot .content .layer-car .rollbar-shade {
+    body:not(.dark).carrot .content .layer-car .rollbar-shade {
       fill: #e67e22;
       opacity: 0.50; }
-    body.carrot .content .layer-car .rollbar-support {
+    body:not(.dark).carrot .content .layer-car .rollbar-support {
       fill: #4d2909; }
-    body.carrot .content .layer-car .rollbar-joint {
+    body:not(.dark).carrot .content .layer-car .rollbar-joint {
       fill: #924d10; }
-    body.carrot .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).carrot .content .layer-car .rollbar-joint-shade {
       fill: #e67e22;
       opacity: 0.50; }
-    body.carrot .content .layer-rose .stem {
+    body:not(.dark).carrot .content .layer-rose .stem {
       fill: #ffa556; }
-    body.carrot .content .layer-rose .petal-outer {
+    body:not(.dark).carrot .content .layer-rose .petal-outer {
       fill: white; }
-    body.carrot .content .layer-rose .petal-inner-1 {
+    body:not(.dark).carrot .content .layer-rose .petal-inner-1 {
       fill: #ffdbbc; }
-    body.carrot .content .layer-rose .petal-inner-2 {
+    body:not(.dark).carrot .content .layer-rose .petal-inner-2 {
       fill: #ffa556; }
-    body.carrot .content .layer-rose .petal-inner-3 {
+    body:not(.dark).carrot .content .layer-rose .petal-inner-3 {
       fill: #ff8a23; }
-    body.carrot .content .layer-plane .plane-body {
+    body:not(.dark).carrot .content .layer-plane .plane-body {
       fill: #ffdbbc; }
-    body.carrot .content .layer-plane .plane-toggle {
+    body:not(.dark).carrot .content .layer-plane .plane-toggle {
       fill: #64350b; }
-    body.carrot .content .planeKiPoonch {
+    body:not(.dark).carrot .content .planeKiPoonch {
       background: #ffa556; }
-    body.carrot .content .start-btn-holder .start-btn {
+    body:not(.dark).carrot .content .start-btn-holder .start-btn {
       background-color: #bf6516;
       border-color: #bf6516; }
-  body.alizarin .header {
+  body:not(.dark).alizarin .header {
     transition: background-color 0.3s linear 0s; }
-    body.alizarin .header-colorslab--top {
+    body:not(.dark).alizarin .header-colorslab--top {
       background-color: #f29f97;
       transition: background-color 0.3s linear 0s; }
-    body.alizarin .header-colorslab--middle {
+    body:not(.dark).alizarin .header-colorslab--middle {
       background-color: #ed7669;
       transition: background-color 0.3s linear 0s; }
-    body.alizarin .header-colorslab--bottom {
+    body:not(.dark).alizarin .header-colorslab--bottom {
       background-color: #e74c3c;
       transition: background-color 0.3s linear 0s; }
-    body.alizarin .header-xs-profile-links-pages-list-toggle, body.alizarin .header-profile-links-pages-list-toggle {
+    body:not(.dark).alizarin .header-xs-profile-links-pages-list-toggle, body:not(.dark).alizarin .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #d62c1a 0%, #e74c3c 100%);
       border: 3px solid #f9d6d2;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.alizarin .header-xs-profile-links-pages-list li a svg g g,
-    body.alizarin .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).alizarin .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).alizarin .header-profile-links-pages-list li a svg g g {
       fill: #f9d6d2; }
-  body.alizarin .content {
+  body:not(.dark).alizarin .content {
     background-color: #921e12;
     transition: background-color 0.3s linear 0s; }
-    body.alizarin .content .layer-grass .grass {
+    body:not(.dark).alizarin .content .layer-grass .grass {
       fill: #ffaca4; }
-    body.alizarin .content .layer-mountains .mountain-peak {
+    body:not(.dark).alizarin .content .layer-mountains .mountain-peak {
       fill: #ffaca4; }
-    body.alizarin .content .layer-mountains .mountain-left {
+    body:not(.dark).alizarin .content .layer-mountains .mountain-left {
       fill: #d62c1a; }
-    body.alizarin .content .layer-mountains .mountain-right {
+    body:not(.dark).alizarin .content .layer-mountains .mountain-right {
       fill: #7b190f; }
-    body.alizarin .content .layer-moon .moon-allure-ring,
-    body.alizarin .content .layer-moon .moon-main-ring {
+    body:not(.dark).alizarin .content .layer-moon .moon-allure-ring,
+    body:not(.dark).alizarin .content .layer-moon .moon-main-ring {
       fill: #ffdad7; }
-    body.alizarin .content .layer-wilma-house .house-wall {
+    body:not(.dark).alizarin .content .layer-wilma-house .house-wall {
       fill: #ffd1cd; }
-    body.alizarin .content .layer-wilma-house .house-beam {
+    body:not(.dark).alizarin .content .layer-wilma-house .house-beam {
       fill: #7b190f; }
-    body.alizarin .content .layer-fred .leg-left,
-    body.alizarin .content .layer-fred .hand-left {
+    body:not(.dark).alizarin .content .layer-fred .leg-left,
+    body:not(.dark).alizarin .content .layer-fred .hand-left {
       fill: #ffdbd7;
       opacity: 0.80; }
-    body.alizarin .content .layer-fred .face-back,
-    body.alizarin .content .layer-fred .face-mid,
-    body.alizarin .content .layer-fred .leg-right,
-    body.alizarin .content .layer-fred .hand-right {
+    body:not(.dark).alizarin .content .layer-fred .face-back,
+    body:not(.dark).alizarin .content .layer-fred .face-mid,
+    body:not(.dark).alizarin .content .layer-fred .leg-right,
+    body:not(.dark).alizarin .content .layer-fred .hand-right {
       fill: #ffdbd7; }
-    body.alizarin .content .layer-fred .face-front {
+    body:not(.dark).alizarin .content .layer-fred .face-front {
       fill: #ffaca4; }
-    body.alizarin .content .layer-fred .hair {
+    body:not(.dark).alizarin .content .layer-fred .hair {
       fill: #64150c; }
-    body.alizarin .content .layer-fred .mouth,
-    body.alizarin .content .layer-fred .eye,
-    body.alizarin .content .layer-fred .ear {
+    body:not(.dark).alizarin .content .layer-fred .mouth,
+    body:not(.dark).alizarin .content .layer-fred .eye,
+    body:not(.dark).alizarin .content .layer-fred .ear {
       fill: #be3f32; }
-    body.alizarin .content .layer-fred .dress-spots {
+    body:not(.dark).alizarin .content .layer-fred .dress-spots {
       fill: #64150c; }
-    body.alizarin .content .layer-fred .dress-wear {
+    body:not(.dark).alizarin .content .layer-fred .dress-wear {
       fill: #e74c3c; }
-    body.alizarin .content .layer-fred .collar {
+    body:not(.dark).alizarin .content .layer-fred .collar {
       fill: #bf2718; }
-    body.alizarin .content .layer-wilma .hair {
+    body:not(.dark).alizarin .content .layer-wilma .hair {
       fill: #64150c; }
-    body.alizarin .content .layer-wilma .face,
-    body.alizarin .content .layer-wilma .hand-left,
-    body.alizarin .content .layer-wilma .leg-left,
-    body.alizarin .content .layer-wilma .nose {
+    body:not(.dark).alizarin .content .layer-wilma .face,
+    body:not(.dark).alizarin .content .layer-wilma .hand-left,
+    body:not(.dark).alizarin .content .layer-wilma .leg-left,
+    body:not(.dark).alizarin .content .layer-wilma .nose {
       fill: #ffdbd7; }
-    body.alizarin .content .layer-wilma .hand-right,
-    body.alizarin .content .layer-wilma .leg-right {
+    body:not(.dark).alizarin .content .layer-wilma .hand-right,
+    body:not(.dark).alizarin .content .layer-wilma .leg-right {
       fill: #ffdbd7;
       opacity: 0.80; }
-    body.alizarin .content .layer-wilma .beads {
+    body:not(.dark).alizarin .content .layer-wilma .beads {
       fill: #7b190f; }
-    body.alizarin .content .layer-wilma .eye,
-    body.alizarin .content .layer-wilma .mouth {
+    body:not(.dark).alizarin .content .layer-wilma .eye,
+    body:not(.dark).alizarin .content .layer-wilma .mouth {
       fill: #be3f32; }
-    body.alizarin .content .layer-wilma .dress-wear {
+    body:not(.dark).alizarin .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.alizarin .content .layer-car .wheel {
+    body:not(.dark).alizarin .content .layer-car .wheel {
       fill: #fdf3f2;
       stroke: #ffaca4; }
-    body.alizarin .content .layer-car .wheel-spot {
+    body:not(.dark).alizarin .content .layer-car .wheel-spot {
       fill: #ffaca4;
       stroke: #fdf3f2; }
-    body.alizarin .content .layer-car .rollbar-piston {
+    body:not(.dark).alizarin .content .layer-car .rollbar-piston {
       fill: #64150c; }
-    body.alizarin .content .layer-car .rollbar-shade {
+    body:not(.dark).alizarin .content .layer-car .rollbar-shade {
       fill: #e74c3c;
       opacity: 0.50; }
-    body.alizarin .content .layer-car .rollbar-support {
+    body:not(.dark).alizarin .content .layer-car .rollbar-support {
       fill: #64150c; }
-    body.alizarin .content .layer-car .rollbar-joint {
+    body:not(.dark).alizarin .content .layer-car .rollbar-joint {
       fill: #a82315; }
-    body.alizarin .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).alizarin .content .layer-car .rollbar-joint-shade {
       fill: #e74c3c;
       opacity: 0.50; }
-    body.alizarin .content .layer-rose .stem {
+    body:not(.dark).alizarin .content .layer-rose .stem {
       fill: #ff7e71; }
-    body.alizarin .content .layer-rose .petal-outer {
+    body:not(.dark).alizarin .content .layer-rose .petal-outer {
       fill: white; }
-    body.alizarin .content .layer-rose .petal-inner-1 {
+    body:not(.dark).alizarin .content .layer-rose .petal-inner-1 {
       fill: #ffdad7; }
-    body.alizarin .content .layer-rose .petal-inner-2 {
+    body:not(.dark).alizarin .content .layer-rose .petal-inner-2 {
       fill: #ff7e71; }
-    body.alizarin .content .layer-rose .petal-inner-3 {
+    body:not(.dark).alizarin .content .layer-rose .petal-inner-3 {
       fill: #ff503e; }
-    body.alizarin .content .layer-plane .plane-body {
+    body:not(.dark).alizarin .content .layer-plane .plane-body {
       fill: #ffdad7; }
-    body.alizarin .content .layer-plane .plane-toggle {
+    body:not(.dark).alizarin .content .layer-plane .plane-toggle {
       fill: #7b190f; }
-    body.alizarin .content .planeKiPoonch {
+    body:not(.dark).alizarin .content .planeKiPoonch {
       background: #ff7e71; }
-    body.alizarin .content .start-btn-holder .start-btn {
+    body:not(.dark).alizarin .content .start-btn-holder .start-btn {
       background-color: #d62c1a;
       border-color: #d62c1a; }
-  body.orange .header {
+  body:not(.dark).orange .header {
     transition: background-color 0.3s linear 0s; }
-    body.orange .header-colorslab--top {
+    body:not(.dark).orange .header-colorslab--top {
       background-color: #f8c573;
       transition: background-color 0.3s linear 0s; }
-    body.orange .header-colorslab--middle {
+    body:not(.dark).orange .header-colorslab--middle {
       background-color: #f5b043;
       transition: background-color 0.3s linear 0s; }
-    body.orange .header-colorslab--bottom {
+    body:not(.dark).orange .header-colorslab--bottom {
       background-color: #f39c12;
       transition: background-color 0.3s linear 0s; }
-    body.orange .header-xs-profile-links-pages-list-toggle, body.orange .header-profile-links-pages-list-toggle {
+    body:not(.dark).orange .header-xs-profile-links-pages-list-toggle, body:not(.dark).orange .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #c87f0a 0%, #f39c12 100%);
       border: 3px solid #fbdfb2;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.orange .header-xs-profile-links-pages-list li a svg g g,
-    body.orange .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).orange .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).orange .header-profile-links-pages-list li a svg g g {
       fill: #fbdfb2; }
-  body.orange .content {
+  body:not(.dark).orange .content {
     background-color: #7f5006;
     transition: background-color 0.3s linear 0s; }
-    body.orange .content .layer-grass .grass {
+    body:not(.dark).orange .content .layer-grass .grass {
       fill: #ffd086; }
-    body.orange .content .layer-mountains .mountain-peak {
+    body:not(.dark).orange .content .layer-mountains .mountain-peak {
       fill: #ffd086; }
-    body.orange .content .layer-mountains .mountain-left {
+    body:not(.dark).orange .content .layer-mountains .mountain-left {
       fill: #c87f0a; }
-    body.orange .content .layer-mountains .mountain-right {
+    body:not(.dark).orange .content .layer-mountains .mountain-right {
       fill: #674105; }
-    body.orange .content .layer-moon .moon-allure-ring,
-    body.orange .content .layer-moon .moon-main-ring {
+    body:not(.dark).orange .content .layer-moon .moon-allure-ring,
+    body:not(.dark).orange .content .layer-moon .moon-main-ring {
       fill: #ffe4b9; }
-    body.orange .content .layer-wilma-house .house-wall {
+    body:not(.dark).orange .content .layer-wilma-house .house-wall {
       fill: #ffe0ae; }
-    body.orange .content .layer-wilma-house .house-beam {
+    body:not(.dark).orange .content .layer-wilma-house .house-beam {
       fill: #674105; }
-    body.orange .content .layer-fred .leg-left,
-    body.orange .content .layer-fred .hand-left {
+    body:not(.dark).orange .content .layer-fred .leg-left,
+    body:not(.dark).orange .content .layer-fred .hand-left {
       fill: #ffe4b9;
       opacity: 0.80; }
-    body.orange .content .layer-fred .face-back,
-    body.orange .content .layer-fred .face-mid,
-    body.orange .content .layer-fred .leg-right,
-    body.orange .content .layer-fred .hand-right {
+    body:not(.dark).orange .content .layer-fred .face-back,
+    body:not(.dark).orange .content .layer-fred .face-mid,
+    body:not(.dark).orange .content .layer-fred .leg-right,
+    body:not(.dark).orange .content .layer-fred .hand-right {
       fill: #ffe4b9; }
-    body.orange .content .layer-fred .face-front {
+    body:not(.dark).orange .content .layer-fred .face-front {
       fill: #ffd086; }
-    body.orange .content .layer-fred .hair {
+    body:not(.dark).orange .content .layer-fred .hair {
       fill: #4f3204; }
-    body.orange .content .layer-fred .mouth,
-    body.orange .content .layer-fred .eye,
-    body.orange .content .layer-fred .ear {
+    body:not(.dark).orange .content .layer-fred .mouth,
+    body:not(.dark).orange .content .layer-fred .eye,
+    body:not(.dark).orange .content .layer-fred .ear {
       fill: #b37a1f; }
-    body.orange .content .layer-fred .dress-spots {
+    body:not(.dark).orange .content .layer-fred .dress-spots {
       fill: #4f3204; }
-    body.orange .content .layer-fred .dress-wear {
+    body:not(.dark).orange .content .layer-fred .dress-wear {
       fill: #f39c12; }
-    body.orange .content .layer-fred .collar {
+    body:not(.dark).orange .content .layer-fred .collar {
       fill: #b06f09; }
-    body.orange .content .layer-wilma .hair {
+    body:not(.dark).orange .content .layer-wilma .hair {
       fill: #4f3204; }
-    body.orange .content .layer-wilma .face,
-    body.orange .content .layer-wilma .hand-left,
-    body.orange .content .layer-wilma .leg-left,
-    body.orange .content .layer-wilma .nose {
+    body:not(.dark).orange .content .layer-wilma .face,
+    body:not(.dark).orange .content .layer-wilma .hand-left,
+    body:not(.dark).orange .content .layer-wilma .leg-left,
+    body:not(.dark).orange .content .layer-wilma .nose {
       fill: #ffe4b9; }
-    body.orange .content .layer-wilma .hand-right,
-    body.orange .content .layer-wilma .leg-right {
+    body:not(.dark).orange .content .layer-wilma .hand-right,
+    body:not(.dark).orange .content .layer-wilma .leg-right {
       fill: #ffe4b9;
       opacity: 0.80; }
-    body.orange .content .layer-wilma .beads {
+    body:not(.dark).orange .content .layer-wilma .beads {
       fill: #674105; }
-    body.orange .content .layer-wilma .eye,
-    body.orange .content .layer-wilma .mouth {
+    body:not(.dark).orange .content .layer-wilma .eye,
+    body:not(.dark).orange .content .layer-wilma .mouth {
       fill: #b37a1f; }
-    body.orange .content .layer-wilma .dress-wear {
+    body:not(.dark).orange .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.orange .content .layer-car .wheel {
+    body:not(.dark).orange .content .layer-car .wheel {
       fill: #fdedd4;
       stroke: #ffd086; }
-    body.orange .content .layer-car .wheel-spot {
+    body:not(.dark).orange .content .layer-car .wheel-spot {
       fill: #ffd086;
       stroke: #fdedd4; }
-    body.orange .content .layer-car .rollbar-piston {
+    body:not(.dark).orange .content .layer-car .rollbar-piston {
       fill: #4f3204; }
-    body.orange .content .layer-car .rollbar-shade {
+    body:not(.dark).orange .content .layer-car .rollbar-shade {
       fill: #f39c12;
       opacity: 0.50; }
-    body.orange .content .layer-car .rollbar-support {
+    body:not(.dark).orange .content .layer-car .rollbar-support {
       fill: #4f3204; }
-    body.orange .content .layer-car .rollbar-joint {
+    body:not(.dark).orange .content .layer-car .rollbar-joint {
       fill: #976008; }
-    body.orange .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).orange .content .layer-car .rollbar-joint-shade {
       fill: #f39c12;
       opacity: 0.50; }
-    body.orange .content .layer-rose .stem {
+    body:not(.dark).orange .content .layer-rose .stem {
       fill: #ffbc53; }
-    body.orange .content .layer-rose .petal-outer {
+    body:not(.dark).orange .content .layer-rose .petal-outer {
       fill: white; }
-    body.orange .content .layer-rose .petal-inner-1 {
+    body:not(.dark).orange .content .layer-rose .petal-inner-1 {
       fill: #ffe4b9; }
-    body.orange .content .layer-rose .petal-inner-2 {
+    body:not(.dark).orange .content .layer-rose .petal-inner-2 {
       fill: #ffbc53; }
-    body.orange .content .layer-rose .petal-inner-3 {
+    body:not(.dark).orange .content .layer-rose .petal-inner-3 {
       fill: #ffa920; }
-    body.orange .content .layer-plane .plane-body {
+    body:not(.dark).orange .content .layer-plane .plane-body {
       fill: #ffe4b9; }
-    body.orange .content .layer-plane .plane-toggle {
+    body:not(.dark).orange .content .layer-plane .plane-toggle {
       fill: #674105; }
-    body.orange .content .planeKiPoonch {
+    body:not(.dark).orange .content .planeKiPoonch {
       background: #ffbc53; }
-    body.orange .content .start-btn-holder .start-btn {
+    body:not(.dark).orange .content .start-btn-holder .start-btn {
       background-color: #c87f0a;
       border-color: #c87f0a; }
-  body.pumpkin .header {
+  body:not(.dark).pumpkin .header {
     transition: background-color 0.3s linear 0s; }
-    body.pumpkin .header-colorslab--top {
+    body:not(.dark).pumpkin .header-colorslab--top {
       background-color: #ff883a;
       transition: background-color 0.3s linear 0s; }
-    body.pumpkin .header-colorslab--middle {
+    body:not(.dark).pumpkin .header-colorslab--middle {
       background-color: #ff6a07;
       transition: background-color 0.3s linear 0s; }
-    body.pumpkin .header-colorslab--bottom {
+    body:not(.dark).pumpkin .header-colorslab--bottom {
       background-color: #d35400;
       transition: background-color 0.3s linear 0s; }
-    body.pumpkin .header-xs-profile-links-pages-list-toggle, body.pumpkin .header-profile-links-pages-list-toggle {
+    body:not(.dark).pumpkin .header-xs-profile-links-pages-list-toggle, body:not(.dark).pumpkin .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #a04000 0%, #d35400 100%);
       border: 3px solid #ffb07c;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.pumpkin .header-xs-profile-links-pages-list li a svg g g,
-    body.pumpkin .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).pumpkin .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).pumpkin .header-profile-links-pages-list li a svg g g {
       fill: #ffb07c; }
-  body.pumpkin .content {
+  body:not(.dark).pumpkin .content {
     background-color: #542100;
     transition: background-color 0.3s linear 0s; }
-    body.pumpkin .content .layer-grass .grass {
+    body:not(.dark).pumpkin .content .layer-grass .grass {
       fill: #ff9854; }
-    body.pumpkin .content .layer-mountains .mountain-peak {
+    body:not(.dark).pumpkin .content .layer-mountains .mountain-peak {
       fill: #ff9854; }
-    body.pumpkin .content .layer-mountains .mountain-left {
+    body:not(.dark).pumpkin .content .layer-mountains .mountain-left {
       fill: #a04000; }
-    body.pumpkin .content .layer-mountains .mountain-right {
+    body:not(.dark).pumpkin .content .layer-mountains .mountain-right {
       fill: #3a1700; }
-    body.pumpkin .content .layer-moon .moon-allure-ring,
-    body.pumpkin .content .layer-moon .moon-main-ring {
+    body:not(.dark).pumpkin .content .layer-moon .moon-allure-ring,
+    body:not(.dark).pumpkin .content .layer-moon .moon-main-ring {
       fill: #ffb687; }
-    body.pumpkin .content .layer-wilma-house .house-wall {
+    body:not(.dark).pumpkin .content .layer-wilma-house .house-wall {
       fill: #ffb07c; }
-    body.pumpkin .content .layer-wilma-house .house-beam {
+    body:not(.dark).pumpkin .content .layer-wilma-house .house-beam {
       fill: #3a1700; }
-    body.pumpkin .content .layer-fred .leg-left,
-    body.pumpkin .content .layer-fred .hand-left {
+    body:not(.dark).pumpkin .content .layer-fred .leg-left,
+    body:not(.dark).pumpkin .content .layer-fred .hand-left {
       fill: #ffb687;
       opacity: 0.80; }
-    body.pumpkin .content .layer-fred .face-back,
-    body.pumpkin .content .layer-fred .face-mid,
-    body.pumpkin .content .layer-fred .leg-right,
-    body.pumpkin .content .layer-fred .hand-right {
+    body:not(.dark).pumpkin .content .layer-fred .face-back,
+    body:not(.dark).pumpkin .content .layer-fred .face-mid,
+    body:not(.dark).pumpkin .content .layer-fred .leg-right,
+    body:not(.dark).pumpkin .content .layer-fred .hand-right {
       fill: #ffb687; }
-    body.pumpkin .content .layer-fred .face-front {
+    body:not(.dark).pumpkin .content .layer-fred .face-front {
       fill: #ff9854; }
-    body.pumpkin .content .layer-fred .hair {
+    body:not(.dark).pumpkin .content .layer-fred .hair {
       fill: #210d00; }
-    body.pumpkin .content .layer-fred .mouth,
-    body.pumpkin .content .layer-fred .eye,
-    body.pumpkin .content .layer-fred .ear {
+    body:not(.dark).pumpkin .content .layer-fred .mouth,
+    body:not(.dark).pumpkin .content .layer-fred .eye,
+    body:not(.dark).pumpkin .content .layer-fred .ear {
       fill: #904310; }
-    body.pumpkin .content .layer-fred .dress-spots {
+    body:not(.dark).pumpkin .content .layer-fred .dress-spots {
       fill: #210d00; }
-    body.pumpkin .content .layer-fred .dress-wear {
+    body:not(.dark).pumpkin .content .layer-fred .dress-wear {
       fill: #d35400; }
-    body.pumpkin .content .layer-fred .collar {
+    body:not(.dark).pumpkin .content .layer-fred .collar {
       fill: #873600; }
-    body.pumpkin .content .layer-wilma .hair {
+    body:not(.dark).pumpkin .content .layer-wilma .hair {
       fill: #210d00; }
-    body.pumpkin .content .layer-wilma .face,
-    body.pumpkin .content .layer-wilma .hand-left,
-    body.pumpkin .content .layer-wilma .leg-left,
-    body.pumpkin .content .layer-wilma .nose {
+    body:not(.dark).pumpkin .content .layer-wilma .face,
+    body:not(.dark).pumpkin .content .layer-wilma .hand-left,
+    body:not(.dark).pumpkin .content .layer-wilma .leg-left,
+    body:not(.dark).pumpkin .content .layer-wilma .nose {
       fill: #ffb687; }
-    body.pumpkin .content .layer-wilma .hand-right,
-    body.pumpkin .content .layer-wilma .leg-right {
+    body:not(.dark).pumpkin .content .layer-wilma .hand-right,
+    body:not(.dark).pumpkin .content .layer-wilma .leg-right {
       fill: #ffb687;
       opacity: 0.80; }
-    body.pumpkin .content .layer-wilma .beads {
+    body:not(.dark).pumpkin .content .layer-wilma .beads {
       fill: #3a1700; }
-    body.pumpkin .content .layer-wilma .eye,
-    body.pumpkin .content .layer-wilma .mouth {
+    body:not(.dark).pumpkin .content .layer-wilma .eye,
+    body:not(.dark).pumpkin .content .layer-wilma .mouth {
       fill: #904310; }
-    body.pumpkin .content .layer-wilma .dress-wear {
+    body:not(.dark).pumpkin .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.pumpkin .content .layer-car .wheel {
+    body:not(.dark).pumpkin .content .layer-car .wheel {
       fill: #ffc6a0;
       stroke: #ff9854; }
-    body.pumpkin .content .layer-car .wheel-spot {
+    body:not(.dark).pumpkin .content .layer-car .wheel-spot {
       fill: #ff9854;
       stroke: #ffc6a0; }
-    body.pumpkin .content .layer-car .rollbar-piston {
+    body:not(.dark).pumpkin .content .layer-car .rollbar-piston {
       fill: #210d00; }
-    body.pumpkin .content .layer-car .rollbar-shade {
+    body:not(.dark).pumpkin .content .layer-car .rollbar-shade {
       fill: #d35400;
       opacity: 0.50; }
-    body.pumpkin .content .layer-car .rollbar-support {
+    body:not(.dark).pumpkin .content .layer-car .rollbar-support {
       fill: #210d00; }
-    body.pumpkin .content .layer-car .rollbar-joint {
+    body:not(.dark).pumpkin .content .layer-car .rollbar-joint {
       fill: #6d2b00; }
-    body.pumpkin .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).pumpkin .content .layer-car .rollbar-joint-shade {
       fill: #d35400;
       opacity: 0.50; }
-    body.pumpkin .content .layer-rose .stem {
+    body:not(.dark).pumpkin .content .layer-rose .stem {
       fill: #ff7921; }
-    body.pumpkin .content .layer-rose .petal-outer {
+    body:not(.dark).pumpkin .content .layer-rose .petal-outer {
       fill: #ffe5d3; }
-    body.pumpkin .content .layer-rose .petal-inner-1 {
+    body:not(.dark).pumpkin .content .layer-rose .petal-inner-1 {
       fill: #ffb687; }
-    body.pumpkin .content .layer-rose .petal-inner-2 {
+    body:not(.dark).pumpkin .content .layer-rose .petal-inner-2 {
       fill: #ff7921; }
-    body.pumpkin .content .layer-rose .petal-inner-3 {
+    body:not(.dark).pumpkin .content .layer-rose .petal-inner-3 {
       fill: #ed5e00; }
-    body.pumpkin .content .layer-plane .plane-body {
+    body:not(.dark).pumpkin .content .layer-plane .plane-body {
       fill: #ffb687; }
-    body.pumpkin .content .layer-plane .plane-toggle {
+    body:not(.dark).pumpkin .content .layer-plane .plane-toggle {
       fill: #3a1700; }
-    body.pumpkin .content .planeKiPoonch {
+    body:not(.dark).pumpkin .content .planeKiPoonch {
       background: #ff7921; }
-    body.pumpkin .content .start-btn-holder .start-btn {
+    body:not(.dark).pumpkin .content .start-btn-holder .start-btn {
       background-color: #a04000;
       border-color: #a04000; }
-  body.pomegranate .header {
+  body:not(.dark).pomegranate .header {
     transition: background-color 0.3s linear 0s; }
-    body.pomegranate .header-colorslab--top {
+    body:not(.dark).pomegranate .header-colorslab--top {
       background-color: #df7c72;
       transition: background-color 0.3s linear 0s; }
-    body.pomegranate .header-colorslab--middle {
+    body:not(.dark).pomegranate .header-colorslab--middle {
       background-color: #d65548;
       transition: background-color 0.3s linear 0s; }
-    body.pomegranate .header-colorslab--bottom {
+    body:not(.dark).pomegranate .header-colorslab--bottom {
       background-color: #c0392b;
       transition: background-color 0.3s linear 0s; }
-    body.pomegranate .header-xs-profile-links-pages-list-toggle, body.pomegranate .header-profile-links-pages-list-toggle {
+    body:not(.dark).pomegranate .header-xs-profile-links-pages-list-toggle, body:not(.dark).pomegranate .header-profile-links-pages-list-toggle {
       background: linear-gradient(to right, #962d22 0%, #c0392b 100%);
       border: 3px solid #ebaea8;
       transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s; }
-    body.pomegranate .header-xs-profile-links-pages-list li a svg g g,
-    body.pomegranate .header-profile-links-pages-list li a svg g g {
+    body:not(.dark).pomegranate .header-xs-profile-links-pages-list li a svg g g,
+    body:not(.dark).pomegranate .header-profile-links-pages-list li a svg g g {
       fill: #ebaea8; }
-  body.pomegranate .content {
+  body:not(.dark).pomegranate .content {
     background-color: #581a14;
     transition: background-color 0.3s linear 0s; }
-    body.pomegranate .content .layer-grass .grass {
+    body:not(.dark).pomegranate .content .layer-grass .grass {
       fill: #ff796c; }
-    body.pomegranate .content .layer-mountains .mountain-peak {
+    body:not(.dark).pomegranate .content .layer-mountains .mountain-peak {
       fill: #ff796c; }
-    body.pomegranate .content .layer-mountains .mountain-left {
+    body:not(.dark).pomegranate .content .layer-mountains .mountain-left {
       fill: #962d22; }
-    body.pomegranate .content .layer-mountains .mountain-right {
+    body:not(.dark).pomegranate .content .layer-mountains .mountain-right {
       fill: #43140f; }
-    body.pomegranate .content .layer-moon .moon-allure-ring,
-    body.pomegranate .content .layer-moon .moon-main-ring {
+    body:not(.dark).pomegranate .content .layer-moon .moon-allure-ring,
+    body:not(.dark).pomegranate .content .layer-moon .moon-main-ring {
       fill: #ffa89f; }
-    body.pomegranate .content .layer-wilma-house .house-wall {
+    body:not(.dark).pomegranate .content .layer-wilma-house .house-wall {
       fill: #f6a69d; }
-    body.pomegranate .content .layer-wilma-house .house-beam {
+    body:not(.dark).pomegranate .content .layer-wilma-house .house-beam {
       fill: #43140f; }
-    body.pomegranate .content .layer-fred .leg-left,
-    body.pomegranate .content .layer-fred .hand-left {
+    body:not(.dark).pomegranate .content .layer-fred .leg-left,
+    body:not(.dark).pomegranate .content .layer-fred .hand-left {
       fill: #f7aea7;
       opacity: 0.80; }
-    body.pomegranate .content .layer-fred .face-back,
-    body.pomegranate .content .layer-fred .face-mid,
-    body.pomegranate .content .layer-fred .leg-right,
-    body.pomegranate .content .layer-fred .hand-right {
+    body:not(.dark).pomegranate .content .layer-fred .face-back,
+    body:not(.dark).pomegranate .content .layer-fred .face-mid,
+    body:not(.dark).pomegranate .content .layer-fred .leg-right,
+    body:not(.dark).pomegranate .content .layer-fred .hand-right {
       fill: #f7aea7; }
-    body.pomegranate .content .layer-fred .face-front {
+    body:not(.dark).pomegranate .content .layer-fred .face-front {
       fill: #fa7d70; }
-    body.pomegranate .content .layer-fred .hair {
+    body:not(.dark).pomegranate .content .layer-fred .hair {
       fill: #2e0e0a; }
-    body.pomegranate .content .layer-fred .mouth,
-    body.pomegranate .content .layer-fred .eye,
-    body.pomegranate .content .layer-fred .ear {
+    body:not(.dark).pomegranate .content .layer-fred .mouth,
+    body:not(.dark).pomegranate .content .layer-fred .eye,
+    body:not(.dark).pomegranate .content .layer-fred .ear {
       fill: #843c34; }
-    body.pomegranate .content .layer-fred .dress-spots {
+    body:not(.dark).pomegranate .content .layer-fred .dress-spots {
       fill: #2e0e0a; }
-    body.pomegranate .content .layer-fred .dress-wear {
+    body:not(.dark).pomegranate .content .layer-fred .dress-wear {
       fill: #c0392b; }
-    body.pomegranate .content .layer-fred .collar {
+    body:not(.dark).pomegranate .content .layer-fred .collar {
       fill: #81261d; }
-    body.pomegranate .content .layer-wilma .hair {
+    body:not(.dark).pomegranate .content .layer-wilma .hair {
       fill: #2e0e0a; }
-    body.pomegranate .content .layer-wilma .face,
-    body.pomegranate .content .layer-wilma .hand-left,
-    body.pomegranate .content .layer-wilma .leg-left,
-    body.pomegranate .content .layer-wilma .nose {
+    body:not(.dark).pomegranate .content .layer-wilma .face,
+    body:not(.dark).pomegranate .content .layer-wilma .hand-left,
+    body:not(.dark).pomegranate .content .layer-wilma .leg-left,
+    body:not(.dark).pomegranate .content .layer-wilma .nose {
       fill: #f7aea7; }
-    body.pomegranate .content .layer-wilma .hand-right,
-    body.pomegranate .content .layer-wilma .leg-right {
+    body:not(.dark).pomegranate .content .layer-wilma .hand-right,
+    body:not(.dark).pomegranate .content .layer-wilma .leg-right {
       fill: #f7aea7;
       opacity: 0.80; }
-    body.pomegranate .content .layer-wilma .beads {
+    body:not(.dark).pomegranate .content .layer-wilma .beads {
       fill: #43140f; }
-    body.pomegranate .content .layer-wilma .eye,
-    body.pomegranate .content .layer-wilma .mouth {
+    body:not(.dark).pomegranate .content .layer-wilma .eye,
+    body:not(.dark).pomegranate .content .layer-wilma .mouth {
       fill: #843c34; }
-    body.pomegranate .content .layer-wilma .dress-wear {
+    body:not(.dark).pomegranate .content .layer-wilma .dress-wear {
       fill: #f0f9fc; }
-    body.pomegranate .content .layer-car .wheel {
+    body:not(.dark).pomegranate .content .layer-car .wheel {
       fill: #f2c9c5;
       stroke: #fa7d70; }
-    body.pomegranate .content .layer-car .wheel-spot {
+    body:not(.dark).pomegranate .content .layer-car .wheel-spot {
       fill: #fa7d70;
       stroke: #f2c9c5; }
-    body.pomegranate .content .layer-car .rollbar-piston {
+    body:not(.dark).pomegranate .content .layer-car .rollbar-piston {
       fill: #2e0e0a; }
-    body.pomegranate .content .layer-car .rollbar-shade {
+    body:not(.dark).pomegranate .content .layer-car .rollbar-shade {
       fill: #c0392b;
       opacity: 0.50; }
-    body.pomegranate .content .layer-car .rollbar-support {
+    body:not(.dark).pomegranate .content .layer-car .rollbar-support {
       fill: #2e0e0a; }
-    body.pomegranate .content .layer-car .rollbar-joint {
+    body:not(.dark).pomegranate .content .layer-car .rollbar-joint {
       fill: #6d2018; }
-    body.pomegranate .content .layer-car .rollbar-joint-shade {
+    body:not(.dark).pomegranate .content .layer-car .rollbar-joint-shade {
       fill: #c0392b;
       opacity: 0.50; }
-    body.pomegranate .content .layer-rose .stem {
+    body:not(.dark).pomegranate .content .layer-rose .stem {
       fill: #f8503f; }
-    body.pomegranate .content .layer-rose .petal-outer {
+    body:not(.dark).pomegranate .content .layer-rose .petal-outer {
       fill: #feedec; }
-    body.pomegranate .content .layer-rose .petal-inner-1 {
+    body:not(.dark).pomegranate .content .layer-rose .petal-inner-1 {
       fill: #fcaaa2; }
-    body.pomegranate .content .layer-rose .petal-inner-2 {
+    body:not(.dark).pomegranate .content .layer-rose .petal-inner-2 {
       fill: #f8503f; }
-    body.pomegranate .content .layer-rose .petal-inner-3 {
+    body:not(.dark).pomegranate .content .layer-rose .petal-inner-3 {
       fill: #f7240e; }
-    body.pomegranate .content .layer-plane .plane-body {
+    body:not(.dark).pomegranate .content .layer-plane .plane-body {
       fill: #ffa89f; }
-    body.pomegranate .content .layer-plane .plane-toggle {
+    body:not(.dark).pomegranate .content .layer-plane .plane-toggle {
       fill: #43140f; }
-    body.pomegranate .content .planeKiPoonch {
+    body:not(.dark).pomegranate .content .planeKiPoonch {
       background: #f8503f; }
-    body.pomegranate .content .start-btn-holder .start-btn {
+    body:not(.dark).pomegranate .content .start-btn-holder .start-btn {
       background-color: #962d22;
       border-color: #962d22; }
+  body #color_multicolored {
+    background: url(../../fred.jpg) no-repeat !important;
+    background-size: contain; }
+  body.multicolored .content {
+    background-color: #75b9e7; }
+  body.multicolored .layer-grass .grass {
+    fill: #16a085; }
+  body.multicolored .layer-mountains .mountain-peak {
+    fill: #fefefe; }
+  body.multicolored .layer-mountains .mountain-left {
+    fill: #91b4c7; }
+  body.multicolored .layer-mountains .mountain-right {
+    fill: #87a6bb; }
+  body.multicolored .layer-moon .moon-allure-ring {
+    fill: #000;
+    opacity: 0.02; }
+  body.multicolored .layer-moon .moon-main-ring {
+    fill: #fff; }
+  body.multicolored .layer-fred .leg-left,
+  body.multicolored .layer-fred .hand-left {
+    fill: #e5c9a8;
+    opacity: 0.80; }
+  body.multicolored .layer-fred .face-back,
+  body.multicolored .layer-fred .face-mid,
+  body.multicolored .layer-fred .leg-right,
+  body.multicolored .layer-fred .hand-right {
+    fill: #fce0b9; }
+  body.multicolored .layer-fred .face-front {
+    fill: #fcc995; }
+  body.multicolored .layer-fred .hair {
+    fill: #000000; }
+  body.multicolored .layer-fred .mouth,
+  body.multicolored .layer-fred .eye,
+  body.multicolored .layer-fred .ear {
+    fill: #4f463e; }
+  body.multicolored .layer-fred .dress-spots {
+    fill: #6d3d18; }
+  body.multicolored .layer-fred .dress-wear {
+    fill: #f98c32; }
+  body.multicolored .layer-fred .collar {
+    fill: #606ce2; }
+  body.multicolored .layer-wilma .hair {
+    fill: #f15a24; }
+  body.multicolored .layer-wilma .face,
+  body.multicolored .layer-wilma .hand-left,
+  body.multicolored .layer-wilma .leg-left,
+  body.multicolored .layer-wilma .nose {
+    fill: #fce0b9; }
+  body.multicolored .layer-wilma .hand-right,
+  body.multicolored .layer-wilma .leg-right {
+    fill: #e5c9a8;
+    opacity: 0.80; }
+  body.multicolored .layer-wilma .beads {
+    fill: #9451bf; }
+  body.multicolored .layer-wilma .eye,
+  body.multicolored .layer-wilma .mouth {
+    fill: #4f463e; }
+  body.multicolored .layer-wilma .dress-wear {
+    fill: #d9b1fc; }
+  body.multicolored .layer-car .wheel {
+    fill: #fff1cc;
+    stroke: #f9d895; }
+  body.multicolored .layer-car .wheel-spot {
+    fill: #f9d895;
+    stroke: #fff1cc; }
+  body.multicolored .layer-car .rollbar-piston {
+    fill: #b75555; }
+  body.multicolored .layer-car .rollbar-shade {
+    fill: #753838;
+    opacity: 0.50; }
+  body.multicolored .layer-car .rollbar-support {
+    fill: #b75555; }
+  body.multicolored .layer-car .rollbar-joint {
+    fill: #542929; }
+  body.multicolored .layer-car .rollbar-joint-shade {
+    fill: #844040;
+    opacity: 0.50; }
+  body.multicolored .layer-rose .stem {
+    fill: #28b463; }
+  body.multicolored .layer-rose .petal-outer {
+    fill: #e74c3c; }
+  body.multicolored .layer-rose .petal-inner-1 {
+    fill: #ffdad7; }
+  body.multicolored .layer-rose .petal-inner-2 {
+    fill: #ff7e71; }
+  body.multicolored .layer-rose .petal-inner-3 {
+    fill: #ff503e; }
+  body.multicolored .layer-plane .plane-body {
+    fill: #96d5ff; }
+  body.multicolored .layer-plane .plane-toggle {
+    fill: #0d293c; }
+  body.multicolored .planeKiPoonch {
+    background: #36acf8; }
+  body.multicolored .start-btn-holder .start-btn {
+    background-color: #f1c40f;
+    border-color: #c87f0a;
+    color: #000; }
   body.colorPickerActive {
     position: relative;
     top: 275px; }
@@ -2436,7 +2533,7 @@ body {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background: #ff0000;
+        background: #e67e22;
         border: 3px solid #fff;
         position: relative;
         top: 12px;
@@ -2489,7 +2586,7 @@ body {
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background: #ff0000;
+      background: #e67e22;
       border: 3px solid #fff;
       position: relative;
       top: 0;
@@ -2507,7 +2604,7 @@ body {
         opacity: 0.75;
         border-radius: 50%;
         background: transparent;
-        box-shadow: 1231px 1337px #fff , 856px 257px #fff , 2953px 449px #fff , 1896px 2170px #fff , 1004px 779px #fff , 1023px 1403px #fff , 859px 2962px #fff , 2237px 353px #fff , 751px 2938px #fff , 1224px 24px #fff , 1472px 264px #fff , 706px 2120px #fff , 2378px 1586px #fff , 698px 770px #fff , 2655px 2298px #fff , 1647px 530px #fff , 1879px 865px #fff , 975px 1394px #fff , 2392px 1683px #fff , 2615px 2165px #fff , 1950px 2267px #fff , 2991px 1476px #fff , 2068px 1542px #fff , 351px 1387px #fff , 2416px 2633px #fff , 1554px 488px #fff , 1199px 10px #fff , 1937px 582px #fff , 1333px 2810px #fff , 600px 1596px #fff , 1741px 2584px #fff , 1010px 1130px #fff , 2231px 244px #fff , 654px 1602px #fff , 570px 1850px #fff , 2210px 651px #fff , 2583px 68px #fff , 1212px 2174px #fff , 2828px 147px #fff , 267px 2524px #fff , 1952px 2210px #fff , 1239px 179px #fff , 2926px 1976px #fff , 1921px 2703px #fff , 1305px 736px #fff , 1619px 1627px #fff , 2292px 1793px #fff , 1597px 2239px #fff , 26px 1678px #fff , 2809px 2122px #fff , 1587px 2440px #fff , 2103px 607px #fff , 244px 2515px #fff , 1266px 1053px #fff , 1613px 1249px #fff , 756px 1605px #fff , 1692px 2364px #fff , 246px 2425px #fff , 417px 2746px #fff , 2182px 2102px #fff , 1938px 2722px #fff , 1937px 2005px #fff , 2492px 2168px #fff , 2424px 2740px #fff , 1950px 13px #fff , 1957px 325px #fff , 2343px 754px #fff , 2412px 688px #fff , 1462px 643px #fff , 1049px 75px #fff , 1014px 59px #fff , 2892px 872px #fff , 1935px 2673px #fff , 2976px 2873px #fff , 2029px 2105px #fff , 253px 2411px #fff , 1652px 2px #fff , 1347px 1674px #fff , 998px 1761px #fff , 1503px 287px #fff , 114px 2341px #fff , 644px 1656px #fff , 340px 2673px #fff , 350px 1684px #fff , 1648px 2979px #fff , 2261px 376px #fff , 606px 2296px #fff , 2716px 359px #fff , 545px 2956px #fff , 93px 2735px #fff , 2705px 2344px #fff , 2516px 2520px #fff , 1501px 2179px #fff , 1060px 365px #fff , 607px 637px #fff , 80px 2881px #fff , 1298px 295px #fff , 565px 1655px #fff , 1735px 2644px #fff , 484px 245px #fff , 960px 1919px #fff , 2477px 2389px #fff , 301px 893px #fff , 2278px 2384px #fff , 2013px 17px #fff , 2469px 1173px #fff , 875px 2485px #fff , 183px 2683px #fff , 2773px 1146px #fff , 2527px 2428px #fff , 334px 239px #fff , 435px 658px #fff , 1985px 1362px #fff , 1086px 2944px #fff , 52px 103px #fff , 429px 2825px #fff , 1025px 2287px #fff , 595px 1790px #fff , 113px 155px #fff , 1890px 1339px #fff , 1421px 253px #fff , 1789px 867px #fff , 2102px 88px #fff , 1959px 847px #fff , 1674px 2208px #fff , 300px 1298px #fff , 920px 37px #fff , 1796px 1400px #fff , 1630px 2495px #fff , 2976px 2773px #fff , 980px 2644px #fff , 1489px 613px #fff , 1095px 1455px #fff , 72px 1258px #fff , 2899px 1297px #fff , 2743px 674px #fff , 1344px 1165px #fff , 1398px 1754px #fff , 661px 1993px #fff , 2375px 63px #fff , 236px 655px #fff , 878px 1001px #fff , 1998px 2938px #fff , 351px 2537px #fff , 1450px 948px #fff , 2872px 974px #fff , 362px 2444px #fff , 2260px 2277px #fff , 2772px 107px #fff , 594px 2111px #fff;
+        box-shadow: 1754px 1360px #fff , 2130px 1208px #fff , 1131px 307px #fff , 2207px 2485px #fff , 2034px 1978px #fff , 696px 1300px #fff , 2527px 269px #fff , 1217px 80px #fff , 2334px 2242px #fff , 1000px 458px #fff , 1802px 567px #fff , 696px 561px #fff , 1147px 902px #fff , 504px 1898px #fff , 523px 673px #fff , 1901px 2751px #fff , 902px 2141px #fff , 2066px 182px #fff , 84px 2068px #fff , 605px 1056px #fff , 471px 942px #fff , 83px 1021px #fff , 435px 1799px #fff , 2852px 2398px #fff , 1428px 2382px #fff , 1220px 1270px #fff , 2752px 2688px #fff , 1435px 536px #fff , 1723px 499px #fff , 1012px 946px #fff , 188px 270px #fff , 949px 726px #fff , 1400px 692px #fff , 997px 654px #fff , 2402px 232px #fff , 217px 1284px #fff , 1153px 659px #fff , 2964px 1155px #fff , 1339px 171px #fff , 2453px 1900px #fff , 342px 1587px #fff , 2688px 744px #fff , 1420px 162px #fff , 2847px 1443px #fff , 1289px 1385px #fff , 2422px 570px #fff , 2274px 603px #fff , 102px 2574px #fff , 1031px 1532px #fff , 2933px 2239px #fff , 443px 1723px #fff , 1151px 293px #fff , 744px 165px #fff , 2915px 925px #fff , 2979px 2818px #fff , 1987px 1283px #fff , 2388px 377px #fff , 1035px 51px #fff , 2158px 2613px #fff , 241px 2392px #fff , 672px 695px #fff , 2806px 652px #fff , 1283px 2465px #fff , 2338px 136px #fff , 2381px 2317px #fff , 1948px 423px #fff , 795px 1857px #fff , 2424px 1261px #fff , 2408px 2024px #fff , 700px 1958px #fff , 2260px 1358px #fff , 1838px 1389px #fff , 394px 2462px #fff , 111px 827px #fff , 1984px 2199px #fff , 1089px 1986px #fff , 1571px 515px #fff , 1819px 1196px #fff , 1668px 305px #fff , 2225px 154px #fff , 224px 1903px #fff , 1812px 479px #fff , 1337px 1211px #fff , 535px 2651px #fff , 1430px 508px #fff , 569px 1722px #fff , 1393px 2188px #fff , 653px 973px #fff , 1048px 1641px #fff , 2412px 2820px #fff , 2167px 2808px #fff , 1926px 1805px #fff , 1598px 585px #fff , 2319px 900px #fff , 236px 149px #fff , 1061px 1047px #fff , 1441px 2354px #fff , 2671px 1346px #fff , 1292px 161px #fff , 1462px 1019px #fff , 2073px 1627px #fff , 2321px 2978px #fff , 1392px 433px #fff , 2429px 2279px #fff , 2434px 2785px #fff , 2568px 1887px #fff , 378px 2788px #fff , 386px 2085px #fff , 1469px 2066px #fff , 933px 494px #fff , 2376px 2340px #fff , 435px 1804px #fff , 2279px 737px #fff , 2764px 370px #fff , 2840px 97px #fff , 1456px 2382px #fff , 2608px 1556px #fff , 2590px 1561px #fff , 1179px 801px #fff , 2032px 1958px #fff , 2993px 23px #fff , 1462px 1656px #fff , 1554px 302px #fff , 1173px 2250px #fff , 1124px 2891px #fff , 110px 2470px #fff , 1766px 1909px #fff , 300px 2512px #fff , 1917px 321px #fff , 49px 452px #fff , 866px 1431px #fff , 2502px 2093px #fff , 1804px 2302px #fff , 2198px 126px #fff , 2288px 2833px #fff , 548px 887px #fff , 1351px 1576px #fff , 2356px 2438px #fff , 2715px 960px #fff , 2599px 641px #fff , 713px 2554px #fff , 707px 992px #fff , 877px 1853px #fff , 823px 27px #fff , 632px 638px #fff , 795px 2415px #fff , 291px 2703px #fff , 1033px 2984px #fff , 2634px 1610px #fff , 1571px 913px #fff;
         -moz-animation: animStar 300s linear infinite;
         -o-animation: animStar 300s linear infinite;
         -webkit-animation: animStar 300s linear infinite;
@@ -2518,7 +2615,7 @@ body {
         opacity: 0.85;
         border-radius: 50%;
         background: transparent;
-        box-shadow: 2686px 1246px #fff , 139px 2741px #fff , 813px 1622px #fff , 1539px 732px #fff , 1039px 1871px #fff , 1786px 520px #fff , 690px 2331px #fff , 1563px 208px #fff , 1411px 1697px #fff , 1827px 2955px #fff , 1672px 2542px #fff , 1567px 855px #fff , 1256px 121px #fff , 48px 651px #fff , 686px 2691px #fff , 2881px 73px #fff , 437px 1084px #fff , 1033px 1213px #fff , 2287px 2093px #fff , 1523px 1784px #fff , 2009px 1763px #fff , 2119px 318px #fff , 480px 1165px #fff , 617px 2095px #fff , 1248px 517px #fff , 838px 471px #fff , 2986px 650px #fff , 508px 2631px #fff , 1150px 529px #fff , 2320px 530px #fff , 117px 1610px #fff , 2908px 152px #fff , 1855px 829px #fff , 1658px 2905px #fff , 242px 2344px #fff , 293px 2504px #fff , 126px 808px #fff , 1981px 1366px #fff , 120px 641px #fff , 458px 2997px #fff , 2128px 459px #fff , 1942px 1100px #fff , 2608px 1904px #fff , 2541px 1368px #fff , 827px 2843px #fff , 419px 1861px #fff , 2804px 346px #fff , 1355px 683px #fff , 573px 1699px #fff , 1561px 2504px #fff , 715px 1316px #fff , 153px 2413px #fff , 489px 2968px #fff , 2558px 551px #fff , 1017px 1244px #fff , 1462px 2348px #fff , 2128px 1682px #fff , 2586px 554px #fff , 2929px 2915px #fff , 961px 2051px #fff , 44px 768px #fff , 2650px 2864px #fff , 312px 2967px #fff , 1136px 1907px #fff , 439px 556px #fff , 1128px 149px #fff , 1929px 2413px #fff , 852px 2512px #fff , 2837px 70px #fff , 921px 1341px #fff , 1280px 200px #fff , 2581px 364px #fff , 1080px 111px #fff , 2063px 2576px #fff , 2784px 1781px #fff , 1060px 1885px #fff , 1045px 2574px #fff , 728px 2008px #fff , 604px 324px #fff , 2596px 1750px #fff;
+        box-shadow: 1198px 1989px #fff , 32px 325px #fff , 2805px 2406px #fff , 1837px 2122px #fff , 323px 1919px #fff , 2326px 2724px #fff , 2881px 1969px #fff , 2141px 2035px #fff , 777px 1734px #fff , 2523px 867px #fff , 217px 2880px #fff , 1398px 516px #fff , 1784px 1816px #fff , 747px 2548px #fff , 921px 2246px #fff , 2980px 388px #fff , 2012px 727px #fff , 889px 1086px #fff , 1262px 2301px #fff , 2742px 1735px #fff , 1161px 882px #fff , 2598px 1523px #fff , 1622px 2897px #fff , 2201px 1338px #fff , 1044px 476px #fff , 622px 2362px #fff , 1375px 2349px #fff , 1923px 357px #fff , 2057px 845px #fff , 364px 2250px #fff , 94px 2676px #fff , 1629px 120px #fff , 2228px 1291px #fff , 2309px 1221px #fff , 1617px 753px #fff , 1462px 2712px #fff , 1817px 2344px #fff , 905px 2440px #fff , 2015px 175px #fff , 2064px 794px #fff , 1400px 498px #fff , 2421px 2094px #fff , 2213px 1171px #fff , 362px 2885px #fff , 2528px 253px #fff , 1260px 1888px #fff , 2900px 273px #fff , 1902px 484px #fff , 2277px 1888px #fff , 2817px 1082px #fff , 1411px 684px #fff , 1179px 2016px #fff , 2089px 206px #fff , 2455px 2534px #fff , 717px 2227px #fff , 1908px 1872px #fff , 1334px 2724px #fff , 1370px 2850px #fff , 206px 513px #fff , 831px 923px #fff , 1589px 2281px #fff , 703px 1852px #fff , 993px 2375px #fff , 626px 2998px #fff , 2805px 2788px #fff , 2654px 267px #fff , 2795px 2695px #fff , 180px 214px #fff , 2829px 1320px #fff , 1623px 305px #fff , 1234px 1122px #fff , 2189px 1762px #fff , 763px 2738px #fff , 1857px 1195px #fff , 681px 2296px #fff , 2357px 431px #fff , 2889px 9px #fff , 343px 972px #fff , 2908px 1341px #fff , 185px 1129px #fff;
         -moz-animation: animStar 400s linear infinite;
         -o-animation: animStar 400s linear infinite;
         -webkit-animation: animStar 400s linear infinite;
@@ -2535,7 +2632,7 @@ body {
           height: 10vh !important; } }
     body .content .layer-mountains {
       position: absolute;
-      bottom: -30px;
+      bottom: -60px;
       z-index: 100;
       height: 20vh; }
       body .content .layer-mountains .mountain-peak {
@@ -2567,10 +2664,6 @@ body {
       z-index: 600;
       opacity: 0.50;
       cursor: pointer; }
-      body .content .moon-toggle .layer-plane .plane-body {
-        fill: #c3eafc; }
-      body .content .moon-toggle .layer-plane .plane-toggle {
-        fill: #245566; }
       body .content .moon-toggle .layer-plane .plane-body,
       body .content .moon-toggle .layer-plane .plane-toggle {
         transition: fill 0.3s linear 0s; }
@@ -2580,6 +2673,7 @@ body {
       width: 1px;
       z-index: 599;
       opacity: 0.15;
+      background-color: #909090;
       transition: background 0.3s linear 0s; }
     body .content .layer-wilma-house {
       position: absolute;
@@ -2691,7 +2785,9 @@ body {
       text-transform: lowercase;
       letter-spacing: 1px;
       outline: none;
-      transition: all 0.3s linear 0s; }
+      transition: all 0.3s linear 0s;
+      background-color: #000;
+      border-color: #A0A0A0; }
       @media only screen and (max-width: 768px) {
         body .start-btn-holder .start-btn {
           display: none; } }

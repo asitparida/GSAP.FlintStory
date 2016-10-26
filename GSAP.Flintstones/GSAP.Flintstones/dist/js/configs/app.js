@@ -59,6 +59,7 @@
         self.fredHandRight = document.getElementById('fred-hand-right');
         self.fredHandsTransformOrigin = "30px 10px";
         self.fredDress = document.getElementById('fred-dress');
+        self.fredHead = document.getElementById('fred-head');
 
         self.wilma = document.getElementById('wilma');
         self.wilmaLegLeft = document.getElementById('wilma-leg-left');
@@ -81,6 +82,8 @@
         self.startBtn = document.getElementById('start-btn');
         self.startBtnHolder = document.getElementById('start-btn-holder');
 
+        self.club = document.getElementById('club');
+
         self.moonActive = false;
         self.inMotion = false;
         self.animationComplete = false;
@@ -94,6 +97,7 @@
         self.initialCartPosition = self.cart.getBoundingClientRect();
         self.initialRosePosition = self.rose.getBoundingClientRect();
         self.widthCartFredDiff = (self.initialCartPosition.width - self.initialFredBodyPosition.width) / 2;
+        self.wilmaHandLeftInitial = self.wilmaHandLeft.getBoundingClientRect();
 
         self.animateMoonRings();
         self.initPlane();
@@ -111,6 +115,7 @@
         //INIT TWEENS
         TweenMax.set([self.fredHandLeft, self.fredHandRight], { rotation: 90, transformOrigin: self.fredHandsTransformOrigin });
         TweenMax.set([self.wilmaHandLeft, self.wilmaHandRight], { rotation: -90, transformOrigin: "right", x: ' -30px' });
+        TweenMax.set(self.club, { opacity: 0 });
         TweenMax.set(self.fredDress, { scaleY: 1.1, transformOrigin: "top" });
 
     }
@@ -136,6 +141,7 @@
         var _cartToFredTranslate = _cartPosition.left - (self.window.innerWidth / 2) - (_cartPosition.width / 2);
         var _fredToCartTranslate = (self.window.innerWidth / 2) - (_fredBodyPosition.width / 2);
         var _fredTimeline = new TimelineMax();
+        var _stop = false;
         _fredTimeline
             .to(self.fred, 0.3, { x: (_fredPosition.left - 100) })
             .to(self.fred, 2, { x: _translateX, ease: Power1.easeIn })
@@ -146,8 +152,13 @@
             })
             .to(self.fred, 0.1, { opacity: 1 })
             .to(self.fred, 2, {
-                x: _fredToCartTranslate, ease: Power3.easeOut, onComplete: function () {
-                    self.stopFredRunningLegs();
+                x: _fredToCartTranslate, ease: Power3.easeOut, onUpdate: function (e) {
+                    if (this.progress() * 100 > 68) {
+                        if (!_stop) {
+                            self.stopFredRunningLegs();
+                            _stop = true;
+                        }
+                    }
                 }
             })
             .to(self.cart, 0.5, { x: _cartToFredTranslate, ease: Power3.easeOut }, "-=1.5")
@@ -155,7 +166,7 @@
                 y: -30, ease: Power3.easeInOut, onComplete: function () {
                     self.getCartRunningWithFred();
                 }
-            });
+            }, "-=0.25");
     }
 
     MainController.prototype.getCartRunningWithFred = function () {
@@ -173,6 +184,8 @@
 
         var _fredHandPosition = self.fredHandRight.getBoundingClientRect();
         var _fredHandLength = _fredHandPosition.bottom - _fredHandPosition.top;
+
+        var _stop = false;
 
         _cartRunningWithFred
             .to(self.fred, 0.3, { x: _fredInitialTranslate })
@@ -196,25 +209,39 @@
             .to(self.house, 1, { x: 0 }, "-=2")
             .to(self.cart, 0.75, {
                 y: 0, ease: Power3.easeInOut, onComplete: function () {
-                    self.stopFredRunningLegs();
                     self.stopRunningCart();
+                }
+                , onUpdate: function (e) {
+                    if (this.progress() * 100 > 40) {
+                        if (!_stop) {
+                            self.stopFredRunningLegs();
+                            _stop = true;
+                        }
+                    }
                 }
             })
             .to(self.wilma, 1, {
                 x: -(self.wilma.getBoundingClientRect().width * 0.5), onComplete: function () {
                     self.fredRunningLegs(4);
                     self.wilmaWalking(4);
+                    _stop = false;
                 }
             })
             .to(self.fred, 2, {
                 x: (self.window.innerWidth / 2 - (self.fredBody.getBoundingClientRect().width)), onComplete: function () {
-                    self.stopFredRunningLegs();
                     var _fredPosition = self.fredBody.getBoundingClientRect();
                     var _rosePosition = self.rose.getBoundingClientRect();
                     var _fredleftHandPosition = self.fredHandLeft.getBoundingClientRect();
                     var _rosePointX = _fredPosition.right - _rosePosition.width - 5;
                     var _rosePointY = _fredleftHandPosition.bottom - _fredleftHandPosition.top + 15;
                     TweenMax.set(self.rose, { opacity: 0, x: _rosePointX });
+                }, onUpdate: function (e) {
+                    if (this.progress() * 100 > 70) {
+                        if (!_stop) {
+                            self.stopFredRunningLegs();
+                            _stop = true;
+                        }
+                    }
                 }
             }, "-=0.5")
             .to(self.cart, 2, { x: -1000 }, "-=1")
@@ -223,7 +250,7 @@
                     self.stopWilmaRunningLegs();
                 }
             }, "-=1")
-            .to(self.fredHandRight, 0.75, {
+            .to(self.fredHandRight, 0.50, {
                 rotation: 0, transformOrigin: self.fredHandsTransformOrigin, ease: Power2.easeOut, onComplete: function () {
                     var _fredHandPosition = self.fredHandRight.getBoundingClientRect();
                     var _rosePointX = _fredHandPosition.right - self.initialRosePosition.width - 5;
@@ -232,14 +259,12 @@
                     TweenMax.set(self.rose, { scaleY: 0, transformOrigin: "center" });
                 }
             })
-            .to(self.rose, 1, { opacity: 1, scaleY: 1, transformOrigin: "bottom" })
-            .to(self.wilmaHandLeft, 1, { rotation: 0, transformOrigin: "right", x: 0 }, "-=0.25")
-            .to(self.fredHandRight, 0.75, {
-                rotation: 90, transformOrigin: self.fredHandsTransformOrigin, ease: Power2.easeOut, onComplete: function () {
+            .to(self.rose, 0.75, {
+                opacity: 1, scaleY: 1, transformOrigin: "bottom", onComplete: function () {
                     self.succeed = self.moonActive;
                     self.reset();
                 }
-            });
+            });        
     }
 
     MainController.prototype.reset = function () {
@@ -248,17 +273,37 @@
             var _resetTimeline = new TimelineMax();
             var _fredPosition = self.fred.getBoundingClientRect();
             var _fredBodyPosition = self.fredBody.getBoundingClientRect();
+            var _wilmaLeftHandPosition = self.wilmaHandLeft.getBoundingClientRect();
+            var _clubPosition = self.club.getBoundingClientRect();
+            console.log(_wilmaLeftHandPosition);
+            var _start = false;
+            TweenMax.set(self.club, { opacity: 1});
             _resetTimeline
-                .to(self.rose, 0.75, { scaleY: 0, y: 200, transformOrigin: "top" }, "-=0.2")
-                .to(self.wilmaHandLeft, 1, {
-                    rotation: -90, transformOrigin: "right", x: -30, onComplete: function () {
-                        TweenMax.set(self.wilma, { scaleX: -1 });
-                        self.wilmaWalking(4);
-                    }
-                }, "-=0.50")
-                .to(self.wilma, 1.5, {
-                    x: self.window.innerWidth, ease: Power1.easeIn
-                });
+                //.to(self.rose, 0.75, { scaleY: 0, y: 200, transformOrigin: "top" }, "-=0.2")
+            .to(self.wilmaHandLeft, 0.50, {
+                rotation: 45, transformOrigin: "right", x: 0, onComplete: function () {                    
+                    TweenMax.to(self.club, 0.30, { rotation: 60, transformOrigin:"200px 30px" });
+                }, onUpdate: function () {
+                    var _wilmaLeftHandPosition = self.wilmaHandLeft.getBoundingClientRect();
+                    TweenMax.set(self.club, { y: -(self.window.innerHeight - _wilmaLeftHandPosition.top - _clubPosition.height - self.wilmaHandLeftInitial.height), x: -(self.window.innerWidth + _clubPosition.width - _wilmaLeftHandPosition.left - (_clubPosition.width * 0.25 )) });
+                }
+            })
+            .to(self.club, 0.30, { rotation: 0, transformOrigin: "200px 30px" }, "+=0.40")
+            .to(self.fredHead, 0.20, { scaleY: 0.20, scaleX: 1.20, transformOrigin: "bottom" }, "-=0.20")    
+            .to(self.club, 0.30, { rotation: 60, transformOrigin: "200px 30px" })
+            .to(self.fredHead, 0.30, { scaleY: 1, scaleX: 1, transformOrigin: "bottom" }, "-=0.30")            
+            .to(self.rose, 0.75, { scaleY: 0, y: 200, transformOrigin: "top" }, "-=0.50")
+            .to(self.club, 0.30, { x: self.window.innerWidth, y: -self.window.innerHeight }, "-=0.20")
+            .to(self.fredHandRight, 0.30, { rotation: 90, transformOrigin: self.fredHandsTransformOrigin, ease: Power2.easeOut })
+            .to(self.wilmaHandLeft, 0.50, {
+                rotation: -90, transformOrigin: "right", x: -30, onComplete: function () {
+                    TweenMax.set(self.wilma, { scaleX: -1 });
+                    self.wilmaWalking(4);
+                }
+            }, "-=0.25")
+            .to(self.wilma, 1.5, {
+                x: self.window.innerWidth, ease: Power1.easeIn
+            });
             _resetTimeline.eventCallback('onComplete', function () {
                 TweenMax.set([self.fred, self.cart], { scaleX: -1 });
                 _resetTimeline.to(self.cart, 2, {

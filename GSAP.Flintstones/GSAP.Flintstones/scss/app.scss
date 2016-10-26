@@ -468,7 +468,8 @@ body {
         }
 
         .planeKiPoonch {
-            background: lighten(saturate(#2980b9, 30), 15);
+            background: #fff !important;
+            opacity:0.05 !important;
         }
 
         .start-btn-holder {
@@ -828,7 +829,6 @@ body {
                 top: 20%;
                 z-index: 600;
                 opacity: 0.50;
-                cursor: pointer;
 
                 .plane-body,
                 .plane-toggle {

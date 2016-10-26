@@ -279,7 +279,6 @@
             var _start = false;
             TweenMax.set(self.club, { opacity: 1});
             _resetTimeline
-                //.to(self.rose, 0.75, { scaleY: 0, y: 200, transformOrigin: "top" }, "-=0.2")
             .to(self.wilmaHandLeft, 0.50, {
                 rotation: 45, transformOrigin: "right", x: 0, onComplete: function () {                    
                     TweenMax.to(self.club, 0.30, { rotation: 60, transformOrigin:"200px 30px" });
@@ -336,6 +335,8 @@
             var _wilmaHairWithRoseX = _wilmaHairPosition.right - (_wilmaHairPosition.width / 2);
             var _wilmaHairWithRoseY = -(self.window.innerHeight - _wilmaHairPosition.top - (_rosePosition.height * 0.80));
             _resetTimeline
+                .to(self.wilmaHandLeft, 1, { rotation: 0, transformOrigin: "right", x: 0 }, "-=0.25")
+                .to(self.fredHandRight, 0.75, {rotation: 90, transformOrigin: self.fredHandsTransformOrigin, ease: Power2.easeOut})
                 .to(self.rose, 1, { y: _wilmaHairWithRoseY, x: _wilmaHairWithRoseX })
                 .to(self.wilmaHandLeft, 1, {
                     rotation: 90, transformOrigin: "right", onComplete: function () {

@@ -177,7 +177,7 @@ html {
             }
         }
 
-         .layer-wilma-club {
+        .layer-wilma-club {
 
             .cls-1 {
                 fill: $defcolor;
@@ -1048,6 +1048,7 @@ body {
             transition: all 0.3s linear 0s;
             background-color: #000;
             border-color: #A0A0A0;
+            animation: btn-expando 1s infinite;
 
             @include respond-to-mobile {
                 display: none;
@@ -1108,5 +1109,15 @@ body {
 
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@keyframes btn-expando {
+    0%, 100% {
+        transform: scale(1,1);
+    }
+
+    33% {
+        transform: scale(1.1,1.1);
     }
 }

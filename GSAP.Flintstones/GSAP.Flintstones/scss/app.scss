@@ -177,6 +177,21 @@ html {
             }
         }
 
+         .layer-wilma-club {
+
+            .cls-1 {
+                fill: $defcolor;
+            }
+
+            .cls-2 {
+                fill: darken($defcolor, 30);
+            }
+
+            .cls-3 {
+                fill: lighten(saturate($defcolor, 20), 35);
+            }
+        }
+
         .layer-car {
 
             .wheel {
@@ -310,11 +325,11 @@ body {
 
             .moon-main-ring {
                 fill: #fff;
-                opacity:0.50;
+                opacity: 0.50;
             }
         }
 
-         .layer-wilma-house {
+        .layer-wilma-house {
 
             .house-wall {
                 fill: #c5e8fc;
@@ -399,6 +414,22 @@ body {
             }
         }
 
+        .layer-wilma-club {
+
+            .cls-1 {
+                fill: #b3b3b3;
+            }
+
+            .cls-2 {
+                fill: #666;
+            }
+
+            .cls-3 {
+                fill: #e6e6e6;
+            }
+        }
+
+
         .layer-car {
 
             .wheel {
@@ -469,7 +500,7 @@ body {
 
         .planeKiPoonch {
             background: #fff !important;
-            opacity:0.05 !important;
+            opacity: 0.05 !important;
         }
 
         .start-btn-holder {
@@ -869,7 +900,7 @@ body {
             height: 40vh;
             bottom: 15px;
             left: 0%;
-            z-index: 200;
+            z-index: 150;
 
             .leg-left,
             .hand-left,
@@ -909,8 +940,33 @@ body {
             .nose,
             .beads,
             .eye,
-            .dress-wear {
+            .dress-wear,
+            .club {
                 transition: fill 0.3s linear 0s;
+            }
+        }
+
+        .layer-wilma-club {
+            width: 250px;
+            position: absolute;
+            bottom: 30px;
+            left: 100%;
+            z-index: 199;
+
+            .club {
+                transition: fill 0.3s linear 0s;
+            }
+
+            .cls-1 {
+                fill: #b3b3b3;
+            }
+
+            .cls-2 {
+                fill: #666;
+            }
+
+            .cls-3 {
+                fill: #e6e6e6;
             }
         }
 
@@ -952,7 +1008,7 @@ body {
             height: 8vh;
             bottom: 0;
             left: 0%;
-            z-index: 150;
+            z-index: 100;
 
             .stem,
             .petal-outer,

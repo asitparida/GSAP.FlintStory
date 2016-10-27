@@ -287,11 +287,19 @@
                     TweenMax.set(self.club, { y: -(self.window.innerHeight - _wilmaLeftHandPosition.top - _clubPosition.height - self.wilmaHandLeftInitial.height), x: -(self.window.innerWidth + _clubPosition.width - _wilmaLeftHandPosition.left - (_clubPosition.width * 0.25 )) });
                 }
             })
+
             .to(self.club, 0.30, { rotation: 0, transformOrigin: "200px 30px" }, "+=0.40")
-            .to(self.fredHead, 0.20, { scaleY: 0.20, scaleX: 1.20, transformOrigin: "bottom" }, "-=0.20")    
+            .to(self.fredHead, 0.20, { scaleY: 0.40, scaleX: 1.10, transformOrigin: "bottom" }, "-=0.20")    
+            .to(self.club, 0.30, { rotation: 60, transformOrigin: "200px 30px" })
+            .to(self.fredHead, 0.30, { scaleY: 1, scaleX: 1, transformOrigin: "bottom" }, "-=0.30")
+
+            .to(self.rose, 0.75, { scaleY: 0, y: 200, transformOrigin: "top" }, "-=0.50")
+            
+            .to(self.club, 0.30, { rotation: 0, transformOrigin: "200px 30px" })
+            .to(self.fredHead, 0.20, { scaleY: 0.20, scaleX: 1.20, transformOrigin: "bottom" }, "-=0.20")
             .to(self.club, 0.30, { rotation: 60, transformOrigin: "200px 30px" })
             .to(self.fredHead, 0.30, { scaleY: 1, scaleX: 1, transformOrigin: "bottom" }, "-=0.30")            
-            .to(self.rose, 0.75, { scaleY: 0, y: 200, transformOrigin: "top" }, "-=0.50")
+             
             .to(self.club, 0.30, { x: self.window.innerWidth, y: -self.window.innerHeight }, "-=0.20")
             .to(self.fredHandRight, 0.30, { rotation: 90, transformOrigin: self.fredHandsTransformOrigin, ease: Power2.easeOut })
             .to(self.wilmaHandLeft, 0.50, {
